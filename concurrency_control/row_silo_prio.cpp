@@ -16,8 +16,8 @@ Row_silo_prio::init(row_t * row)
 RC
 Row_silo_prio::access(txn_man * txn, TsType type, row_t * local_row) {
 	TID_prio_t v, v2;
-	//const uint32_t prio = txn->prio;
-	uint32_t prio;
+	const uint32_t prio = txn->prio;
+	//uint32_t prio;
 	bool is_owner;
 retry:
 	//re-obtain priority in case of change
