@@ -71,6 +71,7 @@ RC thread_t::run() {
 							if (_abort_buffer[i].query != NULL && curr_time > _abort_buffer[i].ready_time) {
 								m_query = _abort_buffer[i].query;
                                 m_query->rerun = true;
+				//printf("rerun! %s\n", m_query);
 								txn_starttime = _abort_buffer[i].starttime;
 								_abort_buffer[i].query = NULL;
 								_abort_buffer_empty_slots ++;

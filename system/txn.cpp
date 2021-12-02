@@ -55,7 +55,7 @@ void txn_man::init(thread_t * h_thd, workload * h_wl, uint64_t thd_id) {
     _cur_tid = 0;
 #elif CC_ALG == SILO_PRIO
     _cur_data_ver = 0;
-	prio = 0;
+    prio = (uint32_t)0;
 #elif CC_ALG == IC3
   depqueue = (TxnEntry **) _mm_malloc(sizeof(void *)*THREAD_CNT, 64);
   for (int i = 0; i < THREAD_CNT; i++)
@@ -192,7 +192,7 @@ void txn_man::cleanup(RC rc) {
         }
 #endif
 
-#if CC_ALG != TICTOC && (CC_ALG != SILO) && (CC_ALG != WOUND_WAIT) && (CC_ALG!= BAMBOO)
+#if CC_ALG != TICTOC && (CC_ALG != SILO) && (CC_ALG != WOUND_WAIT) && (CC_ALG!= BAMBOO) && (CC_ALG != SILO_PRIO)
         // invalidate ptr for cc keeping globally visible ptr
     accesses[rid]->data = NULL;
 #endif

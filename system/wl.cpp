@@ -8,6 +8,7 @@
 #include "catalog.h"
 #include "mem_alloc.h"
 
+
 RC workload::init() {
 	sim_done = false;
 	return RCOK;
@@ -20,7 +21,7 @@ RC workload::init_schema(string schema_file) {
 	ifstream fin(schema_file);
     Catalog * schema;
     while (getline(fin, line)) {
-		if (line.compare(0, 6, "TABLE=") == 0) {
+	    if (line.compare(0, 6, "TABLE=") == 0) {
 			string tname;
 			tname = &line[6];
 			schema = (Catalog *) _mm_malloc(sizeof(Catalog), CL_SIZE);
