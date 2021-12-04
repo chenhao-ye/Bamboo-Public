@@ -38,7 +38,7 @@
 /***********************************************/
 // Concurrency Control
 /***********************************************/
-// WAIT_DIE, NO_WAIT, DL_DETECT, TIMESTAMP, MVCC, HEKATON, HSTORE, OCC, VLL, TICTOC, SILO
+// WAIT_DIE, NO_WAIT, DL_DETECT, TIMESTAMP, MVCC, HEKATON, HSTORE, OCC, VLL, TICTOC, SILO, SILO_PRIO
 // TODO TIMESTAMP does not work at this moment
 #define CC_ALG SILO_PRIO
 #define ISOLATION_LEVEL 			SERIALIZABLE
@@ -53,7 +53,7 @@
 // per-row lock/ts management or central lock/ts management
 #define CENTRAL_MAN					false
 #define BUCKET_CNT					31
-#define ABORT_PENALTY 50000
+#define ABORT_PENALTY 50000 // seems that when ABORT_BUFFER_ENABLE is true, ABORT_PENALTY has no effect
 #define ABORT_BUFFER_SIZE			1
 #define ABORT_BUFFER_ENABLE			true
 // [ INDEX ]
@@ -63,6 +63,9 @@
 #define INDEX_STRUCT				IDX_HASH
 #define BTREE_ORDER 				16
 
+// [SILO_PRIO]
+#define PRIO_BIT_COUNT  4 // if changed, must configure bit count in TID_prio_t in row_silo_prio.h
+#define HAS_PRIO_RATIO 0.6 // ratio of transactions that have non-zero priority values
 // [DL_DETECT]
 #define DL_LOOP_DETECT				1000 	// 100 us
 #define DL_LOOP_TRIAL				100	// 1 us
@@ -128,7 +131,7 @@
 #define THINKTIME				    0
 #define MAX_RUNTIME 10
 // max number of rows touched per transaction
-#define MAX_ROW_PER_TXN 1000
+#define MAX_ROW_PER_TXN 64 // this only works when LONG_TXN_RATIO > 0. See query.cpp:85 and ycsb_query.cpp:16. Since we have no long txns, put this back to default and change REQ_PER_QUERY instead? BTW, I think 1000 is too large...
 #define QUERY_INTVL 				1UL
 #define MAX_TXN_PER_PART 1000000
 #define FIRST_PART_LOCAL 			true
@@ -136,7 +139,7 @@
 #define MAX_FIELD_SIZE                          50
 // ==== [YCSB] ====
 #define INIT_PARALLELISM			40
-#define SYNTH_TABLE_SIZE 10000000
+#define SYNTH_TABLE_SIZE 10485760 // Xiangyao told me before that for some weird reason, SYNTH_TABLE_SIZE should best be a multiple of 1024...
 #define ZIPF_THETA 0.9
 #define READ_PERC 0.5
 #define WRITE_PERC 					1  // if want no scan, write + read >= 1
@@ -144,7 +147,7 @@
 #define SCAN_LEN					20
 #define PART_PER_TXN 				1
 #define PERC_MULTI_PART				1
-#define REQ_PER_QUERY 16
+#define REQ_PER_QUERY 64
 #define LONG_TXN_RATIO 0
 #define LONG_TXN_READ_RATIO			0.5
 #define FIELD_PER_TUPLE				10
