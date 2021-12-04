@@ -40,7 +40,9 @@ int main(int argc, char* argv[])
 #elif CC_ALG == SILO
 	printf("SILO\n");
 #elif CC_ALG == SILO_PRIO
-	printf("SILO_PRIO\n");
+	double has_prio_ratio = HAS_PRIO_RATIO;
+	printf("SILO_PRIO\tHAS_PRIO_RATIO=%.2f\n", has_prio_ratio);
+	printf("THREAD_CNT=%u, ZIPF=%.2f\n", g_thread_cnt, g_zipf_theta); // primitive debug info. can be removed.
 #elif CC_ALG == IC3
 	printf("IC3\n");
 #endif
