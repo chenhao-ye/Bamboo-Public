@@ -147,7 +147,7 @@
 #define SCAN_LEN					20
 #define PART_PER_TXN 				1
 #define PERC_MULTI_PART				1
-#define REQ_PER_QUERY 64
+#define REQ_PER_QUERY 16
 #define LONG_TXN_RATIO 0
 #define LONG_TXN_READ_RATIO			0.5
 #define FIELD_PER_TUPLE				10
