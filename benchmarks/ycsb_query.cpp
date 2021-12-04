@@ -17,7 +17,7 @@ void ycsb_query::init(uint64_t thd_id, workload * h_wl, Query_thd * query_thd) {
 		double x;
 		drand48_r(&_buffer, &x);
 		if (x > HAS_PRIO_RATIO) {
-			drand48_r(&dd, &x);
+			drand48_r(&_buffer, &x);
 			x *= ((1 << PRIO_BIT_COUNT) - 1); // x in [0..15) (double)
 			_prio = 1 + (uint32_t)x; // _prio in [1..16) (uint32)
 		}
