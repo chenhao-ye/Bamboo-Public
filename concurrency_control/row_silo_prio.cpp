@@ -21,7 +21,7 @@ Row_silo_prio::access(txn_man * txn, TsType type, row_t * local_row) {
 	bool is_owner;
 retry:
 	//re-obtain priority in case of change
-	prio = txn->prio;
+	//prio = txn->prio;
 
 	v = _tid_word_prio;
 	if (v.is_locked()) {

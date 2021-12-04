@@ -101,23 +101,23 @@ void Stats::print() {
   if (output_file != NULL) {
     ofstream outf(output_file);
     if (outf.is_open()) {
-      outf << "[summary] throughput=" << total_txn_cnt / total_run_time *
+      outf << "[summary] throughput= " << total_txn_cnt / total_run_time *
       BILLION * THREAD_CNT << ", ";
       ALL_METRICS(WRITE_STAT_X, WRITE_STAT_Y, WRITE_STAT_Y)
-      outf << "deadlock_cnt=" << deadlock << ", ";
-      outf << "cycle_detect=" << cycle_detect << ", ";
-      outf << "dl_detect_time=" << dl_detect_time / BILLION << ", ";
-      outf << "dl_wait_time=" << dl_wait_time / BILLION << "\n";
+      outf << "deadlock_cnt= " << deadlock << ", ";
+      outf << "cycle_detect= " << cycle_detect << ", ";
+      outf << "dl_detect_time= " << dl_detect_time / BILLION << ", ";
+      outf << "dl_wait_time= " << dl_wait_time / BILLION << "\n";
       outf.close();
     }
   }
-  std::cout << "[summary] throughput=" << total_txn_cnt / total_run_time *
+  std::cout << "[summary] throughput= " << total_txn_cnt / total_run_time *
       BILLION * THREAD_CNT << ", ";
   ALL_METRICS(PRINT_STAT_X, PRINT_STAT_Y, PRINT_STAT_Y)
-  std::cout << "deadlock_cnt=" << deadlock << ", ";
-  std::cout << "cycle_detect=" << cycle_detect << ", ";
-  std::cout << "dl_detect_time=" << dl_detect_time / BILLION << ", ";
-  std::cout << "dl_wait_time=" << dl_wait_time / BILLION << "\n";
+  std::cout << "deadlock_cnt= " << deadlock << ", ";
+  std::cout << "cycle_detect= " << cycle_detect << ", ";
+  std::cout << "dl_detect_time= " << dl_detect_time / BILLION << ", ";
+  std::cout << "dl_wait_time= " << dl_wait_time / BILLION << "\n";
   if (g_prt_lat_distr)
     print_lat_distr();
 }
