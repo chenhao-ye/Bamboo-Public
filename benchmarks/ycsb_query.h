@@ -32,6 +32,10 @@ public:
 	bool is_long;
 	double local_read_perc;
 	ycsb_request * requests;
+#if CC_ALG == SILO_PRIO
+	drand48_data _buffer;
+	uint32_t _prio;
+#endif
 
 private:
 	// for Zipfian distribution

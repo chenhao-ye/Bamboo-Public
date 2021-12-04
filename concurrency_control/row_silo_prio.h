@@ -21,7 +21,7 @@ union TID_prio_t {
 		uint32_t prio_ver: 3;
 		// currently support 16 levels of priority
 		// but we could just use more bits to support more
-		uint32_t prio : 4;
+		uint32_t prio : PRIO_BIT_COUNT;
 		// it's possible to have reference count as a separated value
 		// but for now, let's just embed it for simplicity
 		uint32_t ref_cnt : 12;
