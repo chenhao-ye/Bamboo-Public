@@ -156,13 +156,7 @@ public:
 	// temporarily release the lock
 	// only happen as a backoff in validation
 	void				unlock() {
-		// _tid_word_prio.unlock();
-		TID_prio_t v = _tid_word_prio, v2;
-		assert (v.is_locked());
-		v2 = v;
-		v2.unlock();
-		assert (__sync_bool_compare_and_swap(&_tid_word_prio.raw_bits, v.raw_bits,
-			v2.raw_bits));
+		_tid_word_prio.unlock();
 	}
 
 	// the reader only need to release its priority

@@ -71,7 +71,6 @@ RC thread_t::run() {
 							if (_abort_buffer[i].query != NULL && curr_time > _abort_buffer[i].ready_time) {
 								m_query = _abort_buffer[i].query;
                                 m_query->rerun = true;
-				//printf("rerun! %s\n", m_query);
 								txn_starttime = _abort_buffer[i].starttime;
 								_abort_buffer[i].query = NULL;
 								_abort_buffer_empty_slots ++;
@@ -124,7 +123,7 @@ RC thread_t::run() {
         if (unlikely(m_txn->get_ts() == 0))
             m_txn->set_ts(get_next_ts());
 #elif CC_ALG == SILO_PRIO
-		m_txn->prio = ((ycsb_query*)m_query)->_prio;
+		m_txn->prio = m_query->_prio;
 #endif
 		m_txn->set_txn_id(get_thd_id() + thd_txn_id * g_thread_cnt);
 		thd_txn_id ++;
