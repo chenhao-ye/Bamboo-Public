@@ -1,0 +1,1011 @@
+[thd-2 txn-126] unlocked 0x7ff3488629c0 because committed 
+[thd-2 txn-126] unlocked 0x7ff348862a40 because committed 
+[thd-0 txn-136]   locked 0x7ff345d4b400 
+[thd-0 txn-136]   locked 0x7ff345ead6c0 
+[thd-0 txn-136]   locked 0x7ff345efe200 
+[thd-0 txn-136]   locked 0x7ff2d0964180 
+[thd-0 txn-136]   locked 0x7ff2bf5f7540 
+[thd-0 txn-136]   locked 0x7ff2bc4f2f40 
+[thd-0 txn-136] unlocked 0x7ff345d4b400 because committed 
+[thd-0 txn-136] unlocked 0x7ff345ead6c0 because committed 
+[thd-0 txn-136] unlocked 0x7ff345efe200 because committed 
+[thd-0 txn-136] unlocked 0x7ff2d0964180 because committed 
+[thd-0 txn-136] unlocked 0x7ff2bf5f7540 because committed 
+[thd-0 txn-136] unlocked 0x7ff2bc4f2f40 because committed 
+[thd-1 txn-113]   locked 0x7ff348862840 
+[thd-1 txn-113]   locked 0x7ff348865880 
+[thd-1 txn-113]   locked 0x7ff3488fbb80 
+[thd-1 txn-113]   locked 0x7ff343875180 
+[thd-1 txn-113]   locked 0x7ff340ae3080 
+[thd-1 txn-113]   locked 0x7ff300455540 
+[thd-2 txn-126] unlocked 0x7ff345de93c0 because committed 
+[thd-2 txn-126] unlocked 0x7ff34582e540 because committed 
+[thd-2 txn-126] unlocked 0x7ff2c0f38540 because committed 
+[thd-1 txn-113]   locked 0x7ff32a76fe40 
+[thd-1 txn-113]   locked 0x7ff2bb32d980 
+[thd-1 txn-113]   locked 0x7ff2d210aec0 
+[thd-1 txn-113] unlocked 0x7ff348862840 because committed 
+[thd-1 txn-113] unlocked 0x7ff348865880 because committed 
+[thd-1 txn-113] unlocked 0x7ff3488fbb80 because committed 
+[thd-1 txn-113] unlocked 0x7ff343875180 because committed 
+[thd-1 txn-113] unlocked 0x7ff340ae3080 because committed 
+[thd-1 txn-113] unlocked 0x7ff300455540 because committed 
+[thd-1 txn-113] unlocked 0x7ff32a76fe40 because committed 
+[thd-1 txn-113] unlocked 0x7ff2bb32d980 because committed 
+[thd-2 txn-130]   locked 0x7ff348862840 
+[thd-2 txn-130]   locked 0x7ff348865180 
+[thd-2 txn-130]   locked 0x7ff3488e7d80 
+[thd-2 txn-130]   locked 0x7ff3488fb280 
+[thd-2 txn-130]   locked 0x7ff345dceb80 
+[thd-2 txn-130]   locked 0x7ff345add880 
+[thd-2 txn-130]   locked 0x7ff333b8c2c0 
+[thd-2 txn-130]   locked 0x7ff2f622b240 
+[thd-2 txn-130] unlocked 0x7ff348862840 because committed 
+[thd-2 txn-130] unlocked 0x7ff348865180 because committed 
+[thd-2 txn-130] unlocked 0x7ff3488e7d80 because committed 
+[thd-2 txn-130] unlocked 0x7ff3488fb280 because committed 
+[thd-2 txn-130] unlocked 0x7ff345dceb80 because committed 
+[thd-2 txn-130] unlocked 0x7ff345add880 because committed 
+[thd-2 txn-130] unlocked 0x7ff333b8c2c0 because committed 
+[thd-2 txn-130] unlocked 0x7ff2f622b240 because committed 
+[thd-0 txn-140] fail to lock 0x7ff348862840 
+[thd-1 txn-113] unlocked 0x7ff2d210aec0 because committed 
+[thd-3 txn-127] unlocked 0x7ff3488756c0 because committed 
+[thd-3 txn-127] unlocked 0x7ff34887ad40 because committed 
+[thd-3 txn-127] unlocked 0x7ff348888a00 because committed 
+[thd-3 txn-127] unlocked 0x7ff3488e7d00 because committed 
+[thd-3 txn-127] unlocked 0x7ff317b4cf40 because committed 
+[thd-3 txn-127] unlocked 0x7ff29b9f76c0 because committed 
+[thd-3 txn-127] unlocked 0x7ff316f1ac00 because committed 
+[thd-3 txn-127] unlocked 0x7ff2d6623600 because committed 
+[thd-0 txn-144]   locked 0x7ff348862840 
+[thd-0 txn-144]   locked 0x7ff348865800 
+[thd-0 txn-144]   locked 0x7ff34889c880 
+[thd-0 txn-144]   locked 0x7ff3489c94c0 
+[thd-0 txn-144]   locked 0x7ff348b1e640 
+[thd-0 txn-144]   locked 0x7ff345cece00 
+[thd-0 txn-144]   locked 0x7ff3458ddec0 
+[thd-0 txn-144]   locked 0x7ff33c937d00 
+[thd-0 txn-144]   locked 0x7ff33529de40 
+[thd-0 txn-144]   locked 0x7ff28a134f00 
+[thd-0 txn-144] unlocked 0x7ff348862840 because committed 
+[thd-0 txn-144] unlocked 0x7ff348865800 because committed 
+[thd-0 txn-144] unlocked 0x7ff34889c880 because committed 
+[thd-0 txn-144] unlocked 0x7ff3489c94c0 because committed 
+[thd-0 txn-144] unlocked 0x7ff348b1e640 because committed 
+[thd-0 txn-144] unlocked 0x7ff345cece00 because committed 
+[thd-0 txn-144] unlocked 0x7ff3458ddec0 because committed 
+[thd-0 txn-144] unlocked 0x7ff33c937d00 because committed 
+[thd-0 txn-144] unlocked 0x7ff33529de40 because committed 
+[thd-0 txn-144] unlocked 0x7ff28a134f00 because committed 
+[thd-2 txn-134]   locked 0x7ff348862ec0 
+[thd-2 txn-134]   locked 0x7ff348865e00 
+[thd-3 txn-131]   locked 0x7ff348865580 
+[thd-3 txn-131]   locked 0x7ff34886b7c0 
+[thd-2 txn-134]   locked 0x7ff345ce65c0 
+[thd-2 txn-134]   locked 0x7ff3448d1240 
+[thd-2 txn-134]   locked 0x7ff291d82a00 
+[thd-2 txn-134]   locked 0x7ff28aed0a80 
+[thd-2 txn-134]   locked 0x7ff3192c9500 
+[thd-2 txn-134]   locked 0x7ff2fe4ef5c0 
+[thd-2 txn-134] unlocked 0x7ff348862ec0 because committed 
+[thd-2 txn-134] unlocked 0x7ff348865e00 because committed 
+[thd-2 txn-134] unlocked 0x7ff345ce65c0 because committed 
+[thd-2 txn-134] unlocked 0x7ff3448d1240 because committed 
+[thd-2 txn-134] unlocked 0x7ff291d82a00 because committed 
+[thd-2 txn-134] unlocked 0x7ff28aed0a80 because committed 
+[thd-2 txn-134] unlocked 0x7ff3192c9500 because committed 
+[thd-2 txn-134] unlocked 0x7ff2fe4ef5c0 because committed 
+[thd-1 txn-121]   locked 0x7ff348862840 
+[thd-1 txn-121]   locked 0x7ff348865380 
+[thd-1 txn-121]   locked 0x7ff348897e80 
+[thd-1 txn-121]   locked 0x7ff34893c400 
+[thd-3 txn-131]   locked 0x7ff348b001c0 
+[thd-3 txn-131]   locked 0x7ff342984440 
+[thd-3 txn-131]   locked 0x7ff33d9a3c80 
+[thd-3 txn-131]   locked 0x7ff331f3b5c0 
+[thd-3 txn-131]   locked 0x7ff2d2901f00 
+[thd-3 txn-131]   locked 0x7ff32c610880 
+[thd-3 txn-131]   locked 0x7ff3302ed640 
+[thd-3 txn-131]   locked 0x7ff2f54bb0c0 
+[thd-3 txn-131]   locked 0x7ff2aed263c0 
+[thd-2 txn-138]   locked 0x7ff348865b80 
+[thd-2 txn-138]   locked 0x7ff3488668c0 
+[thd-2 txn-138]   locked 0x7ff3488843c0 
+[thd-2 txn-138]   locked 0x7ff348889c40 
+[thd-2 txn-138]   locked 0x7ff34596bf80 
+[thd-2 txn-138]   locked 0x7ff340916180 
+[thd-2 txn-138]   locked 0x7ff3457eacc0 
+[thd-2 txn-138]   locked 0x7ff3277c01c0 
+[thd-2 txn-138]   locked 0x7ff2c5723940 
+[thd-2 txn-138] unlocked 0x7ff348865b80 because committed 
+[thd-2 txn-138] unlocked 0x7ff3488668c0 because committed 
+[thd-2 txn-138] unlocked 0x7ff3488843c0 because committed 
+[thd-2 txn-138] unlocked 0x7ff348889c40 because committed 
+[thd-2 txn-138] unlocked 0x7ff34596bf80 because committed 
+[thd-2 txn-138] unlocked 0x7ff340916180 because committed 
+[thd-2 txn-138] unlocked 0x7ff3457eacc0 because committed 
+[thd-2 txn-138] unlocked 0x7ff3277c01c0 because committed 
+[thd-2 txn-138] unlocked 0x7ff2c5723940 because committed 
+[thd-1 txn-121]   locked 0x7ff345c3d200 
+[thd-1 txn-121]   locked 0x7ff3418be340 
+[thd-1 txn-121]   locked 0x7ff332b3e340 
+[thd-1 txn-121]   locked 0x7ff288c40d80 
+[thd-1 txn-121]   locked 0x7ff2c7364540 
+[thd-1 txn-121] unlocked 0x7ff348862840 because committed 
+[thd-1 txn-121] unlocked 0x7ff348865380 because committed 
+[thd-1 txn-121] unlocked 0x7ff348897e80 because committed 
+[thd-1 txn-121] unlocked 0x7ff34893c400 because committed 
+[thd-1 txn-121] unlocked 0x7ff345c3d200 because committed 
+[thd-1 txn-121] unlocked 0x7ff3418be340 because committed 
+[thd-3 txn-131] unlocked 0x7ff348865580 because committed 
+[thd-0 txn-148]   locked 0x7ff348862840 
+[thd-0 txn-148]   locked 0x7ff348862ec0 
+[thd-0 txn-148]   locked 0x7ff345c3c640 
+[thd-0 txn-148]   locked 0x7ff33387f5c0 
+[thd-0 txn-148]   locked 0x7ff2ae811940 
+[thd-0 txn-148]   locked 0x7ff31c00cb00 
+[thd-1 txn-121] unlocked 0x7ff332b3e340 because committed 
+[thd-1 txn-121] unlocked 0x7ff288c40d80 because committed 
+[thd-3 txn-131] unlocked 0x7ff34886b7c0 because committed 
+[thd-3 txn-131] unlocked 0x7ff348b001c0 because committed 
+[thd-3 txn-131] unlocked 0x7ff342984440 because committed 
+[thd-3 txn-131] unlocked 0x7ff33d9a3c80 because committed 
+[thd-3 txn-131] unlocked 0x7ff331f3b5c0 because committed 
+[thd-3 txn-131] unlocked 0x7ff2d2901f00 because committed 
+[thd-3 txn-131] unlocked 0x7ff32c610880 because committed 
+[thd-3 txn-131] unlocked 0x7ff3302ed640 because committed 
+[thd-3 txn-131] unlocked 0x7ff2f54bb0c0 because committed 
+[thd-3 txn-131] unlocked 0x7ff2aed263c0 because committed 
+[thd-2 txn-142]   locked 0x7ff348862c40 
+[thd-2 txn-142]   locked 0x7ff348883980 
+[thd-1 txn-121] unlocked 0x7ff2c7364540 because committed 
+[thd-2 txn-142]   locked 0x7ff3489adf80 
+[thd-2 txn-142]   locked 0x7ff348aa7800 
+[thd-2 txn-142]   locked 0x7ff342984240 
+[thd-2 txn-142]   locked 0x7ff33db4ab40 
+[thd-2 txn-142]   locked 0x7ff33cb480c0 
+[thd-2 txn-142]   locked 0x7ff2fbcccf80 
+[thd-2 txn-142]   locked 0x7ff2f7248200 
+[thd-2 txn-142] unlocked 0x7ff348862c40 because committed 
+[thd-2 txn-142] unlocked 0x7ff348883980 because committed 
+[thd-2 txn-142] unlocked 0x7ff3489adf80 because committed 
+[thd-2 txn-142] unlocked 0x7ff348aa7800 because committed 
+[thd-2 txn-142] unlocked 0x7ff342984240 because committed 
+[thd-0 txn-148] unlocked 0x7ff348862840 because validation failed 
+[thd-0 txn-148] unlocked 0x7ff348862ec0 because validation failed 
+[thd-0 txn-148] unlocked 0x7ff345c3c640 because validation failed 
+[thd-0 txn-148] unlocked 0x7ff33387f5c0 because validation failed 
+[thd-0 txn-148] unlocked 0x7ff2ae811940 because validation failed 
+[thd-0 txn-148] unlocked 0x7ff31c00cb00 because validation failed 
+[thd-2 txn-142] unlocked 0x7ff33db4ab40 because committed 
+[thd-3 txn-135]   locked 0x7ff348862ec0 
+[thd-1 txn-125]   locked 0x7ff3488a7140 
+[thd-2 txn-142] unlocked 0x7ff33cb480c0 because committed 
+[thd-3 txn-135]   locked 0x7ff348865180 
+[thd-1 txn-125]   locked 0x7ff3488c4d80 
+[thd-2 txn-142] unlocked 0x7ff2fbcccf80 because committed 
+[thd-2 txn-142] unlocked 0x7ff2f7248200 because committed 
+[thd-3 txn-135]   locked 0x7ff34887a340 
+[thd-3 txn-135]   locked 0x7ff34887f140 
+[thd-3 txn-135]   locked 0x7ff345c37b40 
+[thd-3 txn-135]   locked 0x7ff33e90fc40 
+[thd-3 txn-135]   locked 0x7ff2faca6600 
+[thd-3 txn-135] unlocked 0x7ff348862ec0 because committed 
+[thd-3 txn-135] unlocked 0x7ff348865180 because committed 
+[thd-3 txn-135] unlocked 0x7ff34887a340 because committed 
+[thd-3 txn-135] unlocked 0x7ff34887f140 because committed 
+[thd-3 txn-135] unlocked 0x7ff345c37b40 because committed 
+[thd-3 txn-135] unlocked 0x7ff33e90fc40 because committed 
+[thd-0 txn-152]   locked 0x7ff348862840 
+[thd-0 txn-152]   locked 0x7ff348862ec0 
+[thd-0 txn-152]   locked 0x7ff345c3c640 
+[thd-0 txn-152]   locked 0x7ff33387f5c0 
+[thd-0 txn-152]   locked 0x7ff2ae811940 
+[thd-0 txn-152]   locked 0x7ff31c00cb00 
+[thd-0 txn-152] unlocked 0x7ff348862840 because committed 
+[thd-0 txn-152] unlocked 0x7ff348862ec0 because committed 
+[thd-0 txn-152] unlocked 0x7ff345c3c640 because committed 
+[thd-0 txn-152] unlocked 0x7ff33387f5c0 because committed 
+[thd-0 txn-152] unlocked 0x7ff2ae811940 because committed 
+[thd-0 txn-152] unlocked 0x7ff31c00cb00 because committed 
+[thd-1 txn-125]   locked 0x7ff3489069c0 
+[thd-1 txn-125]   locked 0x7ff3489f3400 
+[thd-3 txn-135] unlocked 0x7ff2faca6600 because committed 
+[thd-2 txn-146]   locked 0x7ff3488b0c00 
+[thd-2 txn-146]   locked 0x7ff3488de6c0 
+[thd-2 txn-146]   locked 0x7ff331ec4100 
+[thd-2 txn-146]   locked 0x7ff2e1fa4880 
+[thd-2 txn-146]   locked 0x7ff2b9914d00 
+[thd-2 txn-146]   locked 0x7ff30bb33c80 
+[thd-2 txn-146] unlocked 0x7ff3488b0c00 because committed 
+[thd-2 txn-146] unlocked 0x7ff3488de6c0 because committed 
+[thd-2 txn-146] unlocked 0x7ff331ec4100 because committed 
+[thd-2 txn-146] unlocked 0x7ff2e1fa4880 because committed 
+[thd-2 txn-146] unlocked 0x7ff2b9914d00 because committed 
+[thd-2 txn-146] unlocked 0x7ff30bb33c80 because committed 
+[thd-1 txn-125]   locked 0x7ff345e3ffc0 
+[thd-1 txn-125]   locked 0x7ff34597ef40 
+[thd-1 txn-125]   locked 0x7ff33b923740 
+[thd-1 txn-125]   locked 0x7ff2dc891840 
+[thd-1 txn-125] unlocked 0x7ff3488a7140 because validation failed 
+[thd-0 txn-156]   locked 0x7ff348866440 
+[thd-0 txn-156]   locked 0x7ff3488c04c0 
+[thd-0 txn-156]   locked 0x7ff345e768c0 
+[thd-0 txn-156]   locked 0x7ff338b9ba40 
+[thd-0 txn-156]   locked 0x7ff3329fdcc0 
+[thd-0 txn-156]   locked 0x7ff32aea38c0 
+[thd-0 txn-156]   locked 0x7ff31b91e8c0 
+[thd-0 txn-156]   locked 0x7ff2c5b05200 
+[thd-0 txn-156]   locked 0x7ff282b4b2c0 
+[thd-0 txn-156]   locked 0x7ff2d053fa00 
+[thd-0 txn-156] unlocked 0x7ff348866440 because committed 
+[thd-0 txn-156] unlocked 0x7ff3488c04c0 because committed 
+[thd-0 txn-156] unlocked 0x7ff345e768c0 because committed 
+[thd-0 txn-156] unlocked 0x7ff338b9ba40 because committed 
+[thd-2 txn-150]   locked 0x7ff348862ac0 
+[thd-3 txn-139]   locked 0x7ff348862c40 
+[thd-3 txn-139]   locked 0x7ff3488663c0 
+[thd-3 txn-139]   locked 0x7ff3458c0ac0 
+[thd-3 txn-139]   locked 0x7ff33b99dc00 
+[thd-2 txn-150]   locked 0x7ff3488668c0 
+[thd-2 txn-150]   locked 0x7ff348a289c0 
+[thd-2 txn-150]   locked 0x7ff343b2f0c0 
+[thd-2 txn-150]   locked 0x7ff341a083c0 
+[thd-1 txn-125] unlocked 0x7ff3488c4d80 because validation failed 
+[thd-1 txn-125] unlocked 0x7ff3489069c0 because validation failed 
+[thd-1 txn-125] unlocked 0x7ff3489f3400 because validation failed 
+[thd-1 txn-125] unlocked 0x7ff345e3ffc0 because validation failed 
+[thd-1 txn-125] unlocked 0x7ff34597ef40 because validation failed 
+[thd-1 txn-125] unlocked 0x7ff33b923740 because validation failed 
+[thd-3 txn-139]   locked 0x7ff32cf69c80 
+[thd-3 txn-139]   locked 0x7ff328f48cc0 
+[thd-3 txn-139] unlocked 0x7ff348862c40 because committed 
+[thd-3 txn-139] unlocked 0x7ff3488663c0 because committed 
+[thd-3 txn-139] unlocked 0x7ff3458c0ac0 because committed 
+[thd-3 txn-139] unlocked 0x7ff33b99dc00 because committed 
+[thd-3 txn-139] unlocked 0x7ff32cf69c80 because committed 
+[thd-3 txn-139] unlocked 0x7ff328f48cc0 because committed 
+[thd-1 txn-125] unlocked 0x7ff2dc891840 because validation failed 
+[thd-2 txn-150]   locked 0x7ff33394dd40 
+[thd-2 txn-150]   locked 0x7ff321e848c0 
+[thd-2 txn-150]   locked 0x7ff2d0ada080 
+[thd-2 txn-150]   locked 0x7ff2aaeb59c0 
+[thd-2 txn-150]   locked 0x7ff2dfaf6cc0 
+[thd-2 txn-150] unlocked 0x7ff348862ac0 because committed 
+[thd-2 txn-150] unlocked 0x7ff3488668c0 because committed 
+[thd-2 txn-150] unlocked 0x7ff348a289c0 because committed 
+[thd-2 txn-150] unlocked 0x7ff343b2f0c0 because committed 
+[thd-2 txn-150] unlocked 0x7ff341a083c0 because committed 
+[thd-2 txn-150] unlocked 0x7ff33394dd40 because committed 
+[thd-2 txn-150] unlocked 0x7ff321e848c0 because committed 
+[thd-2 txn-150] unlocked 0x7ff2d0ada080 because committed 
+[thd-2 txn-150] unlocked 0x7ff2aaeb59c0 because committed 
+[thd-2 txn-150] unlocked 0x7ff2dfaf6cc0 because committed 
+[thd-1 txn-129]   locked 0x7ff3488a7140 
+[thd-1 txn-129]   locked 0x7ff3488c4d80 
+[thd-1 txn-129]   locked 0x7ff3489069c0 
+[thd-1 txn-129]   locked 0x7ff3489f3400 
+[thd-1 txn-129]   locked 0x7ff345e3ffc0 
+[thd-3 txn-143]   locked 0x7ff348862cc0 
+[thd-0 txn-156] unlocked 0x7ff3329fdcc0 because committed 
+[thd-0 txn-156] unlocked 0x7ff32aea38c0 because committed 
+[thd-0 txn-156] unlocked 0x7ff31b91e8c0 because committed 
+[thd-0 txn-156] unlocked 0x7ff2c5b05200 because committed 
+[thd-0 txn-156] unlocked 0x7ff282b4b2c0 because committed 
+[thd-0 txn-156] unlocked 0x7ff2d053fa00 because committed 
+[thd-1 txn-129]   locked 0x7ff34597ef40 
+[thd-1 txn-129]   locked 0x7ff33b923740 
+[thd-3 txn-143]   locked 0x7ff345cced00 
+[thd-3 txn-143]   locked 0x7ff3449e8540 
+[thd-3 txn-143]   locked 0x7ff31fccbbc0 
+[thd-3 txn-143]   locked 0x7ff2f93e7640 
+[thd-3 txn-143]   locked 0x7ff2b51da640 
+[thd-2 txn-154]   locked 0x7ff348862a40 
+[thd-2 txn-154]   locked 0x7ff348a6b280 
+[thd-2 txn-154]   locked 0x7ff3439b3b40 
+[thd-2 txn-154]   locked 0x7ff33da84480 
+[thd-2 txn-154]   locked 0x7ff33aac9740 
+[thd-2 txn-154]   locked 0x7ff2b49b2dc0 
+[thd-2 txn-154]   locked 0x7ff296f4ec80 
+[thd-2 txn-154] unlocked 0x7ff348862a40 because committed 
+[thd-0 txn-160]   locked 0x7ff348870dc0 
+[thd-1 txn-129]   locked 0x7ff2dc891840 
+[thd-3 txn-143] unlocked 0x7ff348862cc0 because committed 
+[thd-3 txn-143] unlocked 0x7ff345cced00 because committed 
+[thd-3 txn-143] unlocked 0x7ff3449e8540 because committed 
+[thd-3 txn-143] unlocked 0x7ff31fccbbc0 because committed 
+[thd-3 txn-143] unlocked 0x7ff2f93e7640 because committed 
+[thd-0 txn-160]   locked 0x7ff348981cc0 
+[thd-0 txn-160]   locked 0x7ff345fd6f80 
+[thd-0 txn-160]   locked 0x7ff344813140 
+[thd-0 txn-160]   locked 0x7ff342885b40 
+[thd-1 txn-129] unlocked 0x7ff3488a7140 because committed 
+[thd-1 txn-129] unlocked 0x7ff3488c4d80 because committed 
+[thd-1 txn-129] unlocked 0x7ff3489069c0 because committed 
+[thd-0 txn-160]   locked 0x7ff33f82d680 
+[thd-0 txn-160]   locked 0x7ff2d191bd00 
+[thd-0 txn-160]   locked 0x7ff2b2c7ca00 
+[thd-1 txn-129] unlocked 0x7ff3489f3400 because committed 
+[thd-1 txn-129] unlocked 0x7ff345e3ffc0 because committed 
+[thd-1 txn-129] unlocked 0x7ff34597ef40 because committed 
+[thd-1 txn-129] unlocked 0x7ff33b923740 because committed 
+[thd-1 txn-129] unlocked 0x7ff2dc891840 because committed 
+[thd-2 txn-154] unlocked 0x7ff348a6b280 because committed 
+[thd-2 txn-154] unlocked 0x7ff3439b3b40 because committed 
+[thd-3 txn-143] unlocked 0x7ff2b51da640 because committed 
+[thd-0 txn-160] unlocked 0x7ff348870dc0 because committed 
+[thd-0 txn-160] unlocked 0x7ff348981cc0 because committed 
+[thd-0 txn-160] unlocked 0x7ff345fd6f80 because committed 
+[thd-0 txn-160] unlocked 0x7ff344813140 because committed 
+[thd-0 txn-160] unlocked 0x7ff342885b40 because committed 
+[thd-0 txn-160] unlocked 0x7ff33f82d680 because committed 
+[thd-0 txn-160] unlocked 0x7ff2d191bd00 because committed 
+[thd-0 txn-160] unlocked 0x7ff2b2c7ca00 because committed 
+[thd-2 txn-154] unlocked 0x7ff33da84480 because committed 
+[thd-2 txn-154] unlocked 0x7ff33aac9740 because committed 
+[thd-2 txn-154] unlocked 0x7ff2b49b2dc0 because committed 
+[thd-2 txn-154] unlocked 0x7ff296f4ec80 because committed 
+[thd-1 txn-133]   locked 0x7ff348862cc0 
+[thd-1 txn-133]   locked 0x7ff348866e40 
+[thd-1 txn-133]   locked 0x7ff34887e500 
+[thd-1 txn-133]   locked 0x7ff345ac8940 
+[thd-1 txn-133]   locked 0x7ff335b0aac0 
+[thd-1 txn-133]   locked 0x7ff322ef6e00 
+[thd-1 txn-133]   locked 0x7ff316ab37c0 
+[thd-1 txn-133]   locked 0x7ff298bbde00 
+[thd-1 txn-133] unlocked 0x7ff348862cc0 because committed 
+[thd-1 txn-133] unlocked 0x7ff348866e40 because committed 
+[thd-1 txn-133] unlocked 0x7ff34887e500 because committed 
+[thd-1 txn-133] unlocked 0x7ff345ac8940 because committed 
+[thd-1 txn-133] unlocked 0x7ff335b0aac0 because committed 
+[thd-1 txn-133] unlocked 0x7ff322ef6e00 because committed 
+[thd-1 txn-133] unlocked 0x7ff316ab37c0 because committed 
+[thd-1 txn-133] unlocked 0x7ff298bbde00 because committed 
+[thd-3 txn-147]   locked 0x7ff348888880 
+[thd-3 txn-147]   locked 0x7ff3489b5f40 
+[thd-3 txn-147]   locked 0x7ff345c0a240 
+[thd-3 txn-147]   locked 0x7ff342857dc0 
+[thd-3 txn-147]   locked 0x7ff33cbd32c0 
+[thd-3 txn-147]   locked 0x7ff32ad1fc80 
+[thd-3 txn-147]   locked 0x7ff320c52180 
+[thd-3 txn-147] unlocked 0x7ff348888880 because committed 
+[thd-3 txn-147] unlocked 0x7ff3489b5f40 because committed 
+[thd-3 txn-147] unlocked 0x7ff345c0a240 because committed 
+[thd-3 txn-147] unlocked 0x7ff342857dc0 because committed 
+[thd-3 txn-147] unlocked 0x7ff33cbd32c0 because committed 
+[thd-3 txn-147] unlocked 0x7ff32ad1fc80 because committed 
+[thd-3 txn-147] unlocked 0x7ff320c52180 because committed 
+[thd-1 txn-137]   locked 0x7ff348862840 
+[thd-1 txn-137]   locked 0x7ff3488628c0 
+[thd-2 txn-158]   locked 0x7ff348862dc0 
+[thd-2 txn-158]   locked 0x7ff348865d00 
+[thd-2 txn-158]   locked 0x7ff32ee4d080 
+[thd-2 txn-158]   locked 0x7ff31fecf600 
+[thd-2 txn-158]   locked 0x7ff3137f5580 
+[thd-2 txn-158]   locked 0x7ff30a477540 
+[thd-2 txn-158] unlocked 0x7ff348862dc0 because validation failed 
+[thd-2 txn-158] unlocked 0x7ff348865d00 because validation failed 
+[thd-2 txn-158] unlocked 0x7ff32ee4d080 because validation failed 
+[thd-2 txn-158] unlocked 0x7ff31fecf600 because validation failed 
+[thd-2 txn-158] unlocked 0x7ff3137f5580 because validation failed 
+[thd-2 txn-158] unlocked 0x7ff30a477540 because validation failed 
+[thd-0 txn-164]   locked 0x7ff348892980 
+[thd-0 txn-164]   locked 0x7ff34889cb80 
+[thd-0 txn-164]   locked 0x7ff345e442c0 
+[thd-0 txn-164]   locked 0x7ff345f58700 
+[thd-0 txn-164]   locked 0x7ff336bff800 
+[thd-0 txn-164]   locked 0x7ff327f302c0 
+[thd-3 txn-151]   locked 0x7ff348862b40 
+[thd-3 txn-151]   locked 0x7ff348874380 
+[thd-3 txn-151]   locked 0x7ff345c96c40 
+[thd-3 txn-151]   locked 0x7ff33facf340 
+[thd-3 txn-151]   locked 0x7ff32fc11780 
+[thd-3 txn-151]   locked 0x7ff2bb6eb640 
+[thd-3 txn-151] unlocked 0x7ff348862b40 because committed 
+[thd-3 txn-151] unlocked 0x7ff348874380 because committed 
+[thd-3 txn-151] unlocked 0x7ff345c96c40 because committed 
+[thd-3 txn-151] unlocked 0x7ff33facf340 because committed 
+[thd-3 txn-151] unlocked 0x7ff32fc11780 because committed 
+[thd-3 txn-151] unlocked 0x7ff2bb6eb640 because committed 
+[thd-0 txn-164]   locked 0x7ff326f57480 
+[thd-0 txn-164]   locked 0x7ff2ebddb040 
+[thd-0 txn-164] unlocked 0x7ff348892980 because committed 
+[thd-0 txn-164] unlocked 0x7ff34889cb80 because committed 
+[thd-0 txn-164] unlocked 0x7ff345e442c0 because committed 
+[thd-0 txn-164] unlocked 0x7ff345f58700 because committed 
+[thd-0 txn-164] unlocked 0x7ff336bff800 because committed 
+[thd-0 txn-164] unlocked 0x7ff327f302c0 because committed 
+[thd-0 txn-164] unlocked 0x7ff326f57480 because committed 
+[thd-0 txn-164] unlocked 0x7ff2ebddb040 because committed 
+[thd-1 txn-137]   locked 0x7ff348870140 
+[thd-1 txn-137]   locked 0x7ff3489fdd00 
+[thd-1 txn-137]   locked 0x7ff348a2dac0 
+[thd-1 txn-137]   locked 0x7ff344896e80 
+[thd-1 txn-137]   locked 0x7ff339947480 
+[thd-1 txn-137]   locked 0x7ff320d68cc0 
+[thd-1 txn-137]   locked 0x7ff31ee12c40 
+[thd-1 txn-137]   locked 0x7ff3198bf800 
+[thd-1 txn-137]   locked 0x7ff2de9fba80 
+[thd-1 txn-137]   locked 0x7ff3246a9ec0 
+[thd-1 txn-137] unlocked 0x7ff348862840 because committed 
+[thd-1 txn-137] unlocked 0x7ff3488628c0 because committed 
+[thd-1 txn-137] unlocked 0x7ff348870140 because committed 
+[thd-1 txn-137] unlocked 0x7ff3489fdd00 because committed 
+[thd-1 txn-137] unlocked 0x7ff348a2dac0 because committed 
+[thd-1 txn-137] unlocked 0x7ff344896e80 because committed 
+[thd-1 txn-137] unlocked 0x7ff339947480 because committed 
+[thd-1 txn-137] unlocked 0x7ff320d68cc0 because committed 
+[thd-2 txn-162]   locked 0x7ff348862dc0 
+[thd-2 txn-162]   locked 0x7ff348865d00 
+[thd-1 txn-137] unlocked 0x7ff31ee12c40 because committed 
+[thd-0 txn-168]   locked 0x7ff3488628c0 
+[thd-0 txn-168]   locked 0x7ff34887eb80 
+[thd-0 txn-168]   locked 0x7ff348884140 
+[thd-3 txn-155] fail to lock 0x7ff3488628c0 
+[thd-3 txn-155] fail to lock 0x7ff3488628c0 
+[thd-3 txn-155] fail to lock 0x7ff3488628c0 
+[thd-0 txn-168]   locked 0x7ff348b4d280 
+[thd-0 txn-168]   locked 0x7ff323fe4580 
+[thd-0 txn-168]   locked 0x7ff30e8c6800 
+[thd-0 txn-168] unlocked 0x7ff3488628c0 because committed 
+[thd-0 txn-168] unlocked 0x7ff34887eb80 because committed 
+[thd-0 txn-168] unlocked 0x7ff348884140 because committed 
+[thd-0 txn-168] unlocked 0x7ff348b4d280 because committed 
+[thd-0 txn-168] unlocked 0x7ff323fe4580 because committed 
+[thd-0 txn-168] unlocked 0x7ff30e8c6800 because committed 
+[thd-1 txn-137] unlocked 0x7ff3198bf800 because committed 
+[thd-1 txn-137] unlocked 0x7ff2de9fba80 because committed 
+[thd-1 txn-137] unlocked 0x7ff3246a9ec0 because committed 
+[thd-3 txn-155] fail to lock 0x7ff3488628c0 
+[thd-2 txn-162]   locked 0x7ff32ee4d080 
+[thd-2 txn-162]   locked 0x7ff31fecf600 
+[thd-2 txn-162]   locked 0x7ff3137f5580 
+[thd-2 txn-162]   locked 0x7ff30a477540 
+[thd-2 txn-162] unlocked 0x7ff348862dc0 because validation failed 
+[thd-2 txn-162] unlocked 0x7ff348865d00 because validation failed 
+[thd-2 txn-162] unlocked 0x7ff32ee4d080 because validation failed 
+[thd-2 txn-162] unlocked 0x7ff31fecf600 because validation failed 
+[thd-2 txn-162] unlocked 0x7ff3137f5580 because validation failed 
+[thd-2 txn-162] unlocked 0x7ff30a477540 because validation failed 
+[thd-3 txn-159]   locked 0x7ff3488628c0 
+[thd-3 txn-159]   locked 0x7ff348862c40 
+[thd-3 txn-159]   locked 0x7ff348862cc0 
+[thd-3 txn-159]   locked 0x7ff34886a580 
+[thd-3 txn-159]   locked 0x7ff345f2e440 
+[thd-3 txn-159]   locked 0x7ff344b93800 
+[thd-3 txn-159]   locked 0x7ff33e83e500 
+[thd-0 txn-172]   locked 0x7ff348a1e640 
+[thd-0 txn-172]   locked 0x7ff345f11740 
+[thd-0 txn-172]   locked 0x7ff343b43a40 
+[thd-0 txn-172]   locked 0x7ff3419360c0 
+[thd-0 txn-172]   locked 0x7ff3339b2c00 
+[thd-0 txn-172]   locked 0x7ff313a1f800 
+[thd-0 txn-172]   locked 0x7ff2ee3e5280 
+[thd-0 txn-172]   locked 0x7ff2b2257800 
+[thd-0 txn-172]   locked 0x7ff31b3353c0 
+[thd-0 txn-172] unlocked 0x7ff348a1e640 because validation failed 
+[thd-0 txn-172] unlocked 0x7ff345f11740 because validation failed 
+[thd-0 txn-172] unlocked 0x7ff343b43a40 because validation failed 
+[thd-0 txn-172] unlocked 0x7ff3419360c0 because validation failed 
+[thd-0 txn-172] unlocked 0x7ff3339b2c00 because validation failed 
+[thd-0 txn-172] unlocked 0x7ff313a1f800 because validation failed 
+[thd-0 txn-172] unlocked 0x7ff2ee3e5280 because validation failed 
+[thd-0 txn-172] unlocked 0x7ff2b2257800 because validation failed 
+[thd-0 txn-172] unlocked 0x7ff31b3353c0 because validation failed 
+[thd-1 txn-141]   locked 0x7ff348866a40 
+[thd-1 txn-141]   locked 0x7ff348875440 
+[thd-1 txn-141]   locked 0x7ff34887f640 
+[thd-1 txn-141]   locked 0x7ff2fa06ca80 
+[thd-1 txn-141]   locked 0x7ff2f93ce3c0 
+[thd-1 txn-141]   locked 0x7ff2acd65800 
+[thd-1 txn-141]   locked 0x7ff2a7768080 
+[thd-1 txn-141] unlocked 0x7ff348866a40 because committed 
+[thd-1 txn-141] unlocked 0x7ff348875440 because committed 
+[thd-1 txn-141] unlocked 0x7ff34887f640 because committed 
+[thd-1 txn-141] unlocked 0x7ff2fa06ca80 because committed 
+[thd-1 txn-141] unlocked 0x7ff2f93ce3c0 because committed 
+[thd-1 txn-141] unlocked 0x7ff2acd65800 because committed 
+[thd-1 txn-141] unlocked 0x7ff2a7768080 because committed 
+[thd-3 txn-159]   locked 0x7ff30f771d00 
+[thd-3 txn-159]   locked 0x7ff2a84fe380 
+[thd-3 txn-159] unlocked 0x7ff3488628c0 because committed 
+[thd-2 txn-166]   locked 0x7ff348862dc0 
+[thd-2 txn-166]   locked 0x7ff348865d00 
+[thd-2 txn-166]   locked 0x7ff32ee4d080 
+[thd-2 txn-166]   locked 0x7ff31fecf600 
+[thd-2 txn-166]   locked 0x7ff3137f5580 
+[thd-2 txn-166]   locked 0x7ff30a477540 
+[thd-2 txn-166] unlocked 0x7ff348862dc0 because committed 
+[thd-2 txn-166] unlocked 0x7ff348865d00 because committed 
+[thd-2 txn-166] unlocked 0x7ff32ee4d080 because committed 
+[thd-2 txn-166] unlocked 0x7ff31fecf600 because committed 
+[thd-2 txn-166] unlocked 0x7ff3137f5580 because committed 
+[thd-2 txn-166] unlocked 0x7ff30a477540 because committed 
+[thd-1 txn-145]   locked 0x7ff3488629c0 
+[thd-1 txn-145]   locked 0x7ff348862a40 
+[thd-1 txn-145]   locked 0x7ff348874180 
+[thd-1 txn-145]   locked 0x7ff3489adf80 
+[thd-1 txn-145]   locked 0x7ff2f7230e80 
+[thd-1 txn-145]   locked 0x7ff27dd91680 
+[thd-1 txn-145]   locked 0x7ff2ee3013c0 
+[thd-1 txn-145] unlocked 0x7ff3488629c0 because committed 
+[thd-1 txn-145] unlocked 0x7ff348862a40 because committed 
+[thd-1 txn-145] unlocked 0x7ff348874180 because committed 
+[thd-1 txn-145] unlocked 0x7ff3489adf80 because committed 
+[thd-1 txn-145] unlocked 0x7ff2f7230e80 because committed 
+[thd-1 txn-145] unlocked 0x7ff27dd91680 because committed 
+[thd-1 txn-145] unlocked 0x7ff2ee3013c0 because committed 
+[thd-0 txn-176]   locked 0x7ff348a1e640 
+[thd-0 txn-176]   locked 0x7ff345f11740 
+[thd-0 txn-176]   locked 0x7ff343b43a40 
+[thd-0 txn-176]   locked 0x7ff3419360c0 
+[thd-0 txn-176]   locked 0x7ff3339b2c00 
+[thd-0 txn-176]   locked 0x7ff313a1f800 
+[thd-0 txn-176]   locked 0x7ff2ee3e5280 
+[thd-0 txn-176]   locked 0x7ff2b2257800 
+[thd-0 txn-176]   locked 0x7ff31b3353c0 
+[thd-0 txn-176] unlocked 0x7ff348a1e640 because validation failed 
+[thd-0 txn-176] unlocked 0x7ff345f11740 because validation failed 
+[thd-0 txn-176] unlocked 0x7ff343b43a40 because validation failed 
+[thd-0 txn-176] unlocked 0x7ff3419360c0 because validation failed 
+[thd-0 txn-176] unlocked 0x7ff3339b2c00 because validation failed 
+[thd-3 txn-159] unlocked 0x7ff348862c40 because committed 
+[thd-3 txn-159] unlocked 0x7ff348862cc0 because committed 
+[thd-0 txn-176] unlocked 0x7ff313a1f800 because validation failed 
+[thd-0 txn-176] unlocked 0x7ff2ee3e5280 because validation failed 
+[thd-0 txn-176] unlocked 0x7ff2b2257800 because validation failed 
+[thd-0 txn-176] unlocked 0x7ff31b3353c0 because validation failed 
+[thd-1 txn-149]   locked 0x7ff348862f40 
+[thd-1 txn-149]   locked 0x7ff31dd98a80 
+[thd-2 txn-170]   locked 0x7ff3488628c0 
+[thd-2 txn-170]   locked 0x7ff348870840 
+[thd-2 txn-170]   locked 0x7ff348874c80 
+[thd-1 txn-149]   locked 0x7ff3005c4880 
+[thd-1 txn-149]   locked 0x7ff2dbbf0080 
+[thd-1 txn-149]   locked 0x7ff31e9d1440 
+[thd-1 txn-149]   locked 0x7ff31d188540 
+[thd-1 txn-149]   locked 0x7ff3030cc8c0 
+[thd-1 txn-149] unlocked 0x7ff348862f40 because committed 
+[thd-2 txn-170]   locked 0x7ff348992140 
+[thd-2 txn-170]   locked 0x7ff345da4fc0 
+[thd-2 txn-170]   locked 0x7ff330fc9740 
+[thd-2 txn-170]   locked 0x7ff31dfccdc0 
+[thd-2 txn-170]   locked 0x7ff28defb440 
+[thd-2 txn-170]   locked 0x7ff3088b9c80 
+[thd-2 txn-170] unlocked 0x7ff3488628c0 because committed 
+[thd-0 txn-180]   locked 0x7ff348a1e640 
+[thd-0 txn-180]   locked 0x7ff345f11740 
+[thd-0 txn-180]   locked 0x7ff343b43a40 
+[thd-0 txn-180]   locked 0x7ff3419360c0 
+[thd-0 txn-180]   locked 0x7ff3339b2c00 
+[thd-3 txn-159] unlocked 0x7ff34886a580 because committed 
+[thd-3 txn-159] unlocked 0x7ff345f2e440 because committed 
+[thd-3 txn-159] unlocked 0x7ff344b93800 because committed 
+[thd-0 txn-180]   locked 0x7ff313a1f800 
+[thd-0 txn-180]   locked 0x7ff2ee3e5280 
+[thd-0 txn-180]   locked 0x7ff2b2257800 
+[thd-3 txn-159] unlocked 0x7ff33e83e500 because committed 
+[thd-3 txn-159] unlocked 0x7ff30f771d00 because committed 
+[thd-3 txn-159] unlocked 0x7ff2a84fe380 because committed 
+[thd-2 txn-170] unlocked 0x7ff348870840 because committed 
+[thd-2 txn-170] unlocked 0x7ff348874c80 because committed 
+[thd-1 txn-149] unlocked 0x7ff31dd98a80 because committed 
+[thd-1 txn-149] unlocked 0x7ff3005c4880 because committed 
+[thd-1 txn-149] unlocked 0x7ff2dbbf0080 because committed 
+[thd-1 txn-149] unlocked 0x7ff31e9d1440 because committed 
+[thd-1 txn-149] unlocked 0x7ff31d188540 because committed 
+[thd-1 txn-149] unlocked 0x7ff3030cc8c0 because committed 
+[thd-0 txn-180]   locked 0x7ff31b3353c0 
+[thd-0 txn-180] unlocked 0x7ff348a1e640 because committed 
+[thd-0 txn-180] unlocked 0x7ff345f11740 because committed 
+[thd-0 txn-180] unlocked 0x7ff343b43a40 because committed 
+[thd-0 txn-180] unlocked 0x7ff3419360c0 because committed 
+[thd-0 txn-180] unlocked 0x7ff3339b2c00 because committed 
+[thd-0 txn-180] unlocked 0x7ff313a1f800 because committed 
+[thd-0 txn-180] unlocked 0x7ff2ee3e5280 because committed 
+[thd-0 txn-180] unlocked 0x7ff2b2257800 because committed 
+[thd-0 txn-180] unlocked 0x7ff31b3353c0 because committed 
+[thd-3 txn-163]   locked 0x7ff348862d40 
+[thd-3 txn-163]   locked 0x7ff3488f2bc0 
+[thd-2 txn-170] unlocked 0x7ff348992140 because committed 
+[thd-2 txn-170] unlocked 0x7ff345da4fc0 because committed 
+[thd-2 txn-170] unlocked 0x7ff330fc9740 because committed 
+[thd-3 txn-163]   locked 0x7ff345865740 
+[thd-2 txn-170] unlocked 0x7ff31dfccdc0 because committed 
+[thd-2 txn-170] unlocked 0x7ff28defb440 because committed 
+[thd-2 txn-170] unlocked 0x7ff3088b9c80 because committed 
+[thd-1 txn-153]   locked 0x7ff348884240 
+[thd-3 txn-163]   locked 0x7ff3459dd1c0 
+[thd-3 txn-163]   locked 0x7ff32ecda040 
+[thd-3 txn-163] unlocked 0x7ff348862d40 because committed 
+[thd-3 txn-163] unlocked 0x7ff3488f2bc0 because committed 
+[thd-3 txn-163] unlocked 0x7ff345865740 because committed 
+[thd-0 txn-184]   locked 0x7ff348865500 
+[thd-0 txn-184]   locked 0x7ff3488e3f40 
+[thd-0 txn-184]   locked 0x7ff3488f7fc0 
+[thd-0 txn-184]   locked 0x7ff348a57d80 
+[thd-0 txn-184]   locked 0x7ff348b6ff80 
+[thd-0 txn-184]   locked 0x7ff343b36d00 
+[thd-0 txn-184]   locked 0x7ff336aa2c00 
+[thd-0 txn-184]   locked 0x7ff320f7d880 
+[thd-0 txn-184]   locked 0x7ff2c3a75ac0 
+[thd-0 txn-184]   locked 0x7ff331565740 
+[thd-0 txn-184]   locked 0x7ff29130b800 
+[thd-0 txn-184] unlocked 0x7ff348865500 because committed 
+[thd-0 txn-184] unlocked 0x7ff3488e3f40 because committed 
+[thd-0 txn-184] unlocked 0x7ff3488f7fc0 because committed 
+[thd-0 txn-184] unlocked 0x7ff348a57d80 because committed 
+[thd-0 txn-184] unlocked 0x7ff348b6ff80 because committed 
+[thd-0 txn-184] unlocked 0x7ff343b36d00 because committed 
+[thd-0 txn-184] unlocked 0x7ff336aa2c00 because committed 
+[thd-0 txn-184] unlocked 0x7ff320f7d880 because committed 
+[thd-0 txn-184] unlocked 0x7ff2c3a75ac0 because committed 
+[thd-0 txn-184] unlocked 0x7ff331565740 because committed 
+[thd-0 txn-184] unlocked 0x7ff29130b800 because committed 
+[thd-1 txn-153]   locked 0x7ff345cb0500 
+[thd-1 txn-153]   locked 0x7ff339aec800 
+[thd-1 txn-153]   locked 0x7ff322c85200 
+[thd-1 txn-153]   locked 0x7ff3135cf380 
+[thd-1 txn-153]   locked 0x7ff291dfe4c0 
+[thd-3 txn-163] unlocked 0x7ff3459dd1c0 because committed 
+[thd-2 txn-174]   locked 0x7ff348aafbc0 
+[thd-2 txn-174]   locked 0x7ff348ab6a80 
+[thd-2 txn-174]   locked 0x7ff345c83b80 
+[thd-2 txn-174]   locked 0x7ff343965680 
+[thd-2 txn-174]   locked 0x7ff34190fe00 
+[thd-2 txn-174]   locked 0x7ff285725200 
+[thd-0 txn-188]   locked 0x7ff348862840 
+[thd-0 txn-188]   locked 0x7ff348862b40 
+[thd-0 txn-188]   locked 0x7ff34890fd80 
+[thd-0 txn-188]   locked 0x7ff3489511c0 
+[thd-0 txn-188]   locked 0x7ff348a56bc0 
+[thd-0 txn-188]   locked 0x7ff343ab3d40 
+[thd-0 txn-188]   locked 0x7ff31a9578c0 
+[thd-0 txn-188]   locked 0x7ff2bf6052c0 
+[thd-0 txn-188]   locked 0x7ff296e13800 
+[thd-0 txn-188]   locked 0x7ff29bb730c0 
+[thd-0 txn-188] unlocked 0x7ff348862840 because committed 
+[thd-0 txn-188] unlocked 0x7ff348862b40 because committed 
+[thd-0 txn-188] unlocked 0x7ff34890fd80 because committed 
+[thd-0 txn-188] unlocked 0x7ff3489511c0 because committed 
+[thd-0 txn-188] unlocked 0x7ff348a56bc0 because committed 
+[thd-0 txn-188] unlocked 0x7ff343ab3d40 because committed 
+[thd-0 txn-188] unlocked 0x7ff31a9578c0 because committed 
+[thd-0 txn-188] unlocked 0x7ff2bf6052c0 because committed 
+[thd-0 txn-188] unlocked 0x7ff296e13800 because committed 
+[thd-0 txn-188] unlocked 0x7ff29bb730c0 because committed 
+[thd-2 txn-174] unlocked 0x7ff348aafbc0 because validation failed 
+[thd-2 txn-174] unlocked 0x7ff348ab6a80 because validation failed 
+[thd-2 txn-174] unlocked 0x7ff345c83b80 because validation failed 
+[thd-2 txn-174] unlocked 0x7ff343965680 because validation failed 
+[thd-2 txn-174] unlocked 0x7ff34190fe00 because validation failed 
+[thd-2 txn-174] unlocked 0x7ff285725200 because validation failed 
+[thd-3 txn-163] unlocked 0x7ff32ecda040 because committed 
+[thd-1 txn-153]   locked 0x7ff3212e1380 
+[thd-1 txn-153]   locked 0x7ff30b3823c0 
+[thd-1 txn-153] unlocked 0x7ff348884240 because committed 
+[thd-1 txn-153] unlocked 0x7ff345cb0500 because committed 
+[thd-1 txn-153] unlocked 0x7ff339aec800 because committed 
+[thd-1 txn-153] unlocked 0x7ff322c85200 because committed 
+[thd-1 txn-153] unlocked 0x7ff3135cf380 because committed 
+[thd-1 txn-153] unlocked 0x7ff291dfe4c0 because committed 
+[thd-1 txn-153] unlocked 0x7ff3212e1380 because committed 
+[thd-1 txn-153] unlocked 0x7ff30b3823c0 because committed 
+[thd-2 txn-178]   locked 0x7ff348aafbc0 
+[thd-2 txn-178]   locked 0x7ff348ab6a80 
+[thd-2 txn-178]   locked 0x7ff345c83b80 
+[thd-2 txn-178]   locked 0x7ff343965680 
+[thd-2 txn-178]   locked 0x7ff34190fe00 
+[thd-2 txn-178]   locked 0x7ff285725200 
+[thd-2 txn-178] unlocked 0x7ff348aafbc0 because committed 
+[thd-2 txn-178] unlocked 0x7ff348ab6a80 because committed 
+[thd-2 txn-178] unlocked 0x7ff345c83b80 because committed 
+[thd-2 txn-178] unlocked 0x7ff343965680 because committed 
+[thd-2 txn-178] unlocked 0x7ff34190fe00 because committed 
+[thd-2 txn-178] unlocked 0x7ff285725200 because committed 
+[thd-0 txn-192]   locked 0x7ff345ddbbc0 
+[thd-0 txn-192]   locked 0x7ff345aa9840 
+[thd-0 txn-192]   locked 0x7ff3409a7700 
+[thd-0 txn-192]   locked 0x7ff340b23a00 
+[thd-0 txn-192]   locked 0x7ff32df66240 
+[thd-0 txn-192]   locked 0x7ff2fce73380 
+[thd-0 txn-192]   locked 0x7ff2d19558c0 
+[thd-0 txn-192]   locked 0x7ff2b9b93640 
+[thd-0 txn-192]   locked 0x7ff2a48ba840 
+[thd-1 txn-157]   locked 0x7ff348874b80 
+[thd-1 txn-157]   locked 0x7ff3488c5240 
+[thd-1 txn-157]   locked 0x7ff345ef9880 
+[thd-0 txn-192]   locked 0x7ff2f6e59440 
+[thd-0 txn-192] unlocked 0x7ff345ddbbc0 because committed 
+[thd-0 txn-192] unlocked 0x7ff345aa9840 because committed 
+[thd-1 txn-157]   locked 0x7ff29cc21a40 
+[thd-1 txn-157]   locked 0x7ff2c9c81c00 
+[thd-3 txn-167]   locked 0x7ff344b7dfc0 
+[thd-3 txn-167]   locked 0x7ff343aaad80 
+[thd-3 txn-167]   locked 0x7ff2f1e4d680 
+[thd-3 txn-167]   locked 0x7ff2e1db38c0 
+[thd-3 txn-167]   locked 0x7ff28fd8f040 
+[thd-3 txn-167]   locked 0x7ff318509e40 
+[thd-3 txn-167]   locked 0x7ff2d07a3840 
+[thd-0 txn-192] unlocked 0x7ff3409a7700 because committed 
+[thd-0 txn-192] unlocked 0x7ff340b23a00 because committed 
+[thd-0 txn-192] unlocked 0x7ff32df66240 because committed 
+[thd-3 txn-167] unlocked 0x7ff344b7dfc0 because committed 
+[thd-3 txn-167] unlocked 0x7ff343aaad80 because committed 
+[thd-3 txn-167] unlocked 0x7ff2f1e4d680 because committed 
+[thd-3 txn-167] unlocked 0x7ff2e1db38c0 because committed 
+[thd-3 txn-167] unlocked 0x7ff28fd8f040 because committed 
+[thd-3 txn-167] unlocked 0x7ff318509e40 because committed 
+[thd-3 txn-167] unlocked 0x7ff2d07a3840 because committed 
+[thd-1 txn-157]   locked 0x7ff296b96840 
+[thd-1 txn-157]   locked 0x7ff2cf101440 
+[thd-0 txn-192] unlocked 0x7ff2fce73380 because committed 
+[thd-0 txn-192] unlocked 0x7ff2d19558c0 because committed 
+[thd-0 txn-192] unlocked 0x7ff2b9b93640 because committed 
+[thd-0 txn-192] unlocked 0x7ff2a48ba840 because committed 
+[thd-0 txn-192] unlocked 0x7ff2f6e59440 because committed 
+[thd-1 txn-157]   locked 0x7ff2c78368c0 
+[thd-1 txn-157] unlocked 0x7ff348874b80 because committed 
+[thd-1 txn-157] unlocked 0x7ff3488c5240 because committed 
+[thd-1 txn-157] unlocked 0x7ff345ef9880 because committed 
+[thd-1 txn-157] unlocked 0x7ff29cc21a40 because committed 
+[thd-1 txn-157] unlocked 0x7ff2c9c81c00 because committed 
+[thd-2 txn-182]   locked 0x7ff348866140 
+[thd-2 txn-182]   locked 0x7ff345ceb340 
+[thd-2 txn-182]   locked 0x7ff345d8b240 
+[thd-2 txn-182]   locked 0x7ff345806140 
+[thd-2 txn-182]   locked 0x7ff344909b80 
+[thd-2 txn-182]   locked 0x7ff320c4d800 
+[thd-2 txn-182]   locked 0x7ff31a89f400 
+[thd-2 txn-182]   locked 0x7ff2dfec6300 
+[thd-2 txn-182]   locked 0x7ff2afaeda40 
+[thd-1 txn-157] unlocked 0x7ff296b96840 because committed 
+[thd-3 txn-171]   locked 0x7ff34887a3c0 
+[thd-3 txn-171]   locked 0x7ff345e58ac0 
+[thd-3 txn-171]   locked 0x7ff345ebb1c0 
+[thd-3 txn-171]   locked 0x7ff345fb7a00 
+[thd-3 txn-171]   locked 0x7ff3449e4e40 
+[thd-3 txn-171]   locked 0x7ff2fa0e9e80 
+[thd-3 txn-171]   locked 0x7ff2dda47ac0 
+[thd-3 txn-171]   locked 0x7ff2abef2600 
+[thd-3 txn-171]   locked 0x7ff3440c5780 
+[thd-3 txn-171] unlocked 0x7ff34887a3c0 because committed 
+[thd-3 txn-171] unlocked 0x7ff345e58ac0 because committed 
+[thd-3 txn-171] unlocked 0x7ff345ebb1c0 because committed 
+[thd-3 txn-171] unlocked 0x7ff345fb7a00 because committed 
+[thd-3 txn-171] unlocked 0x7ff3449e4e40 because committed 
+[thd-3 txn-171] unlocked 0x7ff2fa0e9e80 because committed 
+[thd-3 txn-171] unlocked 0x7ff2dda47ac0 because committed 
+[thd-3 txn-171] unlocked 0x7ff2abef2600 because committed 
+[thd-3 txn-171] unlocked 0x7ff3440c5780 because committed 
+[thd-2 txn-182] unlocked 0x7ff348866140 because committed 
+[thd-2 txn-182] unlocked 0x7ff345ceb340 because committed 
+[thd-0 txn-196]   locked 0x7ff348865a80 
+[thd-0 txn-196]   locked 0x7ff348866440 
+[thd-0 txn-196]   locked 0x7ff34886a380 
+[thd-0 txn-196]   locked 0x7ff3458e9180 
+[thd-2 txn-182] unlocked 0x7ff345d8b240 because committed 
+[thd-2 txn-182] unlocked 0x7ff345806140 because committed 
+[thd-2 txn-182] unlocked 0x7ff344909b80 because committed 
+[thd-2 txn-182] unlocked 0x7ff320c4d800 because committed 
+[thd-0 txn-196]   locked 0x7ff343b1c540 
+[thd-0 txn-196]   locked 0x7ff33d9b7980 
+[thd-0 txn-196]   locked 0x7ff33c9a1d00 
+[thd-2 txn-182] unlocked 0x7ff31a89f400 because committed 
+[thd-2 txn-182] unlocked 0x7ff2dfec6300 because committed 
+[thd-0 txn-196]   locked 0x7ff31cc47300 
+[thd-1 txn-157] unlocked 0x7ff2cf101440 because committed 
+[thd-2 txn-182] unlocked 0x7ff2afaeda40 because committed 
+[thd-1 txn-157] unlocked 0x7ff2c78368c0 because committed 
+[thd-0 txn-196]   locked 0x7ff30886a800 
+[thd-0 txn-196] unlocked 0x7ff348865a80 because committed 
+[thd-0 txn-196] unlocked 0x7ff348866440 because committed 
+[thd-0 txn-196] unlocked 0x7ff34886a380 because committed 
+[thd-0 txn-196] unlocked 0x7ff3458e9180 because committed 
+[thd-0 txn-196] unlocked 0x7ff343b1c540 because committed 
+[thd-0 txn-196] unlocked 0x7ff33d9b7980 because committed 
+[thd-0 txn-196] unlocked 0x7ff33c9a1d00 because committed 
+[thd-0 txn-196] unlocked 0x7ff31cc47300 because committed 
+[thd-0 txn-196] unlocked 0x7ff30886a800 because committed 
+[thd-3 txn-175]   locked 0x7ff348862ac0 
+[thd-3 txn-175]   locked 0x7ff3488de840 
+[thd-3 txn-175]   locked 0x7ff34587f040 
+[thd-3 txn-175]   locked 0x7ff34380cb00 
+[thd-3 txn-175]   locked 0x7ff33c90d840 
+[thd-3 txn-175]   locked 0x7ff2ab29d140 
+[thd-3 txn-175]   locked 0x7ff2d2579f40 
+[thd-3 txn-175] unlocked 0x7ff348862ac0 because committed 
+[thd-3 txn-175] unlocked 0x7ff3488de840 because committed 
+[thd-3 txn-175] unlocked 0x7ff34587f040 because committed 
+[thd-3 txn-175] unlocked 0x7ff34380cb00 because committed 
+[thd-1 txn-161]   locked 0x7ff3488a6300 
+[thd-1 txn-161]   locked 0x7ff34891e300 
+[thd-3 txn-175] unlocked 0x7ff33c90d840 because committed 
+[thd-3 txn-175] unlocked 0x7ff2ab29d140 because committed 
+[thd-3 txn-175] unlocked 0x7ff2d2579f40 because committed 
+[thd-1 txn-161]   locked 0x7ff3489a8f00 
+[thd-1 txn-161]   locked 0x7ff345d8bc40 
+[thd-1 txn-161]   locked 0x7ff33aa58680 
+[thd-1 txn-161]   locked 0x7ff330ec4140 
+[thd-0 txn-200]   locked 0x7ff348865400 
+[thd-0 txn-200]   locked 0x7ff348865880 
+[thd-0 txn-200]   locked 0x7ff348946e00 
+[thd-0 txn-200]   locked 0x7ff3295505c0 
+[thd-0 txn-200]   locked 0x7ff2e807ed40 
+[thd-0 txn-200] unlocked 0x7ff348865400 because committed 
+[thd-0 txn-200] unlocked 0x7ff348865880 because committed 
+[thd-0 txn-200] unlocked 0x7ff348946e00 because committed 
+[thd-0 txn-200] unlocked 0x7ff3295505c0 because committed 
+[thd-0 txn-200] unlocked 0x7ff2e807ed40 because committed 
+[thd-1 txn-161]   locked 0x7ff296c6f980 
+[thd-2 txn-186]   locked 0x7ff34890a200 
+[thd-2 txn-186]   locked 0x7ff3349dcac0 
+[thd-2 txn-186]   locked 0x7ff3349fe540 
+[thd-2 txn-186]   locked 0x7ff334b90c00 
+[thd-2 txn-186]   locked 0x7ff324cf89c0 
+[thd-2 txn-186]   locked 0x7ff322ecda40 
+[thd-2 txn-186]   locked 0x7ff2e7cae400 
+[thd-2 txn-186]   locked 0x7ff2c2e30c40 
+[thd-2 txn-186] unlocked 0x7ff34890a200 because committed 
+[thd-2 txn-186] unlocked 0x7ff3349dcac0 because committed 
+[thd-2 txn-186] unlocked 0x7ff3349fe540 because committed 
+[thd-2 txn-186] unlocked 0x7ff334b90c00 because committed 
+[thd-2 txn-186] unlocked 0x7ff324cf89c0 because committed 
+[thd-2 txn-186] unlocked 0x7ff322ecda40 because committed 
+[thd-0 txn-204]   locked 0x7ff348862840 
+[thd-0 txn-204]   locked 0x7ff348862940 
+[thd-0 txn-204]   locked 0x7ff348866840 
+[thd-2 txn-186] unlocked 0x7ff2e7cae400 because committed 
+[thd-2 txn-186] unlocked 0x7ff2c2e30c40 because committed 
+[thd-0 txn-204]   locked 0x7ff34886a400 
+[thd-0 txn-204]   locked 0x7ff34894bf80 
+[thd-0 txn-204]   locked 0x7ff342b7ec80 
+[thd-0 txn-204]   locked 0x7ff2a9a7e500 
+[thd-0 txn-204]   locked 0x7ff284f20b40 
+[thd-0 txn-204] unlocked 0x7ff348862840 because committed 
+[thd-0 txn-204] unlocked 0x7ff348862940 because committed 
+[thd-0 txn-204] unlocked 0x7ff348866840 because committed 
+[thd-0 txn-204] unlocked 0x7ff34886a400 because committed 
+[thd-0 txn-204] unlocked 0x7ff34894bf80 because committed 
+[thd-0 txn-204] unlocked 0x7ff342b7ec80 because committed 
+[thd-0 txn-204] unlocked 0x7ff2a9a7e500 because committed 
+[thd-0 txn-204] unlocked 0x7ff284f20b40 because committed 
+[thd-3 txn-179]   locked 0x7ff348866240 
+[thd-3 txn-179]   locked 0x7ff348884bc0 
+[thd-3 txn-179]   locked 0x7ff348897480 
+[thd-3 txn-179]   locked 0x7ff3488a27c0 
+[thd-1 txn-161]   locked 0x7ff29558d300 
+[thd-1 txn-161] unlocked 0x7ff3488a6300 because validation failed 
+[thd-1 txn-161] unlocked 0x7ff34891e300 because validation failed 
+[thd-1 txn-161] unlocked 0x7ff3489a8f00 because validation failed 
+[thd-2 txn-190]   locked 0x7ff31881a2c0 
+[thd-2 txn-190]   locked 0x7ff2f0f16a40 
+[thd-1 txn-161] unlocked 0x7ff345d8bc40 because validation failed 
+[thd-1 txn-161] unlocked 0x7ff33aa58680 because validation failed 
+[thd-1 txn-161] unlocked 0x7ff330ec4140 because validation failed 
+[thd-1 txn-161] unlocked 0x7ff296c6f980 because validation failed 
+[thd-1 txn-161] unlocked 0x7ff29558d300 because validation failed 
+[thd-2 txn-190]   locked 0x7ff2cc880b00 
+[thd-2 txn-190]   locked 0x7ff2d8e8b240 
+[thd-2 txn-190]   locked 0x7ff2af475500 
+[thd-2 txn-190]   locked 0x7ff33b6eb040 
+[thd-2 txn-190]   locked 0x7ff2c0032100 
+[thd-2 txn-190] unlocked 0x7ff31881a2c0 because committed 
+[thd-2 txn-190] unlocked 0x7ff2f0f16a40 because committed 
+[thd-2 txn-190] unlocked 0x7ff2cc880b00 because committed 
+[thd-1 txn-165]   locked 0x7ff3488a6300 
+[thd-1 txn-165]   locked 0x7ff34891e300 
+[thd-1 txn-165]   locked 0x7ff3489a8f00 
+[thd-1 txn-165]   locked 0x7ff345d8bc40 
+[thd-1 txn-165]   locked 0x7ff33aa58680 
+[thd-1 txn-165]   locked 0x7ff330ec4140 
+[thd-1 txn-165]   locked 0x7ff296c6f980 
+[thd-1 txn-165]   locked 0x7ff29558d300 
+[thd-1 txn-165] unlocked 0x7ff3488a6300 because committed 
+[thd-1 txn-165] unlocked 0x7ff34891e300 because committed 
+[thd-1 txn-165] unlocked 0x7ff3489a8f00 because committed 
+[thd-1 txn-165] unlocked 0x7ff345d8bc40 because committed 
+[thd-1 txn-165] unlocked 0x7ff33aa58680 because committed 
+[thd-1 txn-165] unlocked 0x7ff330ec4140 because committed 
+[thd-1 txn-165] unlocked 0x7ff296c6f980 because committed 
+[thd-1 txn-165] unlocked 0x7ff29558d300 because committed 
+[thd-0 txn-208]   locked 0x7ff348865e80 
+[thd-0 txn-208]   locked 0x7ff34897c040 
+[thd-0 txn-208]   locked 0x7ff34897cbc0 
+[thd-0 txn-208]   locked 0x7ff348a2a100 
+[thd-0 txn-208]   locked 0x7ff32ce09640 
+[thd-0 txn-208]   locked 0x7ff2dfb3a500 
+[thd-0 txn-208] unlocked 0x7ff348865e80 because committed 
+[thd-0 txn-208] unlocked 0x7ff34897c040 because committed 
+[thd-0 txn-208] unlocked 0x7ff34897cbc0 because committed 
+[thd-0 txn-208] unlocked 0x7ff348a2a100 because committed 
+[thd-0 txn-208] unlocked 0x7ff32ce09640 because committed 
+[thd-0 txn-208] unlocked 0x7ff2dfb3a500 because committed 
+[thd-3 txn-179]   locked 0x7ff345def540 
+[thd-3 txn-179]   locked 0x7ff345df0c80 
+[thd-3 txn-179]   locked 0x7ff328fa8800 
+[thd-2 txn-190] unlocked 0x7ff2d8e8b240 because committed 
+[thd-2 txn-190] unlocked 0x7ff2af475500 because committed 
+[thd-2 txn-190] unlocked 0x7ff33b6eb040 because committed 
+[thd-2 txn-190] unlocked 0x7ff2c0032100 because committed 
+[thd-1 txn-169]   locked 0x7ff348862dc0 
+[thd-1 txn-169]   locked 0x7ff348862fc0 
+[thd-1 txn-169]   locked 0x7ff348870640 
+[thd-1 txn-169]   locked 0x7ff348889540 
+[thd-1 txn-169]   locked 0x7ff33cbcbd80 
+[thd-1 txn-169]   locked 0x7ff334b18b00 
+[thd-0 txn-212]   locked 0x7ff348862840 
+[thd-0 txn-212] fail to lock 0x7ff348862dc0 
+[thd-0 txn-212] unlocked 0x7ff348862840 because can't lock write-set 
+[thd-0 txn-212] fail to lock 0x7ff348862840 
+[thd-1 txn-169]   locked 0x7ff29c12a480 
+[thd-1 txn-169]   locked 0x7ff342c54f80 
+[thd-1 txn-169] unlocked 0x7ff348862dc0 because committed 
+[thd-1 txn-169] unlocked 0x7ff348862fc0 because committed 
+[thd-1 txn-169] unlocked 0x7ff348870640 because committed 
+[thd-1 txn-169] unlocked 0x7ff348889540 because committed 
+[thd-1 txn-169] unlocked 0x7ff33cbcbd80 because committed 
+[thd-1 txn-169] unlocked 0x7ff334b18b00 because committed 
+[thd-1 txn-169] unlocked 0x7ff29c12a480 because committed 
+[thd-1 txn-169] unlocked 0x7ff342c54f80 because committed 
+[thd-3 txn-179]   locked 0x7ff2fa12ab00 
+[thd-3 txn-179]   locked 0x7ff2b0b0f840 
+[thd-3 txn-179]   locked 0x7ff307acf040 
+[thd-3 txn-179] unlocked 0x7ff348866240 because committed 
+[thd-3 txn-179] unlocked 0x7ff348884bc0 because committed 
+[thd-3 txn-179] unlocked 0x7ff348897480 because committed 
+[thd-3 txn-179] unlocked 0x7ff3488a27c0 because committed 
+[thd-3 txn-179] unlocked 0x7ff345def540 because committed 
+[thd-3 txn-179] unlocked 0x7ff345df0c80 because committed 
+[thd-3 txn-179] unlocked 0x7ff328fa8800 because committed 
+[thd-3 txn-179] unlocked 0x7ff2fa12ab00 because committed 
+[thd-3 txn-179] unlocked 0x7ff2b0b0f840 because committed 
+[thd-3 txn-179] unlocked 0x7ff307acf040 because committed 
+[thd-2 txn-194]   locked 0x7ff348883480 
+[thd-2 txn-194]   locked 0x7ff3488e2500 
+[thd-2 txn-194]   locked 0x7ff34894c8c0 
+[thd-2 txn-194]   locked 0x7ff348a6e040 
+[thd-2 txn-194]   locked 0x7ff348af7d80 
+[thd-2 txn-194]   locked 0x7ff348b06800 
+[thd-2 txn-194]   locked 0x7ff348bc3540 
+[thd-2 txn-194]   locked 0x7ff345a8cc40 
+[thd-2 txn-194]   locked 0x7ff344877b40 
+[thd-2 txn-194]   locked 0x7ff331ff9b40 
+[thd-2 txn-194]   locked 0x7ff2d7a0ed80 
+[thd-2 txn-194]   locked 0x7ff3352fbe80 
+[thd-2 txn-194] unlocked 0x7ff348883480 because committed 
+[thd-2 txn-194] unlocked 0x7ff3488e2500 because committed 
+[thd-2 txn-194] unlocked 0x7ff34894c8c0 because committed 
+[thd-2 txn-194] unlocked 0x7ff348a6e040 because committed 
+[thd-2 txn-194] unlocked 0x7ff348af7d80 because committed 
+[thd-2 txn-194] unlocked 0x7ff348b06800 because committed 
+[thd-2 txn-194] unlocked 0x7ff348bc3540 because committed 
+[thd-2 txn-194] unlocked 0x7ff345a8cc40 because committed 
+[thd-2 txn-194] unlocked 0x7ff344877b40 because committed 
+[thd-2 txn-194] unlocked 0x7ff331ff9b40 because committed 
+[thd-2 txn-194] unlocked 0x7ff2d7a0ed80 because committed 
+[thd-2 txn-194] unlocked 0x7ff3352fbe80 because committed 
+[thd-3 txn-183]   locked 0x7ff348862940 
+[thd-3 txn-183]   locked 0x7ff34886b040 
+[thd-3 txn-183]   locked 0x7ff348875440 
+[thd-3 txn-183]   locked 0x7ff348921bc0 
+[thd-3 txn-183]   locked 0x7ff34893ddc0 
+[thd-3 txn-183]   locked 0x7ff345d82300 
+[thd-3 txn-183]   locked 0x7ff33797d280 
+[thd-3 txn-183]   locked 0x7ff330d9ab80 
+[thd-3 txn-183]   locked 0x7ff31b5cb2c0 
+[thd-3 txn-183]   locked 0x7ff2ad76bd00 
+[thd-3 txn-183]   locked 0x7ff2813f5f40 
+[thd-0 txn-212] fail to lock 0x7ff348862840 
+[thd-3 txn-183] unlocked 0x7ff348862940 because committed 
+[thd-3 txn-183] unlocked 0x7ff34886b040 because committed 
+[thd-3 txn-183] unlocked 0x7ff348875440 because committed 
+[thd-3 txn-183] unlocked 0x7ff348921bc0 because committed 
+[thd-3 txn-183] unlocked 0x7ff34893ddc0 because committed 
+[thd-3 txn-183] unlocked 0x7ff345d82300 because committed 
+[thd-3 txn-183] unlocked 0x7ff33797d280 because committed 
+[thd-3 txn-183] unlocked 0x7ff330d9ab80 because committed 
+[thd-3 txn-183] unlocked 0x7ff31b5cb2c0 because committed 
+[thd-3 txn-183] unlocked 0x7ff2ad76bd00 because committed 
+[thd-3 txn-183] unlocked 0x7ff2813f5f40 because committed 

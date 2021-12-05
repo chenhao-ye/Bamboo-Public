@@ -24,9 +24,9 @@ enum TxnType {VLL_Blocked, VLL_Free};
 class Access {
   public:
     access_t 	type;
-    row_t * 	orig_row;
-    row_t * 	data;
-    row_t * 	orig_data;
+    row_t * 	orig_row; // ptr to the original row
+    row_t * 	data; // copied row. this is returned by txn_man::get_row()
+    row_t * 	orig_data; // not used in SILO_PRIO
 #if CC_ALG == BAMBOO
     BBLockEntry * lock_entry;
 #elif CC_ALG == WOUND_WAIT || CC_ALG == WAIT_DIE || CC_ALG == NO_WAIT || CC_ALG == DL_DETECT
@@ -163,6 +163,9 @@ class txn_man
 	bool				last_is_owner;
     bool 			    _pre_abort;
     bool 			    _validation_no_wait;
+#if DEBUG_SVEN
+    static uint32_t     debug_counter;
+#endif
     // [IC3]
 #elif CC_ALG == IC3
     TPCCTxnType         curr_type;

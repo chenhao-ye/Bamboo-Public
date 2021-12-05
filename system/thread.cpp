@@ -202,6 +202,8 @@ RC thread_t::run() {
             INC_STATS(get_thd_id(), commit_latency, timespan);
             INC_STATS(get_thd_id(), latency, endtime - txn_starttime);
             INC_STATS(get_thd_id(), txn_cnt, 1);
+			if (stats._stats[get_thd_id()]->txn_cnt % 1000 == 0)
+				printf("thd%lu: commit txn %lu\n", get_thd_id(), stats._stats[get_thd_id()]->txn_cnt);
 #if WORKLOAD == YCSB
             if (unlikely(g_long_txn_ratio > 0)) {
                 if ( ((ycsb_query *) m_query)->request_cnt > REQ_PER_QUERY)
@@ -213,6 +215,8 @@ RC thread_t::run() {
 		} else if (rc == Abort) {
 			INC_STATS(get_thd_id(), time_abort, timespan);
 			INC_STATS(get_thd_id(), abort_cnt, 1);
+			if (stats._stats[get_thd_id()]->abort_cnt % 1000 == 0)
+				printf("thd%lu: \t\t\t\t\tabort  txn %lu\n", get_thd_id(), stats._stats[get_thd_id()]->abort_cnt);
 #if WORKLOAD == YCSB
             if (unlikely(g_long_txn_ratio > 0)) {
                 if ( ((ycsb_query *) m_query)->request_cnt > REQ_PER_QUERY)

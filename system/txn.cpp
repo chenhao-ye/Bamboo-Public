@@ -56,6 +56,9 @@ void txn_man::init(thread_t * h_thd, workload * h_wl, uint64_t thd_id) {
 #elif CC_ALG == SILO_PRIO
     _cur_data_ver = 0;
     prio = (uint32_t)0;
+#if DEBUG_SVEN
+    debug_counter = 0;
+#endif
 #elif CC_ALG == IC3
   depqueue = (TxnEntry **) _mm_malloc(sizeof(void *)*THREAD_CNT, 64);
   for (int i = 0; i < THREAD_CNT; i++)

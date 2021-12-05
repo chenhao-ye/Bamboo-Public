@@ -1,0 +1,1008 @@
+[thd-3 txn-3]   locked 0x7fd7f5ad7a40 
+[thd-3 txn-3]   locked 0x7fd7b327f7c0 
+[thd-3 txn-3] unlocked 0x7fd81940e0c0 because validation failed 
+[thd-3 txn-3] unlocked 0x7fd819417580 because validation failed 
+[thd-3 txn-3] unlocked 0x7fd81948aa00 because validation failed 
+[thd-3 txn-3] unlocked 0x7fd819752040 because validation failed 
+[thd-3 txn-3] unlocked 0x7fd81550c640 because validation failed 
+[thd-3 txn-3] unlocked 0x7fd7f5ad7a40 because validation failed 
+[thd-3 txn-3] unlocked 0x7fd7b327f7c0 because validation failed 
+[thd-0 txn-0] fail to lock 0x7fd81940e0c0 
+[thd-0 txn-0]   locked 0x7fd81940e0c0 
+[thd-0 txn-0]   locked 0x7fd81940eec0 
+[thd-0 txn-0]   locked 0x7fd819412700 
+[thd-0 txn-0]   locked 0x7fd8194148c0 
+[thd-0 txn-0]   locked 0x7fd8194287c0 
+[thd-0 txn-0]   locked 0x7fd8194ef600 
+[thd-3 txn-7] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-1] unlocked 0x7fd81940e140 because committed 
+[thd-1 txn-1] unlocked 0x7fd819426d00 because committed 
+[thd-1 txn-1] unlocked 0x7fd8194adc80 because committed 
+[thd-1 txn-1] unlocked 0x7fd8194e1ec0 because committed 
+[thd-1 txn-1] unlocked 0x7fd817689740 because committed 
+[thd-1 txn-1] unlocked 0x7fd8135b9900 because committed 
+[thd-1 txn-1] unlocked 0x7fd813680080 because committed 
+[thd-1 txn-1] unlocked 0x7fd78e43f4c0 because committed 
+[thd-1 txn-1] unlocked 0x7fd790887300 because committed 
+[thd-2 txn-10] fail to lock 0x7fd81940e0c0 
+[thd-2 txn-10] fail to lock 0x7fd81940e0c0 
+[thd-2 txn-10] fail to lock 0x7fd81940e0c0 
+[thd-1 txn-1] unlocked 0x7fd7dd5d85c0 because committed 
+[thd-1 txn-1] unlocked 0x7fd79c90c240 because committed 
+[thd-3 txn-7] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-3 txn-7] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-3 txn-7] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-10] fail to lock 0x7fd81940e0c0 
+[thd-2 txn-10] fail to lock 0x7fd81940e0c0 
+[thd-2 txn-10] fail to lock 0x7fd81940e0c0 
+[thd-0 txn-0]   locked 0x7fd8195047c0 
+[thd-0 txn-0]   locked 0x7fd8195591c0 
+[thd-2 txn-10] fail to lock 0x7fd81940e0c0 
+[thd-2 txn-10] fail to lock 0x7fd81940e0c0 
+[thd-2 txn-10] fail to lock 0x7fd81940e0c0 
+[thd-1 txn-5] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-5] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-5] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-5] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-5] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-5] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-5] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-0]   locked 0x7fd81963df00 
+[thd-0 txn-0]   locked 0x7fd80b5c4980 
+[thd-2 txn-10] fail to lock 0x7fd81940e0c0 
+[thd-1 txn-5] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-5] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-5] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-5] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-5] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-5] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-10] fail to lock 0x7fd81940e0c0 
+[thd-2 txn-10] fail to lock 0x7fd81940e0c0 
+[thd-2 txn-10] fail to lock 0x7fd81940e0c0 
+[thd-2 txn-10] fail to lock 0x7fd81940e0c0 
+[thd-2 txn-10] fail to lock 0x7fd81940e0c0 
+[thd-0 txn-0]   locked 0x7fd7eb98c580 
+[thd-0 txn-0]   locked 0x7fd7e79630c0 
+[thd-0 txn-0]   locked 0x7fd7e3d35200 
+[thd-2 txn-10] fail to lock 0x7fd81940e0c0 
+[thd-3 txn-7] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-3 txn-7]   locked 0x7fd81940e0c0 
+[thd-3 txn-7]   locked 0x7fd819417580 
+[thd-0 txn-0] unlocked 0x7fd81940e0c0 because committed 
+[thd-0 txn-0] unlocked 0x7fd81940eec0 because committed 
+[thd-0 txn-0] unlocked 0x7fd819412700 because committed 
+[thd-0 txn-0] unlocked 0x7fd8194148c0 because committed 
+[thd-0 txn-0] unlocked 0x7fd8194287c0 because committed 
+[thd-0 txn-0] unlocked 0x7fd8194ef600 because committed 
+[thd-0 txn-0] unlocked 0x7fd8195047c0 because committed 
+[thd-0 txn-0] unlocked 0x7fd8195591c0 because committed 
+[thd-0 txn-0] unlocked 0x7fd81963df00 because committed 
+[thd-2 txn-14] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-14] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-14] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-14] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-14] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-14] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-0] unlocked 0x7fd80b5c4980 because committed 
+[thd-1 txn-5] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-5] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-5] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-0] unlocked 0x7fd7eb98c580 because committed 
+[thd-0 txn-0] unlocked 0x7fd7e79630c0 because committed 
+[thd-0 txn-0] unlocked 0x7fd7e3d35200 because committed 
+[thd-3 txn-7]   locked 0x7fd81948aa00 
+[thd-3 txn-7]   locked 0x7fd819752040 
+[thd-3 txn-7]   locked 0x7fd81550c640 
+[thd-3 txn-7]   locked 0x7fd7f5ad7a40 
+[thd-3 txn-7]   locked 0x7fd7b327f7c0 
+[thd-3 txn-7] unlocked 0x7fd81940e0c0 because committed 
+[thd-3 txn-7] unlocked 0x7fd819417580 because committed 
+[thd-2 txn-14] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-3 txn-7] unlocked 0x7fd81948aa00 because committed 
+[thd-2 txn-14]   locked 0x7fd81940e0c0 
+[thd-2 txn-14]   locked 0x7fd81940e5c0 
+[thd-2 txn-14]   locked 0x7fd819412180 
+[thd-2 txn-14]   locked 0x7fd8185c3e00 
+[thd-2 txn-14]   locked 0x7fd81248ee80 
+[thd-2 txn-14]   locked 0x7fd80c7d3880 
+[thd-2 txn-14]   locked 0x7fd802bbc540 
+[thd-2 txn-14]   locked 0x7fd7cfec2380 
+[thd-2 txn-14]   locked 0x7fd7ed7466c0 
+[thd-2 txn-14] unlocked 0x7fd81940e0c0 because committed 
+[thd-2 txn-14] unlocked 0x7fd81940e5c0 because committed 
+[thd-2 txn-14] unlocked 0x7fd819412180 because committed 
+[thd-2 txn-14] unlocked 0x7fd8185c3e00 because committed 
+[thd-2 txn-14] unlocked 0x7fd81248ee80 because committed 
+[thd-2 txn-14] unlocked 0x7fd80c7d3880 because committed 
+[thd-2 txn-14] unlocked 0x7fd802bbc540 because committed 
+[thd-2 txn-14] unlocked 0x7fd7cfec2380 because committed 
+[thd-2 txn-14] unlocked 0x7fd7ed7466c0 because committed 
+[thd-0 txn-4]   locked 0x7fd81945a0c0 
+[thd-0 txn-4]   locked 0x7fd819468a80 
+[thd-0 txn-4]   locked 0x7fd8194e9580 
+[thd-0 txn-4]   locked 0x7fd819653440 
+[thd-0 txn-4]   locked 0x7fd81969e1c0 
+[thd-0 txn-4]   locked 0x7fd8164064c0 
+[thd-0 txn-4]   locked 0x7fd80f6d0c40 
+[thd-0 txn-4]   locked 0x7fd7fbbac540 
+[thd-0 txn-4]   locked 0x7fd7ea924900 
+[thd-0 txn-4]   locked 0x7fd7beb86740 
+[thd-0 txn-4]   locked 0x7fd7b01945c0 
+[thd-0 txn-4]   locked 0x7fd79f875240 
+[thd-0 txn-4] unlocked 0x7fd81945a0c0 because committed 
+[thd-0 txn-4] unlocked 0x7fd819468a80 because committed 
+[thd-0 txn-4] unlocked 0x7fd8194e9580 because committed 
+[thd-0 txn-4] unlocked 0x7fd819653440 because committed 
+[thd-0 txn-4] unlocked 0x7fd81969e1c0 because committed 
+[thd-0 txn-4] unlocked 0x7fd8164064c0 because committed 
+[thd-1 txn-5] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-18]   locked 0x7fd81940e440 
+[thd-2 txn-18]   locked 0x7fd819417380 
+[thd-2 txn-18]   locked 0x7fd80d48aa80 
+[thd-0 txn-4] unlocked 0x7fd80f6d0c40 because committed 
+[thd-0 txn-4] unlocked 0x7fd7fbbac540 because committed 
+[thd-0 txn-4] unlocked 0x7fd7ea924900 because committed 
+[thd-0 txn-4] unlocked 0x7fd7beb86740 because committed 
+[thd-2 txn-18]   locked 0x7fd80581e440 
+[thd-2 txn-18]   locked 0x7fd8038a7e80 
+[thd-0 txn-4] unlocked 0x7fd7b01945c0 because committed 
+[thd-0 txn-4] unlocked 0x7fd79f875240 because committed 
+[thd-3 txn-7] unlocked 0x7fd819752040 because committed 
+[thd-3 txn-7] unlocked 0x7fd81550c640 because committed 
+[thd-3 txn-7] unlocked 0x7fd7f5ad7a40 because committed 
+[thd-3 txn-7] unlocked 0x7fd7b327f7c0 because committed 
+[thd-2 txn-18]   locked 0x7fd75bd616c0 
+[thd-2 txn-18]   locked 0x7fd78f9b5500 
+[thd-2 txn-18] unlocked 0x7fd81940e440 because committed 
+[thd-2 txn-18] unlocked 0x7fd819417380 because committed 
+[thd-2 txn-18] unlocked 0x7fd80d48aa80 because committed 
+[thd-3 txn-11] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-5]   locked 0x7fd81940e0c0 
+[thd-1 txn-5]   locked 0x7fd81940e140 
+[thd-1 txn-5]   locked 0x7fd817480f80 
+[thd-1 txn-5] unlocked 0x7fd81940e0c0 because committed 
+[thd-1 txn-5] unlocked 0x7fd81940e140 because committed 
+[thd-1 txn-5] unlocked 0x7fd817480f80 because committed 
+[thd-2 txn-18] unlocked 0x7fd80581e440 because committed 
+[thd-2 txn-18] unlocked 0x7fd8038a7e80 because committed 
+[thd-2 txn-18] unlocked 0x7fd75bd616c0 because committed 
+[thd-2 txn-18] unlocked 0x7fd78f9b5500 because committed 
+[thd-3 txn-11] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-8]   locked 0x7fd81940e340 
+[thd-0 txn-8]   locked 0x7fd819412e00 
+[thd-0 txn-8]   locked 0x7fd8195bddc0 
+[thd-0 txn-8]   locked 0x7fd8124dea80 
+[thd-0 txn-8]   locked 0x7fd7fd8baf40 
+[thd-0 txn-8]   locked 0x7fd7df532940 
+[thd-0 txn-8]   locked 0x7fd7bcb081c0 
+[thd-0 txn-8]   locked 0x7fd77aab35c0 
+[thd-0 txn-8] unlocked 0x7fd81940e340 because committed 
+[thd-0 txn-8] unlocked 0x7fd819412e00 because committed 
+[thd-0 txn-8] unlocked 0x7fd8195bddc0 because committed 
+[thd-0 txn-8] unlocked 0x7fd8124dea80 because committed 
+[thd-0 txn-8] unlocked 0x7fd7fd8baf40 because committed 
+[thd-0 txn-8] unlocked 0x7fd7df532940 because committed 
+[thd-0 txn-8] unlocked 0x7fd7bcb081c0 because committed 
+[thd-0 txn-8] unlocked 0x7fd77aab35c0 because committed 
+[thd-1 txn-9]   locked 0x7fd81940e1c0 
+[thd-1 txn-9]   locked 0x7fd819412080 
+[thd-1 txn-9]   locked 0x7fd819432d40 
+[thd-2 txn-22]   locked 0x7fd819412c00 
+[thd-2 txn-22]   locked 0x7fd81941da00 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-2 txn-22]   locked 0x7fd81946e7c0 
+[thd-2 txn-22]   locked 0x7fd819478ac0 
+[thd-2 txn-22]   locked 0x7fd8167ec680 
+[thd-2 txn-22]   locked 0x7fd7d3fcf340 
+[thd-2 txn-22]   locked 0x7fd778781340 
+[thd-2 txn-22] unlocked 0x7fd819412c00 because committed 
+[thd-2 txn-22] unlocked 0x7fd81941da00 because committed 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-2 txn-22] unlocked 0x7fd81946e7c0 because committed 
+[thd-2 txn-22] unlocked 0x7fd819478ac0 because committed 
+[thd-2 txn-22] unlocked 0x7fd8167ec680 because committed 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-2 txn-22] unlocked 0x7fd7d3fcf340 because committed 
+[thd-2 txn-22] unlocked 0x7fd778781340 because committed 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-1 txn-9]   locked 0x7fd81957b880 
+[thd-1 txn-9]   locked 0x7fd819748bc0 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-1 txn-9]   locked 0x7fd814577240 
+[thd-1 txn-9]   locked 0x7fd801b2dcc0 
+[thd-1 txn-9]   locked 0x7fd7fe9dafc0 
+[thd-1 txn-9]   locked 0x7fd7a55f63c0 
+[thd-1 txn-9]   locked 0x7fd7a3440b00 
+[thd-1 txn-9]   locked 0x7fd7f1334940 
+[thd-1 txn-9] unlocked 0x7fd81940e1c0 because committed 
+[thd-1 txn-9] unlocked 0x7fd819412080 because committed 
+[thd-1 txn-9] unlocked 0x7fd819432d40 because committed 
+[thd-1 txn-9] unlocked 0x7fd81957b880 because committed 
+[thd-1 txn-9] unlocked 0x7fd819748bc0 because committed 
+[thd-1 txn-9] unlocked 0x7fd814577240 because committed 
+[thd-1 txn-9] unlocked 0x7fd801b2dcc0 because committed 
+[thd-0 txn-12] row 0x7fd819412080 TID is locked. retry. 
+[thd-3 txn-11]   locked 0x7fd8166224c0 
+[thd-3 txn-11]   locked 0x7fd81678a140 
+[thd-3 txn-11]   locked 0x7fd7eae341c0 
+[thd-3 txn-11]   locked 0x7fd752e85900 
+[thd-3 txn-11]   locked 0x7fd760284e00 
+[thd-2 txn-26] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-1 txn-9] unlocked 0x7fd7fe9dafc0 because committed 
+[thd-1 txn-9] unlocked 0x7fd7a55f63c0 because committed 
+[thd-1 txn-9] unlocked 0x7fd7a3440b00 because committed 
+[thd-1 txn-9] unlocked 0x7fd7f1334940 because committed 
+[thd-3 txn-11] unlocked 0x7fd8166224c0 because validation failed 
+[thd-3 txn-11] unlocked 0x7fd81678a140 because validation failed 
+[thd-3 txn-11] unlocked 0x7fd7eae341c0 because validation failed 
+[thd-3 txn-11] unlocked 0x7fd752e85900 because validation failed 
+[thd-3 txn-11] unlocked 0x7fd760284e00 because validation failed 
+[thd-0 txn-12]   locked 0x7fd819412080 
+[thd-0 txn-12]   locked 0x7fd819441e40 
+[thd-0 txn-12]   locked 0x7fd81947d940 
+[thd-0 txn-12]   locked 0x7fd818420b40 
+[thd-0 txn-12]   locked 0x7fd8134fcbc0 
+[thd-0 txn-12]   locked 0x7fd8125c1cc0 
+[thd-2 txn-26]   locked 0x7fd81940e1c0 
+[thd-2 txn-26]   locked 0x7fd8194198c0 
+[thd-0 txn-12]   locked 0x7fd8058a5040 
+[thd-0 txn-12] unlocked 0x7fd819412080 because committed 
+[thd-1 txn-13]   locked 0x7fd81940eb40 
+[thd-1 txn-13]   locked 0x7fd819428ac0 
+[thd-1 txn-13]   locked 0x7fd819468d00 
+[thd-0 txn-12] unlocked 0x7fd819441e40 because committed 
+[thd-0 txn-12] unlocked 0x7fd81947d940 because committed 
+[thd-2 txn-26]   locked 0x7fd81955e5c0 
+[thd-1 txn-13]   locked 0x7fd8195a9740 
+[thd-1 txn-13]   locked 0x7fd8146ed980 
+[thd-0 txn-12] unlocked 0x7fd818420b40 because committed 
+[thd-0 txn-12] unlocked 0x7fd8134fcbc0 because committed 
+[thd-0 txn-12] unlocked 0x7fd8125c1cc0 because committed 
+[thd-0 txn-12] unlocked 0x7fd8058a5040 because committed 
+[thd-2 txn-26]   locked 0x7fd819612bc0 
+[thd-2 txn-26]   locked 0x7fd81977f640 
+[thd-2 txn-26]   locked 0x7fd81378e500 
+[thd-2 txn-26]   locked 0x7fd811684b80 
+[thd-2 txn-26]   locked 0x7fd7c2a33a00 
+[thd-2 txn-26]   locked 0x7fd77ab93a00 
+[thd-2 txn-26]   locked 0x7fd814c1f200 
+[thd-2 txn-26] unlocked 0x7fd81940e1c0 because committed 
+[thd-2 txn-26] unlocked 0x7fd8194198c0 because committed 
+[thd-2 txn-26] unlocked 0x7fd81955e5c0 because committed 
+[thd-2 txn-26] unlocked 0x7fd819612bc0 because committed 
+[thd-2 txn-26] unlocked 0x7fd81977f640 because committed 
+[thd-2 txn-26] unlocked 0x7fd81378e500 because committed 
+[thd-2 txn-26] unlocked 0x7fd811684b80 because committed 
+[thd-2 txn-26] unlocked 0x7fd7c2a33a00 because committed 
+[thd-2 txn-26] unlocked 0x7fd77ab93a00 because committed 
+[thd-2 txn-26] unlocked 0x7fd814c1f200 because committed 
+[thd-3 txn-15] row 0x7fd81940e1c0 TID is locked. retry. 
+[thd-3 txn-15]   locked 0x7fd8166224c0 
+[thd-3 txn-15]   locked 0x7fd81678a140 
+[thd-3 txn-15]   locked 0x7fd7eae341c0 
+[thd-3 txn-15]   locked 0x7fd752e85900 
+[thd-3 txn-15]   locked 0x7fd760284e00 
+[thd-3 txn-15] unlocked 0x7fd8166224c0 because committed 
+[thd-0 txn-16]   locked 0x7fd81940e0c0 
+[thd-0 txn-16]   locked 0x7fd81940e640 
+[thd-0 txn-16]   locked 0x7fd819494e80 
+[thd-0 txn-16]   locked 0x7fd8195f4b40 
+[thd-0 txn-16]   locked 0x7fd81865f240 
+[thd-0 txn-16]   locked 0x7fd8104df640 
+[thd-0 txn-16]   locked 0x7fd7f2871840 
+[thd-0 txn-16]   locked 0x7fd7cedd5180 
+[thd-0 txn-16]   locked 0x7fd7dd727240 
+[thd-0 txn-16] unlocked 0x7fd81940e0c0 because committed 
+[thd-0 txn-16] unlocked 0x7fd81940e640 because committed 
+[thd-0 txn-16] unlocked 0x7fd819494e80 because committed 
+[thd-0 txn-16] unlocked 0x7fd8195f4b40 because committed 
+[thd-0 txn-16] unlocked 0x7fd81865f240 because committed 
+[thd-0 txn-16] unlocked 0x7fd8104df640 because committed 
+[thd-0 txn-16] unlocked 0x7fd7f2871840 because committed 
+[thd-0 txn-16] unlocked 0x7fd7cedd5180 because committed 
+[thd-2 txn-30]   locked 0x7fd819417400 
+[thd-2 txn-30]   locked 0x7fd819525480 
+[thd-2 txn-30]   locked 0x7fd8185ce5c0 
+[thd-0 txn-16] unlocked 0x7fd7dd727240 because committed 
+[thd-1 txn-13]   locked 0x7fd810683740 
+[thd-1 txn-13]   locked 0x7fd80d619500 
+[thd-1 txn-13]   locked 0x7fd7fe980740 
+[thd-1 txn-13]   locked 0x7fd7fea37680 
+[thd-1 txn-13]   locked 0x7fd7d8723280 
+[thd-1 txn-13] unlocked 0x7fd81940eb40 because committed 
+[thd-1 txn-13] unlocked 0x7fd819428ac0 because committed 
+[thd-1 txn-13] unlocked 0x7fd819468d00 because committed 
+[thd-1 txn-13] unlocked 0x7fd8195a9740 because committed 
+[thd-1 txn-13] unlocked 0x7fd8146ed980 because committed 
+[thd-2 txn-30]   locked 0x7fd80e523b00 
+[thd-2 txn-30]   locked 0x7fd80b6978c0 
+[thd-2 txn-30]   locked 0x7fd7f596a340 
+[thd-2 txn-30]   locked 0x7fd7a56c1c00 
+[thd-2 txn-30]   locked 0x7fd75bc701c0 
+[thd-2 txn-30] unlocked 0x7fd819417400 because committed 
+[thd-2 txn-30] unlocked 0x7fd819525480 because committed 
+[thd-2 txn-30] unlocked 0x7fd8185ce5c0 because committed 
+[thd-2 txn-30] unlocked 0x7fd80e523b00 because committed 
+[thd-2 txn-30] unlocked 0x7fd80b6978c0 because committed 
+[thd-2 txn-30] unlocked 0x7fd7f596a340 because committed 
+[thd-2 txn-30] unlocked 0x7fd7a56c1c00 because committed 
+[thd-0 txn-20]   locked 0x7fd81940e240 
+[thd-0 txn-20]   locked 0x7fd819414f40 
+[thd-0 txn-20]   locked 0x7fd819449c80 
+[thd-2 txn-30] unlocked 0x7fd75bc701c0 because committed 
+[thd-1 txn-13] unlocked 0x7fd810683740 because committed 
+[thd-1 txn-13] unlocked 0x7fd80d619500 because committed 
+[thd-1 txn-13] unlocked 0x7fd7fe980740 because committed 
+[thd-1 txn-13] unlocked 0x7fd7fea37680 because committed 
+[thd-1 txn-13] unlocked 0x7fd7d8723280 because committed 
+[thd-0 txn-20]   locked 0x7fd7e781c280 
+[thd-0 txn-20]   locked 0x7fd799380840 
+[thd-0 txn-20]   locked 0x7fd7ba22af40 
+[thd-0 txn-20] unlocked 0x7fd81940e240 because committed 
+[thd-0 txn-20] unlocked 0x7fd819414f40 because committed 
+[thd-0 txn-20] unlocked 0x7fd819449c80 because committed 
+[thd-0 txn-20] unlocked 0x7fd7e781c280 because committed 
+[thd-0 txn-20] unlocked 0x7fd799380840 because committed 
+[thd-0 txn-20] unlocked 0x7fd7ba22af40 because committed 
+[thd-3 txn-15] unlocked 0x7fd81678a140 because committed 
+[thd-3 txn-15] unlocked 0x7fd7eae341c0 because committed 
+[thd-3 txn-15] unlocked 0x7fd752e85900 because committed 
+[thd-3 txn-15] unlocked 0x7fd760284e00 because committed 
+[thd-2 txn-34]   locked 0x7fd81940e7c0 
+[thd-2 txn-34]   locked 0x7fd819539980 
+[thd-2 txn-34]   locked 0x7fd81959ef80 
+[thd-2 txn-34]   locked 0x7fd81874d080 
+[thd-2 txn-34]   locked 0x7fd7f7addb40 
+[thd-2 txn-34]   locked 0x7fd7d0f07300 
+[thd-2 txn-34] unlocked 0x7fd81940e7c0 because validation failed 
+[thd-2 txn-34] unlocked 0x7fd819539980 because validation failed 
+[thd-2 txn-34] unlocked 0x7fd81959ef80 because validation failed 
+[thd-2 txn-34] unlocked 0x7fd81874d080 because validation failed 
+[thd-2 txn-34] unlocked 0x7fd7f7addb40 because validation failed 
+[thd-2 txn-34] unlocked 0x7fd7d0f07300 because validation failed 
+[thd-0 txn-24]   locked 0x7fd81941d280 
+[thd-0 txn-24]   locked 0x7fd80b7cca00 
+[thd-0 txn-24]   locked 0x7fd7eea5d100 
+[thd-0 txn-24]   locked 0x7fd78fba6cc0 
+[thd-0 txn-24] unlocked 0x7fd81941d280 because committed 
+[thd-0 txn-24] unlocked 0x7fd80b7cca00 because committed 
+[thd-0 txn-24] unlocked 0x7fd7eea5d100 because committed 
+[thd-0 txn-24] unlocked 0x7fd78fba6cc0 because committed 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-17]   locked 0x7fd81940e0c0 
+[thd-1 txn-17]   locked 0x7fd81940e940 
+[thd-1 txn-17]   locked 0x7fd819412e80 
+[thd-1 txn-17]   locked 0x7fd8195086c0 
+[thd-1 txn-17]   locked 0x7fd81959f4c0 
+[thd-1 txn-17]   locked 0x7fd80e4d4a40 
+[thd-1 txn-17]   locked 0x7fd7f2bb7700 
+[thd-1 txn-17]   locked 0x7fd7cbef96c0 
+[thd-1 txn-17]   locked 0x7fd7b54d6d40 
+[thd-1 txn-17]   locked 0x7fd7fb59f1c0 
+[thd-1 txn-17] unlocked 0x7fd81940e0c0 because committed 
+[thd-1 txn-17] unlocked 0x7fd81940e940 because committed 
+[thd-1 txn-17] unlocked 0x7fd819412e80 because committed 
+[thd-1 txn-17] unlocked 0x7fd8195086c0 because committed 
+[thd-1 txn-17] unlocked 0x7fd81959f4c0 because committed 
+[thd-1 txn-17] unlocked 0x7fd80e4d4a40 because committed 
+[thd-1 txn-17] unlocked 0x7fd7f2bb7700 because committed 
+[thd-1 txn-17] unlocked 0x7fd7cbef96c0 because committed 
+[thd-1 txn-17] unlocked 0x7fd7b54d6d40 because committed 
+[thd-1 txn-17] unlocked 0x7fd7fb59f1c0 because committed 
+[thd-0 txn-28] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-38] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-3 txn-19]   locked 0x7fd81940e340 
+[thd-3 txn-19]   locked 0x7fd81942bf00 
+[thd-3 txn-19]   locked 0x7fd8196b78c0 
+[thd-3 txn-19]   locked 0x7fd8155d2c80 
+[thd-3 txn-19]   locked 0x7fd7f59e7ac0 
+[thd-3 txn-19]   locked 0x7fd7b05e04c0 
+[thd-3 txn-19]   locked 0x7fd7a9620140 
+[thd-3 txn-19]   locked 0x7fd7571a7980 
+[thd-3 txn-19] unlocked 0x7fd81940e340 because committed 
+[thd-3 txn-19] unlocked 0x7fd81942bf00 because committed 
+[thd-3 txn-19] unlocked 0x7fd8196b78c0 because committed 
+[thd-3 txn-19] unlocked 0x7fd8155d2c80 because committed 
+[thd-3 txn-19] unlocked 0x7fd7f59e7ac0 because committed 
+[thd-3 txn-19] unlocked 0x7fd7b05e04c0 because committed 
+[thd-3 txn-19] unlocked 0x7fd7a9620140 because committed 
+[thd-3 txn-19] unlocked 0x7fd7571a7980 because committed 
+[thd-1 txn-21]   locked 0x7fd81940e240 
+[thd-1 txn-21]   locked 0x7fd819412180 
+[thd-1 txn-21]   locked 0x7fd8194282c0 
+[thd-1 txn-21]   locked 0x7fd81945db80 
+[thd-1 txn-21]   locked 0x7fd8196cbb40 
+[thd-1 txn-21]   locked 0x7fd80e7457c0 
+[thd-1 txn-21]   locked 0x7fd80a890980 
+[thd-0 txn-28]   locked 0x7fd81940e640 
+[thd-0 txn-28]   locked 0x7fd81940e8c0 
+[thd-1 txn-21]   locked 0x7fd7cbd783c0 
+[thd-1 txn-21]   locked 0x7fd781529f80 
+[thd-1 txn-21] unlocked 0x7fd81940e240 because committed 
+[thd-1 txn-21] unlocked 0x7fd819412180 because committed 
+[thd-1 txn-21] unlocked 0x7fd8194282c0 because committed 
+[thd-1 txn-21] unlocked 0x7fd81945db80 because committed 
+[thd-1 txn-21] unlocked 0x7fd8196cbb40 because committed 
+[thd-1 txn-21] unlocked 0x7fd80e7457c0 because committed 
+[thd-1 txn-21] unlocked 0x7fd80a890980 because committed 
+[thd-1 txn-21] unlocked 0x7fd7cbd783c0 because committed 
+[thd-1 txn-21] unlocked 0x7fd781529f80 because committed 
+[thd-0 txn-28]   locked 0x7fd819586cc0 
+[thd-0 txn-28]   locked 0x7fd7fc9ac140 
+[thd-0 txn-28]   locked 0x7fd7e68eb980 
+[thd-0 txn-28]   locked 0x7fd7dbbb5d40 
+[thd-2 txn-38]   locked 0x7fd81940e7c0 
+[thd-2 txn-38]   locked 0x7fd819539980 
+[thd-2 txn-38]   locked 0x7fd81959ef80 
+[thd-2 txn-38]   locked 0x7fd81874d080 
+[thd-2 txn-38]   locked 0x7fd7f7addb40 
+[thd-2 txn-38]   locked 0x7fd7d0f07300 
+[thd-2 txn-38] unlocked 0x7fd81940e7c0 because validation failed 
+[thd-2 txn-38] unlocked 0x7fd819539980 because validation failed 
+[thd-2 txn-38] unlocked 0x7fd81959ef80 because validation failed 
+[thd-2 txn-38] unlocked 0x7fd81874d080 because validation failed 
+[thd-2 txn-38] unlocked 0x7fd7f7addb40 because validation failed 
+[thd-2 txn-38] unlocked 0x7fd7d0f07300 because validation failed 
+[thd-0 txn-28]   locked 0x7fd80a734dc0 
+[thd-0 txn-28] unlocked 0x7fd81940e640 because validation failed 
+[thd-0 txn-28] unlocked 0x7fd81940e8c0 because validation failed 
+[thd-0 txn-28] unlocked 0x7fd819586cc0 because validation failed 
+[thd-0 txn-28] unlocked 0x7fd7fc9ac140 because validation failed 
+[thd-0 txn-28] unlocked 0x7fd7e68eb980 because validation failed 
+[thd-0 txn-28] unlocked 0x7fd7dbbb5d40 because validation failed 
+[thd-0 txn-28] unlocked 0x7fd80a734dc0 because validation failed 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-32] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-32] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-25]   locked 0x7fd819412b00 
+[thd-1 txn-25]   locked 0x7fd81647c580 
+[thd-1 txn-25]   locked 0x7fd8146c5680 
+[thd-1 txn-25]   locked 0x7fd81344d740 
+[thd-1 txn-25]   locked 0x7fd80782cb80 
+[thd-1 txn-25]   locked 0x7fd7eeb29f00 
+[thd-1 txn-25]   locked 0x7fd7d1cc2340 
+[thd-1 txn-25]   locked 0x7fd7cfeec240 
+[thd-1 txn-25]   locked 0x7fd78bb09600 
+[thd-1 txn-25] unlocked 0x7fd819412b00 because committed 
+[thd-1 txn-25] unlocked 0x7fd81647c580 because committed 
+[thd-1 txn-25] unlocked 0x7fd8146c5680 because committed 
+[thd-1 txn-25] unlocked 0x7fd81344d740 because committed 
+[thd-1 txn-25] unlocked 0x7fd80782cb80 because committed 
+[thd-1 txn-25] unlocked 0x7fd7eeb29f00 because committed 
+[thd-1 txn-25] unlocked 0x7fd7d1cc2340 because committed 
+[thd-1 txn-25] unlocked 0x7fd7cfeec240 because committed 
+[thd-1 txn-25] unlocked 0x7fd78bb09600 because committed 
+[thd-0 txn-32] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-32] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-32] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-32] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-32] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-0 txn-32] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-1 txn-29]   locked 0x7fd81940e140 
+[thd-1 txn-29]   locked 0x7fd8167536c0 
+[thd-1 txn-29]   locked 0x7fd81341ed80 
+[thd-1 txn-29]   locked 0x7fd7baa56c00 
+[thd-1 txn-29] unlocked 0x7fd81940e140 because committed 
+[thd-1 txn-29] unlocked 0x7fd8167536c0 because committed 
+[thd-1 txn-29] unlocked 0x7fd81341ed80 because committed 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
+[thd-2 txn-42] row 0x7fd81940e0c0 TID is locked. retry. 
