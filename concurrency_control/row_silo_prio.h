@@ -156,7 +156,13 @@ public:
 	// temporarily release the lock
 	// only happen as a backoff in validation
 	void				unlock() {
-		_tid_word_prio.unlock();
+		// _tid_word_prio.unlock();
+		TID_prio_t v = _tid_word_prio, v2;
+		assert (v.is_locked());
+		v2 = v;
+		v2.unlock();
+		assert (__sync_bool_compare_and_swap(&_tid_word_prio.raw_bits, v.raw_bits,
+			v2.raw_bits));
 	}
 
 	// the reader only need to release its priority
@@ -185,9 +191,13 @@ public:
 			goto retry;
 	}
 
-	// in the case of abort, the writer update the data version and reset
+	// in the case of commit, the writer updates the data version and reset
 	// prioirty and ref_cnt
 	void		writer_release_commit(uint64_t data_ver) {
+		// TID_prio_t v, v2(data_ver, _tid_word_prio.get_prio_ver() + 1);
+		// v = _tid_word_prio;
+		// assert (v.is_locked());
+		// assert (__sync_bool_compare_and_swap(&_tid_word_prio.raw_bits, v.raw_bits, v2.raw_bits));
 		TID_prio_t v(data_ver, _tid_word_prio.get_prio_ver() + 1);
 		_tid_word_prio = v;
 	}
