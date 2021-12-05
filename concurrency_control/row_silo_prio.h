@@ -64,12 +64,7 @@ public:
 	bool operator!=(const union TID_prio_t& rhs) { return this->raw_bits != rhs.raw_bits; }
 
 	void lock() { tid_prio.latch = 1; }
-	void unlock() { 
-	#if DEBUG_SVEN
-		assert(is_locked());
-	#endif
-		tid_prio.latch = 0; 
-	}
+	void unlock() { tid_prio.latch = 0;	}
 
 	// acquire/release_prio will maintain ref_cnt based on priority
 	bool acquire_prio(uint32_t prio) {
@@ -172,13 +167,6 @@ public:
 		_tid_word_prio.unlock();
 #if DEBUG_SVEN
 		printf("after unlock: latch-%1u, prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", _tid_word_prio.is_locked(), _tid_word_prio.get_prio_ver(), _tid_word_prio.get_prio(), _tid_word_prio.get_ref_cnt(), _tid_word_prio.get_data_ver());
-		// TID_prio_t v = _tid_word_prio, v2;
-		// assert (v.is_locked());
-		// v2 = v;
-		// v2.unlock();
-		// v2.release_prio(prio, prio_ver);
-		// assert (__sync_bool_compare_and_swap(&_tid_word_prio.raw_bits, v.raw_bits,
-		// 	v2.raw_bits));
 #endif
 	}
 
