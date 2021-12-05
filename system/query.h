@@ -14,6 +14,11 @@ public:
 	uint64_t part_num;
 	uint64_t * part_to_access;
     bool rerun;
+
+#if CC_ALG == SILO_PRIO
+	drand48_data _buffer;
+	uint32_t _prio;
+#endif
 };
 
 // All the querise for a particular thread.
