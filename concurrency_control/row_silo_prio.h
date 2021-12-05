@@ -164,14 +164,22 @@ public:
 
 	// temporarily release the lock
 	// only happen as a backoff in validation
-	void				unlock() {
-		// _tid_word_prio.unlock();
-		TID_prio_t v = _tid_word_prio, v2;
-		assert (v.is_locked());
-		v2 = v;
-		v2.unlock();
-		assert (__sync_bool_compare_and_swap(&_tid_word_prio.raw_bits, v.raw_bits,
-			v2.raw_bits));
+	void				unlock(uint32_t prio, uint32_t prio_ver) {
+#if DEBUG_SVEN
+		printf("before unlock: latch-%1u, prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", _tid_word_prio.is_locked(), _tid_word_prio.get_prio_ver(), _tid_word_prio.get_prio(), _tid_word_prio.get_ref_cnt(), _tid_word_prio.get_data_ver());
+#endif
+		// _tid_word_prio.release_prio(prio, prio_ver);
+		_tid_word_prio.unlock();
+#if DEBUG_SVEN
+		printf("after unlock: latch-%1u, prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", _tid_word_prio.is_locked(), _tid_word_prio.get_prio_ver(), _tid_word_prio.get_prio(), _tid_word_prio.get_ref_cnt(), _tid_word_prio.get_data_ver());
+		// TID_prio_t v = _tid_word_prio, v2;
+		// assert (v.is_locked());
+		// v2 = v;
+		// v2.unlock();
+		// v2.release_prio(prio, prio_ver);
+		// assert (__sync_bool_compare_and_swap(&_tid_word_prio.raw_bits, v.raw_bits,
+		// 	v2.raw_bits));
+#endif
 	}
 
 	// the reader only need to release its priority

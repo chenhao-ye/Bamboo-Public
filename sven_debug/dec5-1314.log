@@ -1,0 +1,1236 @@
+mem_allocator initialized!
+SILO_PRIO	HAS_PRIO_RATIO=0.60
+THREAD_CNT=4, ZIPF=0.90
+workload initialized!
+Query Queue Init Time 6.529154
+query_queue initialized!
+WARMUP start!
+WARMUP finished!
+thd2: commit txn 1000
+thd1: commit txn 1000
+thd0: commit txn 1000
+thd3: commit txn 1000
+thd1: commit txn 2000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-2, data_ver-3344
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-1, data_ver-3344
+thd2: commit txn 2000
+thd0: commit txn 2000
+thd3: commit txn 2000
+thd1: commit txn 3000
+thd1: commit txn 4000
+thd2: commit txn 3000
+thd0: commit txn 3000
+thd3: commit txn 3000
+thd1: commit txn 5000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-6657
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-6657
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-2, data_ver-6672
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-1, data_ver-6672
+thd2: commit txn 4000
+thd0: commit txn 4000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-2, data_ver-7271
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-1, data_ver-7271
+thd3: commit txn 4000
+thd1: commit txn 6000
+thd0: commit txn 5000
+thd2: commit txn 5000
+thd1: commit txn 7000
+thd3: commit txn 5000
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-9221
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-9221
+thd1: commit txn 8000
+thd0: commit txn 6000
+thd2: commit txn 6000
+thd3: commit txn 6000
+thd3: 					abort  txn 1000
+thd2: 					abort  txn 1000
+thd0: 					abort  txn 1000
+thd1: commit txn 9000
+thd1: 					abort  txn 1000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-3, data_ver-11618
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-2, data_ver-11618
+thd0: commit txn 7000
+thd2: commit txn 7000
+thd3: commit txn 7000
+thd1: commit txn 10000
+thd0: commit txn 8000
+thd2: commit txn 8000
+thd3: commit txn 8000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-14562
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-14562
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-14563
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-14563
+thd1: commit txn 11000
+thd0: commit txn 9000
+thd2: commit txn 9000
+thd3: commit txn 9000
+thd0: commit txn 10000
+thd1: commit txn 12000
+thd2: commit txn 10000
+thd3: commit txn 10000
+thd0: commit txn 11000
+thd1: commit txn 13000
+thd2: commit txn 11000
+thd3: commit txn 11000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-18839
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-18839
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-18836
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-18836
+thd0: commit txn 12000
+thd2: commit txn 12000
+thd1: commit txn 14000
+thd3: commit txn 12000
+thd0: commit txn 13000
+thd2: commit txn 13000
+thd1: commit txn 15000
+thd3: commit txn 13000
+thd0: commit txn 14000
+thd2: commit txn 14000
+thd3: 					abort  txn 2000
+thd1: commit txn 16000
+thd2: 					abort  txn 2000
+thd3: commit txn 14000
+thd1: 					abort  txn 2000
+thd0: commit txn 15000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-23469
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-23469
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-23468
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-23468
+thd2: commit txn 15000
+thd0: 					abort  txn 2000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-1, data_ver-24414
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-24414
+thd3: commit txn 15000
+thd0: commit txn 16000
+thd1: commit txn 17000
+thd2: commit txn 16000
+thd3: commit txn 16000
+thd0: commit txn 17000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-26643
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-26643
+thd2: commit txn 17000
+thd1: commit txn 18000
+thd0: commit txn 18000
+thd3: commit txn 17000
+thd2: commit txn 18000
+thd0: commit txn 19000
+thd3: commit txn 18000
+thd1: commit txn 19000
+thd2: commit txn 19000
+thd0: commit txn 20000
+thd3: commit txn 19000
+thd1: commit txn 20000
+thd2: commit txn 20000
+thd0: commit txn 21000
+thd3: commit txn 20000
+thd2: commit txn 21000
+thd1: commit txn 21000
+thd0: commit txn 22000
+thd3: commit txn 21000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-2, data_ver-33892
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-1, data_ver-33892
+thd2: commit txn 22000
+thd0: commit txn 23000
+thd3: commit txn 22000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-34932
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-34932
+thd1: 					abort  txn 3000
+thd2: commit txn 23000
+thd1: commit txn 22000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-36080
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-36080
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-36089
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-36089
+thd3: commit txn 23000
+thd2: 					abort  txn 3000
+thd0: commit txn 24000
+thd3: 					abort  txn 3000
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-37032
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-37032
+thd2: commit txn 24000
+thd3: commit txn 24000
+thd0: 					abort  txn 3000
+thd1: commit txn 23000
+thd0: commit txn 25000
+thd2: commit txn 25000
+thd3: commit txn 25000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-2, data_ver-39438
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-1, data_ver-39438
+thd1: commit txn 24000
+thd0: commit txn 26000
+thd2: commit txn 26000
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-40539
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-40539
+thd3: commit txn 26000
+thd0: commit txn 27000
+thd2: commit txn 27000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-41719
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-41719
+thd3: commit txn 27000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-42229
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-42229
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-42218
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-42218
+thd0: commit txn 28000
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-42839
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-42839
+thd1: commit txn 25000
+thd2: commit txn 28000
+thd3: commit txn 28000
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-43838
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-43838
+thd0: commit txn 29000
+thd2: commit txn 29000
+thd1: commit txn 26000
+thd3: commit txn 29000
+thd0: commit txn 30000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-45912
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-45912
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-45901
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-45901
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-1, data_ver-45935
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-45935
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-2, data_ver-46069
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-1, data_ver-46069
+thd2: commit txn 30000
+before unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-46483
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-46483
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-2, data_ver-46521
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-1, data_ver-46521
+thd3: commit txn 30000
+thd0: commit txn 31000
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-47156
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-47156
+thd1: commit txn 27000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-47491
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-47491
+thd2: commit txn 31000
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-2, data_ver-47894
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-1, data_ver-47894
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-47899
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-47899
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-47639
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-47639
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-46079
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-46079
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-48110
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-48110
+thd3: commit txn 31000
+thd0: commit txn 32000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-2, data_ver-48542
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-1, data_ver-48542
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-48542
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-48542
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-1, data_ver-48519
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-48519
+thd2: commit txn 32000
+thd1: commit txn 28000
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-49488
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-49488
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-49466
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-49466
+thd1: 					abort  txn 4000
+thd3: commit txn 32000
+thd0: commit txn 33000
+thd2: 					abort  txn 4000
+thd2: commit txn 33000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-2, data_ver-50630
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-1, data_ver-50630
+thd3: 					abort  txn 4000
+thd1: commit txn 29000
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-50881
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-50881
+thd0: 					abort  txn 4000
+thd0: commit txn 34000
+thd3: commit txn 33000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-2, data_ver-51907
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-1, data_ver-51907
+thd2: commit txn 34000
+thd1: commit txn 30000
+thd0: commit txn 35000
+thd3: commit txn 34000
+thd2: commit txn 35000
+thd1: commit txn 31000
+thd0: commit txn 36000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-1, data_ver-54771
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-54771
+thd3: commit txn 35000
+thd2: commit txn 36000
+thd0: commit txn 37000
+thd1: commit txn 32000
+thd3: commit txn 36000
+thd2: commit txn 37000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-56869
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-56869
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-56896
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-56896
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-57465
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-57465
+thd0: commit txn 38000
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-57853
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-57853
+thd3: commit txn 37000
+thd2: commit txn 38000
+thd0: commit txn 39000
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-59050
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-59050
+thd1: commit txn 33000
+thd3: commit txn 38000
+thd2: commit txn 39000
+thd0: commit txn 40000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-60422
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-60422
+thd3: commit txn 39000
+thd1: commit txn 34000
+thd2: commit txn 40000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-61750
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-61750
+thd0: commit txn 41000
+thd3: commit txn 40000
+thd1: commit txn 35000
+thd2: commit txn 41000
+thd0: commit txn 42000
+thd1: 					abort  txn 5000
+thd1: commit txn 36000
+thd3: commit txn 41000
+thd2: commit txn 42000
+thd0: commit txn 43000
+thd3: 					abort  txn 5000
+thd2: 					abort  txn 5000
+thd1: commit txn 37000
+thd3: commit txn 42000
+thd0: 					abort  txn 5000
+thd0: commit txn 44000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-2, data_ver-67220
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-1, data_ver-67220
+thd1: commit txn 38000
+thd3: commit txn 43000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-67588
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-67588
+thd0: commit txn 45000
+thd2: commit txn 43000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-67909
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-67909
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-68105
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-68105
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-2, data_ver-68110
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-1, data_ver-68110
+thd1: commit txn 39000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-68722
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-68722
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-68895
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-68895
+thd0: commit txn 46000
+thd2: commit txn 44000
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-69871
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-69871
+thd1: commit txn 40000
+thd3: commit txn 44000
+thd0: commit txn 47000
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-2, data_ver-71059
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-1, data_ver-71059
+thd1: commit txn 41000
+thd2: commit txn 45000
+thd0: commit txn 48000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-2, data_ver-72032
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-1, data_ver-72032
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-72100
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-72100
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-71809
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-71809
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-72392
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-72392
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-72381
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-72381
+thd3: commit txn 45000
+thd1: commit txn 42000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-73098
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-73098
+thd2: commit txn 46000
+thd0: commit txn 49000
+thd3: commit txn 46000
+thd1: commit txn 43000
+thd2: commit txn 47000
+thd0: commit txn 50000
+thd3: commit txn 47000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-75712
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-75712
+thd1: commit txn 44000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-2, data_ver-76285
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-1, data_ver-76285
+thd2: commit txn 48000
+thd0: commit txn 51000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-2, data_ver-76935
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-1, data_ver-76935
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-77248
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-77248
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-77216
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-77216
+thd3: commit txn 48000
+thd1: commit txn 45000
+thd2: commit txn 49000
+thd0: commit txn 52000
+thd1: 					abort  txn 6000
+thd3: commit txn 49000
+thd1: commit txn 46000
+thd0: commit txn 53000
+thd2: commit txn 50000
+thd2: 					abort  txn 6000
+thd3: 					abort  txn 6000
+thd3: commit txn 50000
+thd1: commit txn 47000
+thd0: 					abort  txn 6000
+thd0: commit txn 54000
+thd2: commit txn 51000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-82213
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-82213
+thd3: commit txn 51000
+thd1: commit txn 48000
+thd0: commit txn 55000
+thd1: commit txn 49000
+thd3: commit txn 52000
+thd2: commit txn 52000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-2, data_ver-84678
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-1, data_ver-84678
+thd1: commit txn 50000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-1, data_ver-85160
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-85160
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-85159
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-85159
+thd3: commit txn 53000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-2, data_ver-85609
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-1, data_ver-85609
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-86259
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-86259
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-86312
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-86312
+thd0: commit txn 56000
+thd1: commit txn 51000
+thd2: commit txn 53000
+thd3: commit txn 54000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-87581
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-87581
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-87465
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-87465
+thd1: commit txn 52000
+thd3: commit txn 55000
+thd0: commit txn 57000
+thd2: commit txn 54000
+thd1: commit txn 53000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-89141
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-89141
+thd3: commit txn 56000
+thd2: commit txn 55000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-90406
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-90406
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-90448
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-90448
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-90515
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-90515
+thd1: commit txn 54000
+thd3: commit txn 57000
+thd0: commit txn 58000
+thd2: commit txn 56000
+thd1: commit txn 55000
+thd3: commit txn 58000
+thd2: commit txn 57000
+thd1: commit txn 56000
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-93722
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-93722
+thd3: commit txn 59000
+thd0: commit txn 59000
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-2, data_ver-94931
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-1, data_ver-94931
+thd2: commit txn 58000
+thd1: commit txn 57000
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-95214
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-95214
+thd1: 					abort  txn 7000
+thd2: 					abort  txn 7000
+thd0: 					abort  txn 7000
+thd3: commit txn 60000
+thd0: commit txn 60000
+thd3: 					abort  txn 7000
+thd2: commit txn 59000
+thd1: commit txn 58000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-96678
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-96678
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-96673
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-96673
+thd3: commit txn 61000
+thd2: commit txn 60000
+thd0: commit txn 61000
+thd1: commit txn 59000
+thd3: commit txn 62000
+thd0: commit txn 62000
+before unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-99708
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-99708
+thd1: commit txn 60000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-99780
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-99780
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-99752
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-99752
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-99626
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-99626
+thd3: commit txn 63000
+thd2: commit txn 61000
+thd0: commit txn 63000
+thd1: commit txn 61000
+thd3: commit txn 64000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-102236
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-102236
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-102597
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-102597
+thd0: commit txn 64000
+thd1: commit txn 62000
+thd2: commit txn 62000
+thd3: commit txn 65000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-2, data_ver-104164
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-1, data_ver-104164
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-104262
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-104262
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-104221
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-104221
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-3, data_ver-104527
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-2, data_ver-104527
+thd3: commit txn 66000
+thd0: commit txn 65000
+thd2: commit txn 63000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-105422
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-105422
+thd1: commit txn 63000
+thd3: commit txn 67000
+thd2: commit txn 64000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-106780
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-106780
+thd0: commit txn 66000
+thd3: commit txn 68000
+thd2: commit txn 65000
+thd1: commit txn 64000
+thd3: commit txn 69000
+thd2: commit txn 66000
+thd0: commit txn 67000
+thd3: commit txn 70000
+thd1: commit txn 65000
+thd2: commit txn 67000
+thd0: 					abort  txn 8000
+thd1: 					abort  txn 8000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-2, data_ver-110760
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-1, data_ver-110760
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-110767
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-110767
+thd3: commit txn 71000
+thd0: commit txn 68000
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-2, data_ver-111888
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-1, data_ver-111888
+thd2: commit txn 68000
+thd2: 					abort  txn 8000
+thd1: commit txn 66000
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-112656
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-112656
+thd3: 					abort  txn 8000
+thd3: commit txn 72000
+thd2: commit txn 69000
+thd0: commit txn 69000
+thd1: commit txn 67000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-114502
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-114502
+thd3: commit txn 73000
+thd0: commit txn 70000
+thd1: commit txn 68000
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-115571
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-115571
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-115776
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-115776
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-2, data_ver-115797
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-1, data_ver-115797
+thd3: commit txn 74000
+thd0: commit txn 71000
+thd2: commit txn 70000
+thd1: commit txn 69000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-117861
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-117861
+thd3: commit txn 75000
+thd0: commit txn 72000
+thd1: commit txn 70000
+thd0: commit txn 73000
+thd3: commit txn 76000
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-119764
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-119764
+thd1: commit txn 71000
+thd2: commit txn 71000
+thd0: commit txn 74000
+thd3: commit txn 77000
+thd1: commit txn 72000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-121363
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-121363
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-121366
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-121366
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-2, data_ver-121377
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-1, data_ver-121377
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-121615
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-121615
+thd0: commit txn 75000
+thd2: commit txn 72000
+thd1: commit txn 73000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-1, data_ver-123873
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-123873
+thd3: commit txn 78000
+thd0: commit txn 76000
+thd1: commit txn 74000
+thd2: commit txn 73000
+thd0: commit txn 77000
+thd2: commit txn 74000
+thd1: commit txn 75000
+thd3: commit txn 79000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-126208
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-126208
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-126193
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-126193
+thd0: 					abort  txn 9000
+thd0: commit txn 78000
+thd1: 					abort  txn 9000
+thd2: commit txn 75000
+thd2: 					abort  txn 9000
+thd3: commit txn 80000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-128131
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-128131
+thd2: commit txn 76000
+thd0: commit txn 79000
+thd3: 					abort  txn 9000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-128836
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-128836
+thd3: commit txn 81000
+thd1: commit txn 76000
+thd2: commit txn 77000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-130073
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-130073
+thd0: commit txn 80000
+thd3: commit txn 82000
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-131037
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-131037
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-2, data_ver-131253
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-1, data_ver-131253
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-131192
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-131192
+thd2: commit txn 78000
+thd0: commit txn 81000
+thd1: commit txn 77000
+thd3: commit txn 83000
+thd2: commit txn 79000
+thd0: commit txn 82000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-2, data_ver-133572
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-1, data_ver-133572
+thd3: commit txn 84000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-134216
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-134216
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-2, data_ver-134223
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-1, data_ver-134223
+thd2: commit txn 80000
+thd0: commit txn 83000
+thd1: commit txn 78000
+thd3: commit txn 85000
+thd2: commit txn 81000
+thd0: commit txn 84000
+thd3: commit txn 86000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-137373
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-137373
+thd2: commit txn 82000
+thd0: commit txn 85000
+thd1: commit txn 79000
+thd3: commit txn 87000
+thd0: commit txn 86000
+thd2: commit txn 83000
+thd1: commit txn 80000
+thd3: commit txn 88000
+thd0: commit txn 87000
+thd2: commit txn 84000
+thd1: commit txn 81000
+thd3: commit txn 89000
+thd0: 					abort  txn 10000
+thd2: commit txn 85000
+thd1: 					abort  txn 10000
+thd0: commit txn 88000
+thd1: commit txn 82000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-143162
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-143162
+thd3: commit txn 90000
+thd2: 					abort  txn 10000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-143931
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-143931
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-143911
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-143911
+thd2: commit txn 86000
+thd1: commit txn 83000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-144554
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-144554
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-1, data_ver-144620
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-144620
+thd3: commit txn 91000
+thd3: 					abort  txn 10000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-144888
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-144888
+thd2: commit txn 87000
+thd1: commit txn 84000
+thd3: commit txn 92000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-146369
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-146369
+thd0: commit txn 89000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-146961
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-146961
+thd2: commit txn 88000
+thd1: commit txn 85000
+thd3: commit txn 93000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-147801
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-147801
+thd2: commit txn 89000
+thd0: commit txn 90000
+thd1: commit txn 86000
+thd3: commit txn 94000
+thd2: commit txn 90000
+thd1: commit txn 87000
+thd3: commit txn 95000
+thd0: commit txn 91000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-151380
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-151380
+thd2: commit txn 91000
+thd1: commit txn 88000
+thd3: commit txn 96000
+thd0: commit txn 92000
+thd1: commit txn 89000
+thd2: commit txn 92000
+thd3: commit txn 97000
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-154282
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-154282
+thd0: commit txn 93000
+thd1: commit txn 90000
+thd3: commit txn 98000
+thd0: commit txn 94000
+thd2: commit txn 93000
+thd1: commit txn 91000
+thd3: commit txn 99000
+thd0: 					abort  txn 11000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-2, data_ver-157631
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-1, data_ver-157631
+thd0: commit txn 95000
+thd1: commit txn 92000
+thd3: commit txn 100000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-158648
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-158648
+thd1: 					abort  txn 11000
+thd2: commit txn 94000
+thd0: commit txn 96000
+thd1: commit txn 93000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-2, data_ver-159567
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-1, data_ver-159567
+thd2: 					abort  txn 11000
+thd3: commit txn 101000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-160355
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-160355
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-159962
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-159962
+thd0: commit txn 97000
+thd3: 					abort  txn 11000
+thd1: commit txn 94000
+thd2: commit txn 95000
+thd3: commit txn 102000
+thd0: commit txn 98000
+thd1: commit txn 95000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-163115
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-163115
+thd2: commit txn 96000
+thd3: commit txn 103000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-2, data_ver-163431
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-1, data_ver-163431
+thd0: commit txn 99000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-2, data_ver-163900
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-1, data_ver-163900
+thd1: commit txn 96000
+thd3: commit txn 104000
+thd2: commit txn 97000
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-2, data_ver-165529
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-1, data_ver-165529
+thd0: commit txn 100000
+thd1: commit txn 97000
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-166363
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-166363
+thd3: commit txn 105000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-166690
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-166690
+thd2: commit txn 98000
+thd1: commit txn 98000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-167283
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-167283
+thd0: commit txn 101000
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-167635
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-167635
+thd3: commit txn 106000
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-168784
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-168784
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-2, data_ver-168783
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-1, data_ver-168783
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-2, data_ver-168750
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-168783
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-168783
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-1, data_ver-168750
+thd1: commit txn 99000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-168948
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-168948
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-2, data_ver-168955
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-1, data_ver-168955
+thd2: commit txn 99000
+thd0: commit txn 102000
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-169487
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-169487
+thd3: commit txn 107000
+thd1: commit txn 100000
+thd2: commit txn 100000
+thd3: commit txn 108000
+thd0: commit txn 103000
+thd1: commit txn 101000
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-172004
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-172004
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-172004
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-172004
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-3, data_ver-172075
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-2, data_ver-172075
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-172073
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-172073
+thd2: commit txn 101000
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-172713
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-172713
+thd3: commit txn 109000
+thd0: commit txn 104000
+thd1: commit txn 102000
+thd0: 					abort  txn 12000
+thd3: commit txn 110000
+thd0: commit txn 105000
+thd1: commit txn 103000
+thd2: 					abort  txn 12000
+thd1: 					abort  txn 12000
+thd2: commit txn 102000
+thd3: commit txn 111000
+thd1: commit txn 104000
+thd0: commit txn 106000
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-177181
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-177181
+thd3: commit txn 112000
+thd3: 					abort  txn 12000
+thd1: commit txn 105000
+thd0: commit txn 107000
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-178278
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-178278
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-178308
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-178308
+thd2: commit txn 103000
+thd3: commit txn 113000
+thd1: commit txn 106000
+thd0: commit txn 108000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-1, data_ver-179704
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-179704
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-179785
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-179785
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-180903
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-180903
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-180730
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-180730
+thd3: commit txn 114000
+thd1: commit txn 107000
+thd2: commit txn 104000
+thd0: commit txn 109000
+thd3: commit txn 115000
+thd0: commit txn 110000
+thd1: commit txn 108000
+thd2: commit txn 105000
+thd3: commit txn 116000
+thd0: commit txn 111000
+thd1: commit txn 109000
+thd2: commit txn 106000
+thd3: commit txn 117000
+thd0: commit txn 112000
+thd1: commit txn 110000
+thd2: commit txn 107000
+thd3: commit txn 118000
+thd0: commit txn 113000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-1, data_ver-187648
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-187648
+thd1: commit txn 111000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-1, data_ver-188059
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-188059
+thd2: commit txn 108000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-188285
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-188285
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-188556
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-188556
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-188663
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-188663
+thd3: commit txn 119000
+thd0: commit txn 114000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-2, data_ver-189373
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-1, data_ver-189373
+thd1: commit txn 112000
+thd2: commit txn 109000
+thd0: 					abort  txn 13000
+thd0: commit txn 115000
+thd2: 					abort  txn 13000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-190892
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-190892
+thd3: commit txn 120000
+thd1: commit txn 113000
+thd1: 					abort  txn 13000
+thd2: commit txn 110000
+thd0: commit txn 116000
+thd1: commit txn 114000
+thd3: commit txn 121000
+thd3: 					abort  txn 13000
+thd0: commit txn 117000
+thd2: commit txn 111000
+thd1: commit txn 115000
+thd3: commit txn 122000
+thd0: commit txn 118000
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-195199
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-195199
+thd2: commit txn 112000
+thd1: commit txn 116000
+thd3: commit txn 123000
+thd0: commit txn 119000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-196729
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-196729
+thd2: commit txn 113000
+thd1: commit txn 117000
+thd3: commit txn 124000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-198306
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-198306
+thd0: commit txn 120000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-1, data_ver-198455
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-198455
+thd2: commit txn 114000
+thd1: commit txn 118000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-199649
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-199649
+thd3: commit txn 125000
+thd0: commit txn 121000
+thd2: commit txn 115000
+thd1: commit txn 119000
+thd3: commit txn 126000
+thd0: commit txn 122000
+thd2: commit txn 116000
+thd1: commit txn 120000
+thd3: commit txn 127000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-203301
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-203301
+thd0: commit txn 123000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-1, data_ver-203619
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-203619
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-2, data_ver-203915
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-1, data_ver-203915
+thd2: commit txn 117000
+thd1: commit txn 121000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-204161
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-204161
+thd3: commit txn 128000
+thd0: commit txn 124000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-2, data_ver-205411
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-1, data_ver-205411
+thd1: commit txn 122000
+thd2: commit txn 118000
+thd3: commit txn 129000
+thd2: 					abort  txn 14000
+thd0: commit txn 125000
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-206796
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-206796
+thd0: 					abort  txn 14000
+thd1: commit txn 123000
+thd2: commit txn 119000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-207879
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-207879
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-207871
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-207871
+thd1: 					abort  txn 14000
+thd0: commit txn 126000
+thd1: commit txn 124000
+thd2: commit txn 120000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-1, data_ver-209260
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-209260
+thd3: 					abort  txn 14000
+thd0: commit txn 127000
+before unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-210032
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-210034
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-2, data_ver-209843
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-1, data_ver-209843
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-210133
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-210133
+thd1: commit txn 125000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-2, data_ver-210234
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-1, data_ver-210234
+thd2: commit txn 121000
+thd3: commit txn 130000
+thd0: commit txn 128000
+thd1: commit txn 126000
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-212045
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-212045
+thd2: commit txn 122000
+thd0: commit txn 129000
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-212817
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-212817
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-2, data_ver-213232
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-1, data_ver-213232
+thd1: commit txn 127000
+thd2: commit txn 123000
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-213961
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-213961
+thd0: commit txn 130000
+thd3: commit txn 131000
+thd1: commit txn 128000
+thd2: commit txn 124000
+thd1: commit txn 129000
+thd0: commit txn 131000
+thd3: commit txn 132000
+thd2: commit txn 125000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-217524
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-217524
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-217548
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-217548
+thd1: commit txn 130000
+thd3: commit txn 133000
+thd2: commit txn 126000
+thd1: commit txn 131000
+thd3: commit txn 134000
+thd2: commit txn 127000
+thd0: commit txn 132000
+thd1: commit txn 132000
+thd3: commit txn 135000
+thd2: commit txn 128000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-222421
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-222421
+thd1: commit txn 133000
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-222576
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-222576
+thd3: commit txn 136000
+thd2: commit txn 129000
+thd1: commit txn 134000
+thd0: 					abort  txn 15000
+thd2: 					abort  txn 15000
+thd3: commit txn 137000
+thd0: commit txn 133000
+thd2: commit txn 130000
+thd1: commit txn 135000
+thd1: 					abort  txn 15000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-225894
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-225894
+thd3: commit txn 138000
+thd2: commit txn 131000
+thd1: commit txn 136000
+thd3: 					abort  txn 15000
+thd3: commit txn 139000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-227974
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-227974
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-227932
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-227932
+thd1: commit txn 137000
+thd2: commit txn 132000
+thd0: commit txn 134000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-228889
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-228889
+thd3: commit txn 140000
+thd1: commit txn 138000
+thd2: commit txn 133000
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-230568
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-230568
+thd0: commit txn 135000
+thd1: commit txn 139000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-231215
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-231215
+thd2: commit txn 134000
+thd3: commit txn 141000
+thd0: commit txn 136000
+thd1: commit txn 140000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-232849
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-232849
+thd2: commit txn 135000
+thd0: commit txn 137000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-1, data_ver-234044
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-234044
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-2, data_ver-234124
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-1, data_ver-234124
+thd1: commit txn 141000
+thd2: commit txn 136000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-1, data_ver-234883
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-0, data_ver-234883
+thd1: commit txn 142000
+thd0: commit txn 138000
+thd3: commit txn 142000
+thd2: commit txn 137000
+thd1: commit txn 143000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-2, data_ver-237351
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-1, data_ver-237351
+thd0: commit txn 139000
+thd3: commit txn 143000
+thd2: commit txn 138000
+thd1: commit txn 144000
+thd0: commit txn 140000
+thd3: commit txn 144000
+thd1: commit txn 145000
+thd0: commit txn 141000
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-3, data_ver-240684
+after unlock: latch-0, prio_ver-7, prio- 0, ref_cnt-2, data_ver-240684
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-2, data_ver-241334
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-1, data_ver-241334
+thd3: commit txn 145000
+thd1: commit txn 146000
+thd0: 					abort  txn 16000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-1, data_ver-241385
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-241385
+thd2: 					abort  txn 16000
+thd0: commit txn 142000
+thd2: commit txn 139000
+before unlock: latch-1, prio_ver-0, prio- 0, ref_cnt-1, data_ver-242731
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-0, data_ver-242731
+thd1: commit txn 147000
+thd3: commit txn 146000
+thd0: commit txn 143000
+thd3: commit txn 147000
+thd1: commit txn 148000
+thd1: 					abort  txn 16000
+thd3: 					abort  txn 16000
+thd0: commit txn 144000
+thd2: commit txn 140000
+thd1: commit txn 149000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-246197
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-246197
+thd3: commit txn 148000
+thd0: commit txn 145000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-2, data_ver-247047
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-1, data_ver-247047
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-247497
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-247497
+thd1: commit txn 150000
+thd3: commit txn 149000
+thd2: commit txn 141000
+thd0: commit txn 146000
+thd1: commit txn 151000
+thd3: commit txn 150000
+thd0: commit txn 147000
+thd2: commit txn 142000
+before unlock: latch-1, prio_ver-6, prio- 0, ref_cnt-3, data_ver-250743
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-2, data_ver-250743
+thd1: commit txn 152000
+thd3: commit txn 151000
+thd0: commit txn 148000
+thd1: commit txn 153000
+thd2: commit txn 143000
+thd3: commit txn 152000
+thd0: commit txn 149000
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-253993
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-253993
+thd1: commit txn 154000
+thd2: commit txn 144000
+thd0: commit txn 150000
+thd3: commit txn 153000
+thd1: commit txn 155000
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-255966
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-255966
+thd2: commit txn 145000
+thd0: commit txn 151000
+thd3: commit txn 154000
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-2, data_ver-256975
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-1, data_ver-256975
+thd1: commit txn 156000
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-257657
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-257657
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-257647
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-257647
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-257700
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-257700
+thd0: commit txn 152000
+thd3: commit txn 155000
+thd2: commit txn 146000
+thd0: commit txn 153000
+thd1: commit txn 157000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-259657
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-259657
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-259691
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-259691
+thd0: 					abort  txn 17000
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-259808
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-259808
+thd3: commit txn 156000
+thd2: commit txn 147000
+thd2: 					abort  txn 17000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-260066
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-260066
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-260265
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-260265
+thd0: commit txn 154000
+thd3: commit txn 157000
+thd2: commit txn 148000
+thd0: commit txn 155000
+thd1: commit txn 158000
+thd3: 					abort  txn 17000
+thd1: 					abort  txn 17000
+thd3: commit txn 158000
+thd2: commit txn 149000
+thd0: commit txn 156000
+before unlock: latch-1, prio_ver-7, prio- 0, ref_cnt-1, data_ver-264111
+after unlock: latch-0, prio_ver-0, prio- 0, ref_cnt-0, data_ver-264111
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-264523
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-264523
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-264541
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-264541
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-264417
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-264417
+thd3: commit txn 159000
+thd2: commit txn 150000
+thd0: commit txn 157000
+thd1: commit txn 159000
+thd3: commit txn 160000
+thd2: commit txn 151000
+thd0: commit txn 158000
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-266846
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-266846
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-267538
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-267538
+thd3: commit txn 161000
+thd2: commit txn 152000
+thd0: commit txn 159000
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-2, data_ver-269160
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-1, data_ver-269160
+thd1: commit txn 160000
+thd2: commit txn 153000
+thd3: commit txn 162000
+thd0: commit txn 160000
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-1, data_ver-269942
+after unlock: latch-0, prio_ver-6, prio- 0, ref_cnt-0, data_ver-269942
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-1, data_ver-270512
+after unlock: latch-0, prio_ver-2, prio- 0, ref_cnt-0, data_ver-270512
+before unlock: latch-1, prio_ver-4, prio- 0, ref_cnt-1, data_ver-270481
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-0, data_ver-270481
+thd2: commit txn 154000
+thd0: commit txn 161000
+thd3: commit txn 163000
+before unlock: latch-1, prio_ver-3, prio- 0, ref_cnt-1, data_ver-271805
+after unlock: latch-0, prio_ver-4, prio- 0, ref_cnt-0, data_ver-271805
+before unlock: latch-1, prio_ver-5, prio- 0, ref_cnt-2, data_ver-272461
+after unlock: latch-0, prio_ver-5, prio- 0, ref_cnt-1, data_ver-272461
+thd1: commit txn 161000
+thd0: commit txn 162000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-1, data_ver-272868
+after unlock: latch-0, prio_ver-3, prio- 0, ref_cnt-0, data_ver-272868
+thd2: commit txn 155000
+thd3: commit txn 164000
+before unlock: latch-1, prio_ver-1, prio- 0, ref_cnt-2, data_ver-273831
+after unlock: latch-0, prio_ver-1, prio- 0, ref_cnt-1, data_ver-273831
+thd0: commit txn 163000
+thd3: commit txn 165000
+thd2: commit txn 156000
+thd1: commit txn 162000
+thd0: commit txn 164000
+thd3: commit txn 166000
+thd2: commit txn 157000
+thd3: commit txn 167000
+thd0: commit txn 165000
+thd2: 					abort  txn 18000
+thd2: commit txn 158000
+thd1: commit txn 163000
+before unlock: latch-1, prio_ver-2, prio- 0, ref_cnt-1, data_ver-278506
+after unlock: latc

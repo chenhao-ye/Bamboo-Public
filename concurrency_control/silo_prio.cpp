@@ -87,11 +87,10 @@ txn_man::validate_silo_prio()
 				done = true;
 			else {
 				for (int i = 0; i < num_locks; i++) {
-					accesses[ write_set[i] ]->orig_row->manager->unlock();
+					accesses[ write_set[i] ]->orig_row->manager->unlock(prio, accesses[ write_set[i] ]->prio_ver);
 #if DEBUG_SVEN
 					TID_prio_t *tid = &(accesses[ write_set[i] ]->orig_row->manager->_tid_word_prio);
-					printf("[thd-%lu txn-%lu] unlocked %p because can't lock write-set \n[thd-%lu txn-%lu] TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", get_thd_id(), get_txn_id(), accesses[ write_set[i] ]->orig_row, get_thd_id(), get_txn_id(), tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver()
-			);
+					printf("[thd-%lu txn-%lu] unlocked %p because can't lock write-set \n[thd-%lu txn-%lu] TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", get_thd_id(), get_txn_id(), accesses[ write_set[i] ]->orig_row, get_thd_id(), get_txn_id(), tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver());
 #endif
 				}
 				if (_pre_abort) {
