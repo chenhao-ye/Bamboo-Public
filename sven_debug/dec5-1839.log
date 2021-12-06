@@ -1,0 +1,1023 @@
+[thd-  txn-    ] TID: latch-1 prio_ver-7, prio- 0, ref_cnt-1, data_ver-58286
+[thd-1 txn-174961] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-7, prio- 0, ref_cnt-1, data_ver-58364
+[thd-3 txn-114087] row 0x7fff7a00e2c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-5, prio- 0, ref_cnt-1, data_ver-58468
+[thd-3 txn-114179] row 0x7fff7a00e2c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-0, prio- 0, ref_cnt-2, data_ver-58505
+[thd-2 txn-174338] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-1, data_ver-58531
+[thd-0 txn-175712] row 0x7fff7a00e140 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-0, prio- 0, ref_cnt-1, data_ver-58565
+[thd-1 txn-175545] row 0x7fff7a00e340 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-2, prio- 0, ref_cnt-1, data_ver-58569
+[thd-0 txn-175840] row 0x7fff7a00e140 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-1, prio- 0, ref_cnt-2, data_ver-58609
+[thd-2 txn-174542] row 0x7fff7a00e140 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-4, prio- 0, ref_cnt-1, data_ver-58611
+[thd-1 txn-175925] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-5, prio- 0, ref_cnt-2, data_ver-58693
+[thd-3 txn-114811] row 0x7fff7a00e840 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-7, prio- 0, ref_cnt-1, data_ver-58746
+thd0: commit txn 40000
+thd1: commit txn 40000
+[thd-3 txn-115247] row 0x7fff7a03cfc0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-1, data_ver-55706
+[thd-0 txn-176948] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-2, prio- 0, ref_cnt-1, data_ver-59000
+[thd-1 txn-177093] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-1, data_ver-59193
+[thd-3 txn-115875] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-2, prio- 0, ref_cnt-1, data_ver-59263
+[thd-2 txn-176506] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-2, prio- 0, ref_cnt-1, data_ver-59298
+thd2: commit txn 40000
+[thd-2 txn-176638] row 0x7fff7a00e240 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-5, prio- 0, ref_cnt-1, data_ver-59331
+[thd-2 txn-176878] row 0x7fff7a00eb40 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-1, prio- 0, ref_cnt-1, data_ver-59361
+[thd-2 txn-177154] row 0x7fff7a00e1c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-5, prio- 0, ref_cnt-1, data_ver-59520
+[thd-1 txn-178057] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-7, prio- 0, ref_cnt-1, data_ver-59556
+thd3: commit txn 25000
+[thd-2 txn-177646] row 0x7fff7a00e2c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-1, prio- 0, ref_cnt-1, data_ver-59692
+[thd-3 txn-116887] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-4, prio- 0, ref_cnt-1, data_ver-59734
+[thd-0 txn-179156] row 0x7fff7a00e1c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-0, prio- 0, ref_cnt-1, data_ver-59737
+[thd-3 txn-116899] row 0x7fff7a00e1c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-3, prio- 0, ref_cnt-1, data_ver-59745
+[thd-1 txn-178593] row 0x7fff7a00e1c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-2, prio- 0, ref_cnt-1, data_ver-59755
+[thd-3 txn-117123] row 0x7fff7a00e1c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-1, prio- 0, ref_cnt-1, data_ver-59865
+[thd-2 txn-178430] row 0x7fff7a00e340 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-5, prio- 0, ref_cnt-1, data_ver-59955
+[thd-3 txn-117579] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-7, prio- 0, ref_cnt-1, data_ver-60060
+[thd-3 txn-117611] row 0x7fff7a00eec0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-3, prio- 0, ref_cnt-1, data_ver-60035
+[thd-3 txn-117851] row 0x7fff7a00e140 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-3, prio- 0, ref_cnt-1, data_ver-60165
+[thd-0 txn-180524] row 0x7fff7a00e240 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-7, prio- 0, ref_cnt-2, data_ver-60210
+[thd-0 txn-180656] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-3, prio- 0, ref_cnt-1, data_ver-60260
+thd0: commit txn 41000
+[thd-3 txn-118135] row 0x7fff7a00e1c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-0, prio- 0, ref_cnt-1, data_ver-60309
+[thd-0 txn-180904] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-1, data_ver-60350
+[thd-0 txn-180928] row 0x7fff7a00e140 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-0, prio- 0, ref_cnt-1, data_ver-60351
+[thd-3 txn-118371] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-5, prio- 0, ref_cnt-1, data_ver-60408
+[thd-0 txn-181160] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-4, prio- 0, ref_cnt-1, data_ver-60439
+thd1: commit txn 41000
+[thd-1 txn-180897] row 0x7fff7a00e1c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-3, prio- 0, ref_cnt-2, data_ver-60624
+[thd-2 txn-180710] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-3, prio- 0, ref_cnt-1, data_ver-60769
+[thd-1 txn-181433] row 0x7fff7a00e240 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-2, prio- 0, ref_cnt-1, data_ver-60807
+thd2: commit txn 41000
+[thd-0 txn-182452] row 0x7fff7a00e2c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-2, prio- 0, ref_cnt-1, data_ver-60911
+[thd-0 txn-182676] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-2, prio- 0, ref_cnt-1, data_ver-60986
+[thd-3 txn-119627] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-5, prio- 0, ref_cnt-1, data_ver-61015
+[thd-3 txn-119731] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-7, prio- 0, ref_cnt-2, data_ver-61070
+[thd-2 txn-181962] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-5, prio- 0, ref_cnt-1, data_ver-61174
+[thd-2 txn-182222] row 0x7fff7a00e840 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-7, prio- 0, ref_cnt-1, data_ver-61257
+[thd-3 txn-120043] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-1, prio- 0, ref_cnt-1, data_ver-61466
+[thd-2 txn-182806] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-7, prio- 0, ref_cnt-2, data_ver-61488
+[thd-3 txn-120355] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-1, prio- 0, ref_cnt-1, data_ver-61615
+[thd-0 txn-184676] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-3, prio- 0, ref_cnt-1, data_ver-61656
+[thd-2 txn-183638] row 0x7fff7a00e140 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-1, data_ver-61757
+[thd-0 txn-185040] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-4, prio- 0, ref_cnt-1, data_ver-61775
+[thd-3 txn-120683] row 0x7fff7a00e1c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-1, prio- 0, ref_cnt-1, data_ver-61793
+thd0: commit txn 42000
+[thd-0 txn-185184] row 0x7fff7a00e1c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-2, prio- 0, ref_cnt-1, data_ver-61839
+[thd-2 txn-183958] row 0x7fff7a00e6c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-1, data_ver-61873
+[thd-2 txn-184218] row 0x7fff7a00e240 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-7, prio- 0, ref_cnt-1, data_ver-61959
+thd3: commit txn 26000
+[thd-0 txn-185960] row 0x7fff7a019f40 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-0, prio- 0, ref_cnt-1, data_ver-62099
+[thd-3 txn-121475] row 0x7fff7a00e1c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-5, prio- 0, ref_cnt-1, data_ver-62123
+[thd-3 txn-121611] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-1, prio- 0, ref_cnt-1, data_ver-62190
+[thd-0 txn-186300] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-2, prio- 0, ref_cnt-1, data_ver-62203
+thd2: commit txn 42000
+[thd-0 txn-186856] row 0x7fff7a00e0c0 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-5, prio- 0, ref_cnt-1, data_ver-62365
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-    0. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-  100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-  200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-  200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-  300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-  300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-  400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-  500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-  600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-  700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-  800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count- 1000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 1000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-  900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 1100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 1200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 1500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 1300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 1400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 1800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 1600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 1700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 2100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 1900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 2000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 2400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 2200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 2300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 2700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 2500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 2600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 3000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 2800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 2900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count- 1200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 3100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 3200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 3300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 3400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 3700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 3500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 3600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count- 3400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 3800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 3900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 4000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 4100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 4400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 4200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 4300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count- 4100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 4500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 4600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 4700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 4800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 5100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 4900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 5000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count- 4800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 5200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 5300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 5400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 5500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 5800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 5600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 5700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count- 5500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 5900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 6000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 6100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 6200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 6500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 6300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 6400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count- 6200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 6600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 6700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 6800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 6900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 7200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 7000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 7100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count- 6900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 7300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 7400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 7500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 7600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 7900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 7700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 7800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count- 7600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 8000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 8100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 8200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 8300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 8600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 8400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 8500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count- 8300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 8700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 8800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 8900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 9000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 9300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 9100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 9200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count- 9000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 9400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 9500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 9600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count- 9700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-10000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count- 9800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count- 9900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count- 9700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-10100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-10200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-10300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-10400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-10700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-10500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-10600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-11000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-10800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-10900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-11300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-11100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-11200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-11600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-11400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-11500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-10400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-11700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-11800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-11900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-12000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-12300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-12100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-12200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-12000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-12400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-12500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-12600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-12700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-13000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-12800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-12900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-12700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-13100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-13200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-13300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-13400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-13700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-13500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-13600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-13400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-13800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-13900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-14000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-14100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-14400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-14200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-14300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-14100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-14500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-14600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-14700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-14800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-15100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-14900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-15000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-15400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-15200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-15300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-15700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-15500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-15600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-16000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-15800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-15900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-14800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-16100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-16200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-16300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-16400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-16700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-16500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-16600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-16400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-16800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-16900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-17000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-17100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-17400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-17200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-17300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-17100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-17500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-17600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-17700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-17800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-18100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-17900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-18000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-17800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-18200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-18300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-18400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-18500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-18800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-18600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-18700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-18500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-18900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-19000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-19100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-19200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-19500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-19300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-19400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-19800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-19600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-19700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-20100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-19900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-20000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-20400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-20200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-20300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-20700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-20500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-20600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-21000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-20800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-20900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-21300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-21100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-21200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-19200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-21400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-21500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-21600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-21700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-22000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-21800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-21900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-21700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-22100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-22200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-22300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-22400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-22400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-22500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-22600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-22700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-22800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-23100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-22900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-23000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-23400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-23200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-23300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-22800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-23500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-23600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-23700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-23800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-24100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-23900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-24000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-24400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-24200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-24300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-24700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-24500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-24600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-25000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-24800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-24900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-23800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-25100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-25200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-25300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-25400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-25700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-25500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-25600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-26000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-25800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-25900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-26300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-26100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-26200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-26600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-26400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-26500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-25400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-26700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-26800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-26900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-27000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-27300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-27100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-27200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-27600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-27400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-27500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-27900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-27700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-27800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-28200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-28000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-28100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-27000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-28300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-28400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-28500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-28600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-28900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-28700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-28800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-29200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-29000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-29100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-29500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-29300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-29400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-29800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-29600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-29700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-28600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-29900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-30000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-30100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-30200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-30500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-30300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-30400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-30200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-30600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-30700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-30800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-30900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-31200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-31000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-31100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-30900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-31300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-31400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-31500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-31600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-31900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-31700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-31800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-31600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-32000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-32100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-32200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-32300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-32600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-32400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-32500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-32300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-32700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-32800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-32900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-33000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-33300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-33100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-33200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-33000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-33400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-33500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-33600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-33700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-34000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-33800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-33900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-33700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-34100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-34200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-34300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-34400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-34700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-34500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-34600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-34400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-34800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-34900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-35000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-35100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-35400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-35200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-35300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-35100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-35500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-35600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-35700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-35800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-36100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-35900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-36000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-35800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-36200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-36300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-36400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-36500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-36800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-36600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-36700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-37100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-36900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-37000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-37400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-37200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-37300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-37700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-37500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-37600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-38000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-37800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-37900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-38300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-38100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-38200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-38600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-38400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-38500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-36500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-38700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-38800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-38900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-39000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-39300. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-39100. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-39200. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-39000. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-39400. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-39500. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-39600. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-2 txn-185418] row 0x7fff7a00e140 TID is locked. retry count-39700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+reach debug point. pause gdb
+[thd-0 txn-186860] row 0x7fff7a00e140 TID is locked. retry count-39800. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+reach debug point. pause gdb
+[thd-3 txn-122051] row 0x7fff7a00e140 TID is locked. retry count-39900. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+[thd-1 txn-185065] row 0x7fff7a00e140 TID is locked. retry count-39700. 
+[thd-  txn-    ] TID: latch-1 prio_ver-6, prio- 0, ref_cnt-0, data_ver-62377
+reach debug point. pause gdb
+reach debug point. pause gdb

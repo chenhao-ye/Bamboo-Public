@@ -102,6 +102,8 @@ static_assert(sizeof(TID_prio_t) == 8, "TID_prio_t must be of size 64 bits");
 class Row_silo_prio {
 #if DEBUG_SVEN
 public:
+#endif
+#if DEBUG_SVEN || DEBUG_TMP
 	uint32_t retry_count = 0;
 #endif
 	TID_prio_t _tid_word_prio;
@@ -161,11 +163,11 @@ public:
 	// only happen as a backoff in validation
 	void				unlock() {
 #if DEBUG_SVEN
-		printf("before unlock: latch-%1u, prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", _tid_word_prio.is_locked(), _tid_word_prio.get_prio_ver(), _tid_word_prio.get_prio(), _tid_word_prio.get_ref_cnt(), _tid_word_prio.get_data_ver());
+		// printf("before unlock: latch-%1u, prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", _tid_word_prio.is_locked(), _tid_word_prio.get_prio_ver(), _tid_word_prio.get_prio(), _tid_word_prio.get_ref_cnt(), _tid_word_prio.get_data_ver());
 #endif
 		_tid_word_prio.unlock();
 #if DEBUG_SVEN
-		printf("after unlock: latch-%1u, prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", _tid_word_prio.is_locked(), _tid_word_prio.get_prio_ver(), _tid_word_prio.get_prio(), _tid_word_prio.get_ref_cnt(), _tid_word_prio.get_data_ver());
+		// printf("after unlock: latch-%1u, prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", _tid_word_prio.is_locked(), _tid_word_prio.get_prio_ver(), _tid_word_prio.get_prio(), _tid_word_prio.get_ref_cnt(), _tid_word_prio.get_data_ver());
 #endif
 	}
 

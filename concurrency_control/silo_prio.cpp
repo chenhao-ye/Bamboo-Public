@@ -74,7 +74,7 @@ txn_man::validate_silo_prio()
 				row->manager->assert_lock();
 #if DEBUG_SVEN
 				TID_prio_t *tid = &(row->manager->_tid_word_prio);
-				printf("[thd-%lu txn-%lu]   locked %p \n[thd-%lu txn-%lu] TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", get_thd_id(), get_txn_id(), row, get_thd_id(), get_txn_id(), tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver());
+				printf("[thd-%lu txn-%lu]   locked %p \n[thd-  txn-    ] TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", get_thd_id(), get_txn_id(), row, tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver());
 #endif
 				num_locks ++;
 				if (row->manager->get_data_ver() != accesses[write_set[i]]->data_ver)
@@ -90,7 +90,7 @@ txn_man::validate_silo_prio()
 					accesses[ write_set[i] ]->orig_row->manager->unlock();
 #if DEBUG_SVEN
 					TID_prio_t *tid = &(accesses[ write_set[i] ]->orig_row->manager->_tid_word_prio);
-					printf("[thd-%lu txn-%lu] unlocked %p because can't lock write-set \n[thd-%lu txn-%lu] TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", get_thd_id(), get_txn_id(), accesses[ write_set[i] ]->orig_row, get_thd_id(), get_txn_id(), tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver());
+					printf("[thd-%lu txn-%lu] unlocked %p because can't lock write-set \n[thd-  txn-    ] TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", get_thd_id(), get_txn_id(), accesses[ write_set[i] ]->orig_row, tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver());
 #endif
 				}
 				if (_pre_abort) {
@@ -170,7 +170,7 @@ final:
 			access->orig_row->manager->writer_release_abort(prio, access->prio_ver);
 #if DEBUG_SVEN
 			TID_prio_t *tid = &(access->orig_row->manager->_tid_word_prio);
-			printf("[thd-%lu txn-%lu] unlocked %p because validation failed. \n[thd-%lu txn-%lu] TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", get_thd_id(), get_txn_id(), access->orig_row, get_thd_id(), get_txn_id(), tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver()
+			printf("[thd-%lu txn-%lu] unlocked %p because validation failed. \n[thd-  txn-    ] TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", get_thd_id(), get_txn_id(), access->orig_row, tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver()
 			);
 #endif
 			assert(access->is_owner);
@@ -184,7 +184,7 @@ final:
 			access->orig_row->manager->writer_release_commit(_cur_data_ver);
 #if DEBUG_SVEN
 			TID_prio_t *tid = &(access->orig_row->manager->_tid_word_prio);
-			printf("[thd-%lu txn-%lu] unlocked %p because committed. \n[thd-%lu txn-%lu] TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", get_thd_id(), get_txn_id(), access->orig_row, get_thd_id(), get_txn_id(), tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver()
+			printf("[thd-%lu txn-%lu] unlocked %p because committed. \n[thd-  txn-    ] TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", get_thd_id(), get_txn_id(), access->orig_row, tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver()
 			);
 #endif
 			assert(access->is_owner);
