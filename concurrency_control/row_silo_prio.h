@@ -162,13 +162,7 @@ public:
 	// temporarily release the lock
 	// only happen as a backoff in validation
 	void				unlock() {
-#if DEBUG_SVEN
-		// printf("before unlock: latch-%1u, prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", _tid_word_prio.is_locked(), _tid_word_prio.get_prio_ver(), _tid_word_prio.get_prio(), _tid_word_prio.get_ref_cnt(), _tid_word_prio.get_data_ver());
-#endif
 		_tid_word_prio.unlock();
-#if DEBUG_SVEN
-		// printf("after unlock: latch-%1u, prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", _tid_word_prio.is_locked(), _tid_word_prio.get_prio_ver(), _tid_word_prio.get_prio(), _tid_word_prio.get_ref_cnt(), _tid_word_prio.get_data_ver());
-#endif
 	}
 
 	// the reader only need to release its priority
