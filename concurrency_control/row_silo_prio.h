@@ -3,6 +3,7 @@
 #include "global.h"
 #include <cstdint>
 #include <cassert>
+#include "NanoLogCpp17.h"
 
 class row_t;
 class table_t;
@@ -189,7 +190,8 @@ public:
 		v2.release_prio(prio, prio_ver);
 		if (!__sync_bool_compare_and_swap(&_tid_word_prio.raw_bits, v.raw_bits, v2.raw_bits)) {
 #if DEBUG_SVEN
-			printf("[row-%p] writer_release_abort failed. retry... \n", this->_row);
+			NANO_LOG(LogLevels::NOTICE, "[row-%p] writer_release_abort failed. retry... \n", this->_row);
+			// printf("[row-%p] writer_release_abort failed. retry... \n", this->_row);
 #endif
 			goto retry;
 		}

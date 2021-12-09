@@ -13,3 +13,5 @@ cmake-build-debug
 perf*
 row_stats.csv
 linux/
+compressedLog
+debug_sven/

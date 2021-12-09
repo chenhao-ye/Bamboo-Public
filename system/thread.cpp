@@ -12,6 +12,7 @@
 #include "tpcc_query.h"
 #include "mem_alloc.h"
 #include "test.h"
+#include "NanoLogCpp17.h"
 
 void thread_t::init(uint64_t thd_id, workload * workload) {
 	_thd_id = thd_id;
@@ -203,7 +204,8 @@ RC thread_t::run() {
             INC_STATS(get_thd_id(), txn_cnt, 1);
 #if DEBUG_SVEN || DEBUG_TMP
 			if (stats._stats[get_thd_id()]->txn_cnt % 1000 == 0)
-				printf("thd%lu: commit txn %lu\n", get_thd_id(), stats._stats[get_thd_id()]->txn_cnt);
+				NANO_LOG(LogLevels::NOTICE, "thd%lu: commit txn %lu\n", get_thd_id(), stats._stats[get_thd_id()]->txn_cnt);
+				// printf("thd%lu: commit txn %lu\n", get_thd_id(), stats._stats[get_thd_id()]->txn_cnt);
 #endif
 #if WORKLOAD == YCSB
             if (unlikely(g_long_txn_ratio > 0)) {
@@ -218,7 +220,8 @@ RC thread_t::run() {
 			INC_STATS(get_thd_id(), abort_cnt, 1);
 #if DEBUG_SVEN || DEBUG_TMP
 			if (stats._stats[get_thd_id()]->abort_cnt % 1000 == 0)
-				printf("thd%lu: \t\t\tabort  txn %lu\n", get_thd_id(), stats._stats[get_thd_id()]->abort_cnt);
+				NANO_LOG(LogLevels::NOTICE, "thd%lu: \t\t\tabort  txn %lu\n", get_thd_id(), stats._stats[get_thd_id()]->abort_cnt);
+				// printf("thd%lu: \t\t\tabort  txn %lu\n", get_thd_id(), stats._stats[get_thd_id()]->abort_cnt);
 #endif
 #if WORKLOAD == YCSB
             if (unlikely(g_long_txn_ratio > 0)) {
