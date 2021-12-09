@@ -17,12 +17,8 @@ RC
 Row_silo_prio::access(txn_man * txn, TsType type, row_t * local_row) {
 	TID_prio_t v, v2;
 	const uint32_t prio = txn->prio;
-	//uint32_t prio;
 	bool is_owner;
 retry:
-	//re-obtain priority in case of change
-	//prio = txn->prio;
-
 	v = _tid_word_prio;
 	if (v.is_locked()) {
 		PAUSE
@@ -38,13 +34,9 @@ retry:
 	v2 = v;
 	is_owner = v2.acquire_prio(prio);
 	local_row->copy(_row);
-	//if row metadata did not change since the start of this txn, this can commit
-	//otherwise, increment txn priority and retry
 	if (!__sync_bool_compare_and_swap(&_tid_word_prio.raw_bits, v.raw_bits,
-		v2.raw_bits)) {
-		//if (txn->prio<16) ++txn->prio;
+		v2.raw_bits))
 		goto retry;
-	}
 	txn->last_is_owner = is_owner;
 	txn->last_data_ver = v2.get_data_ver();
 	if (is_owner) txn->last_prio_ver = v2.get_prio_ver();
