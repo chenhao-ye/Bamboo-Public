@@ -176,6 +176,10 @@ public:
 		v2.release_prio(prio, prio_ver);
 		if (!__sync_bool_compare_and_swap(&_tid_word_prio.raw_bits, v.raw_bits, v2.raw_bits))
 			goto retry;
+#if DEBUG_SVEN
+		// NANO_LOG(LogLevels::NOTICE, "[row-%p] reader_release_priority", this->_row);
+		// NANO_LOG(LogLevels::NOTICE, "TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", v2.is_locked(), v2.get_prio_ver(), v2.get_prio(), v2.get_ref_cnt(), v2.get_data_ver());
+#endif
 	}
 
 	// in the case of abort, the writer just do the same things as reader plus
@@ -189,23 +193,25 @@ public:
 		v2.unlock();
 		v2.release_prio(prio, prio_ver);
 		if (!__sync_bool_compare_and_swap(&_tid_word_prio.raw_bits, v.raw_bits, v2.raw_bits)) {
-#if DEBUG_SVEN
-			NANO_LOG(LogLevels::NOTICE, "[row-%p] writer_release_abort failed. retry... \n", this->_row);
-			// printf("[row-%p] writer_release_abort failed. retry... \n", this->_row);
-#endif
 			goto retry;
+#if DEBUG_SVEN
+		// NANO_LOG(LogLevels::NOTICE, "[row-%p] writer_release_priority (abort)", this->_row);
+		// NANO_LOG(LogLevels::NOTICE, "TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", v2.is_locked(), v2.get_prio_ver(), v2.get_prio(), v2.get_ref_cnt(), v2.get_data_ver());
+#endif
 		}
 	}
 
 	// in the case of commit, the writer updates the data version and reset
 	// prioirty and ref_cnt
 	void		writer_release_commit(uint64_t data_ver) {
-		// TID_prio_t v, v2(data_ver, _tid_word_prio.get_prio_ver() + 1);
-		// v = _tid_word_prio;
-		// assert (v.is_locked());
-		// assert (__sync_bool_compare_and_swap(&_tid_word_prio.raw_bits, v.raw_bits, v2.raw_bits));
 		TID_prio_t v(data_ver, _tid_word_prio.get_prio_ver() + 1);
+		v.lock();
 		_tid_word_prio = v;
+		unlock();
+#if DEBUG_SVEN
+		// NANO_LOG(LogLevels::NOTICE, "[row-%p] writer_release_priority (commit)", this->_row);
+		// NANO_LOG(LogLevels::NOTICE, "TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", v.is_locked(), v.get_prio_ver(), v.get_prio(), v.get_ref_cnt(), v.get_data_ver());
+#endif
 	}
 };
 
