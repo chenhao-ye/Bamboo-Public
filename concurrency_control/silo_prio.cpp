@@ -5,10 +5,6 @@
 
 #if CC_ALG == SILO_PRIO
 
-#if DEBUG_SVEN
-uint32_t txn_man::debug_counter;
-#endif
-
 RC
 txn_man::validate_silo_prio()
 {
@@ -64,20 +60,26 @@ txn_man::validate_silo_prio()
 			num_locks = 0;
 			for (int i = 0; i < wr_cnt; i++) {
 				row_t * row = accesses[ write_set[i] ]->orig_row;
-				if (row->manager->try_lock(prio) != Row_silo_prio::LOCK_STATUS::LOCK_DONE) {
+				Row_silo_prio::LOCK_STATUS l_stat = row->manager->try_lock(prio);
+				if (l_stat != Row_silo_prio::LOCK_STATUS::LOCK_DONE) {
 #if DEBUG_SVEN
 					TID_prio_t *tid = &(row->manager->_tid_word_prio);
-					NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu] fail to lock %p    %d-th item in write_set", get_thd_id(), get_txn_id(), row, i);
-					NANO_LOG(LogLevels::NOTICE, "TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver());
+					NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu] fail to lock %p because %s\n\
+							TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u", 
+get_thd_id(), get_txn_id(), row, (l_stat == Row_silo_prio::LOCK_STATUS::LOCK_ERR_PRIO) ? "priority" : "locked",
+tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver()
+);
+					// NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu] fail to lock %p    %d-th item in write_set", get_thd_id(), get_txn_id(), row, i);
+					// NANO_LOG(LogLevels::NOTICE, "TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver());
 					// printf("[thd-%lu txn-%lu] fail to lock %p \n", get_thd_id(), get_txn_id(), row);
 #endif
 					break;
 				}
 				row->manager->assert_lock();
 #if DEBUG_SVEN
-				TID_prio_t *tid = &(row->manager->_tid_word_prio);
-				NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu]   locked %p    %d-th item in write_set", get_thd_id(), get_txn_id(), row, i);
-				NANO_LOG(LogLevels::NOTICE, "TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver());
+				// TID_prio_t *tid = &(row->manager->_tid_word_prio);
+				// NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu]   locked %p    %d-th item in write_set", get_thd_id(), get_txn_id(), row, i);
+				// NANO_LOG(LogLevels::NOTICE, "TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver());
 				// printf("[thd-%lu txn-%lu]   locked %p \n[thd-  txn-    ] TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", get_thd_id(), get_txn_id(), row, tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver());
 #endif
 				num_locks ++;
@@ -93,9 +95,9 @@ txn_man::validate_silo_prio()
 				for (int i = 0; i < num_locks; i++) {
 					accesses[ write_set[i] ]->orig_row->manager->unlock();
 #if DEBUG_SVEN
-					TID_prio_t *tid = &(accesses[ write_set[i] ]->orig_row->manager->_tid_word_prio);
-					NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu] unlocked %p because can't lock write-set", get_thd_id(), get_txn_id(), accesses[ write_set[i] ]->orig_row);
-					NANO_LOG(LogLevels::NOTICE, "TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver());
+					// TID_prio_t *tid = &(accesses[ write_set[i] ]->orig_row->manager->_tid_word_prio);
+					// NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu] unlocked %p because can't lock write-set", get_thd_id(), get_txn_id(), accesses[ write_set[i] ]->orig_row);
+					// NANO_LOG(LogLevels::NOTICE, "TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver());
 					// printf("[thd-%lu txn-%lu] unlocked %p because can't lock write-set \n[thd-  txn-    ] TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", get_thd_id(), get_txn_id(), accesses[ write_set[i] ]->orig_row, tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver());
 #endif
 				}
@@ -124,8 +126,7 @@ txn_man::validate_silo_prio()
 			row_t * row = accesses[ write_set[i] ]->orig_row;
 			Row_silo_prio::LOCK_STATUS ls = row->manager->lock(prio);
 #if DEBUG_SVEN
-					NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu] (abnormal) locked %p \n", get_thd_id(), get_txn_id(), row);
-					// printf("[thd-%lu txn-%lu] (abnormal) locked %p \n", get_thd_id(), get_txn_id(), row);
+					// NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu] (abnormal) locked %p \n", get_thd_id(), get_txn_id(), row);
 #endif
 			if (ls == Row_silo_prio::LOCK_STATUS::LOCK_ERR_PRIO) {
 				rc = Abort;
@@ -176,11 +177,10 @@ final:
 			// Sven: access->prio_ver is the prio ver this txn got when it access
 			access->orig_row->manager->writer_release_abort(prio, access->prio_ver);
 #if DEBUG_SVEN
-			TID_prio_t *tid = &(access->orig_row->manager->_tid_word_prio);
-			NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu] unlocked %p because validation failed.    %d-th item in write_set", get_thd_id(), get_txn_id(), access->orig_row, i);
-			NANO_LOG(LogLevels::NOTICE, "TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver()
-			// printf("[thd-%lu txn-%lu] unlocked %p because validation failed. \n[thd-  txn-    ] TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", get_thd_id(), get_txn_id(), access->orig_row, tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver()
-			);
+			// TID_prio_t *tid = &(access->orig_row->manager->_tid_word_prio);
+			// NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu] unlocked %p because validation failed.    %d-th item in write_set", get_thd_id(), get_txn_id(), access->orig_row, i);
+			// NANO_LOG(LogLevels::NOTICE, "TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver()
+			// printf("[thd-%lu txn-%lu] unlocked %p because validation failed. \n[thd-  txn-    ] TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", get_thd_id(), get_txn_id(), access->orig_row, tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver());
 #endif
 			assert(access->is_owner);
 			access->is_owner = false;
@@ -192,11 +192,10 @@ final:
 			access->orig_row->manager->write(access->data);
 			access->orig_row->manager->writer_release_commit(_cur_data_ver);
 #if DEBUG_SVEN
-			TID_prio_t *tid = &(access->orig_row->manager->_tid_word_prio);
-			NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu] unlocked %p because committed.    %d-th item in write_set", get_thd_id(), get_txn_id(), access->orig_row, i);
-			NANO_LOG(LogLevels::NOTICE, "TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver()
-			// printf("[thd-%lu txn-%lu] unlocked %p because committed. \n[thd-  txn-    ] TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", get_thd_id(), get_txn_id(), access->orig_row, tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver()
-			);
+			// TID_prio_t *tid = &(access->orig_row->manager->_tid_word_prio);
+			// NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu] unlocked %p because committed.    %d-th item in write_set", get_thd_id(), get_txn_id(), access->orig_row, i);
+			// NANO_LOG(LogLevels::NOTICE, "TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver()
+			// printf("[thd-%lu txn-%lu] unlocked %p because committed. \n[thd-  txn-    ] TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", get_thd_id(), get_txn_id(), access->orig_row, tid->is_locked(), tid->get_prio_ver(), tid->get_prio(), tid->get_ref_cnt(), tid->get_data_ver());
 #endif
 			assert(access->is_owner);
 			access->is_owner = false;
@@ -204,10 +203,8 @@ final:
 		cleanup(rc);
 	}
 #if DEBUG_SVEN2
-	printf("prio=%u\n", prio);
-	return RC::Abort;
-#else
-	return rc;
+	rc = RC::Abort;
 #endif
+	return rc;
 }
 #endif

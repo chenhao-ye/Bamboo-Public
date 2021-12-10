@@ -15,6 +15,8 @@
 #include "row_mvcc.h"
 #include "mem_alloc.h"
 #include "query.h"
+#include "NanoLogCpp17.h"
+
 void ycsb_txn_man::init(thread_t * h_thd, workload * h_wl, uint64_t thd_id) {
     txn_man::init(h_thd, h_wl, thd_id);
     _wl = (ycsb_wl *) h_wl;
@@ -30,6 +32,10 @@ RC ycsb_txn_man::run_txn(base_query * query) {
     retire_threshold = (uint32_t) floor(m_query->request_cnt * (1 - g_last_retire));
 #else
     row_cnt = 0;
+#endif
+
+#if DEBUG_SVEN
+    NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu] m_query=%p prio=%u start", get_thd_id(), get_txn_id(), m_query, prio);
 #endif
 
     // if long txn and not rerun aborted txn, generate queries
@@ -108,6 +114,13 @@ RC ycsb_txn_man::run_txn(base_query * query) {
     rc = RCOK;
 final:
     rc = finish(rc);
+#if DEBUG_SVEN
+    // if (rc == Commit)
+        NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu] m_query=%p prio=%u end rc=%u", get_thd_id(), get_txn_id(), m_query, prio, rc);
+    // else
+    //     NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu] m_query=%p prio=%u end: abort", get_thd_id(), get_txn_id(), m_query, prio);
+
+#endif
     return rc;
 }
 

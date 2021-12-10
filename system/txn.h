@@ -163,9 +163,6 @@ class txn_man
 	bool				last_is_owner;
     bool 			    _pre_abort;
     bool 			    _validation_no_wait;
-#if DEBUG_SVEN
-    static uint32_t     debug_counter;
-#endif
     // [IC3]
 #elif CC_ALG == IC3
     TPCCTxnType         curr_type;
