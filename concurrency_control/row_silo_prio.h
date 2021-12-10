@@ -189,7 +189,9 @@ public:
 	// prioirty and ref_cnt
 	void		writer_release_commit(uint64_t data_ver) {
 		TID_prio_t v(data_ver, _tid_word_prio.get_prio_ver() + 1);
+		v.lock();
 		_tid_word_prio = v;
+		unlock();
 	}
 };
 
