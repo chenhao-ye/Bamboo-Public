@@ -21,7 +21,7 @@ union TID_prio_t {
 		uint32_t prio_ver: 3;
 		// currently support 16 levels of priority
 		// but we could just use more bits to support more
-		uint32_t prio : PRIO_BIT_COUNT;
+		uint32_t prio : 4;
 		// it's possible to have reference count as a separated value
 		// but for now, let's just embed it for simplicity
 		uint32_t ref_cnt : 12;
@@ -185,7 +185,7 @@ public:
 			goto retry;
 	}
 
-	// in the case of commit, the writer updates the data version and reset
+	// in the case of abort, the writer update the data version and reset
 	// prioirty and ref_cnt
 	void		writer_release_commit(uint64_t data_ver) {
 		TID_prio_t v(data_ver, _tid_word_prio.get_prio_ver() + 1);
