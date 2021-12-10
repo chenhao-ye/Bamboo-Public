@@ -28,14 +28,15 @@ retry:
 	if (v.is_locked()) {
 #if DEBUG_SVEN || DEBUG_TMP
 		if (!(++retry_count % 100)) {
-			NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu prio-%u] row %p TID is locked. retry count-%5u.", txn->get_thd_id(), txn->get_txn_id(), txn->prio, this->_row, retry_count);
-			NANO_LOG(LogLevels::NOTICE, "TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", txn->get_thd_id(), txn->get_txn_id(), v.is_locked(), v.get_prio_ver(), v.get_prio(), v.get_ref_cnt(), v.get_data_ver());
+			NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu] row %p TID is locked. retry count-%5u.", txn->get_thd_id(), txn->get_txn_id(), this->_row, retry_count);
+			NANO_LOG(LogLevels::NOTICE, "TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", v.is_locked(), v.get_prio_ver(), v.get_prio(), v.get_ref_cnt(), v.get_data_ver());
 			// printf("[thd-%lu txn-%lu] row %p TID is locked. retry count-%5u. \n[thd-  txn-    ] TID: latch-%1u prio_ver-%1u, prio-%2u, ref_cnt-%1u, data_ver-%u\n", txn->get_thd_id(), txn->get_txn_id(), this->_row, retry_count, v.is_locked(), v.get_prio_ver(), v.get_prio(), v.get_ref_cnt(), v.get_data_ver());
 		}
-		if ((retry_count) >= 40000) {
-			NANO_LOG(LogLevels::NOTICE, "reach debug point. exit");
-			exit(1);
-		}
+		// if ((retry_count) >= 40000) {
+		// 	NANO_LOG(LogLevels::NOTICE, "[thd-%lu txn-%lu] row %p TID is locked. retry count-%5u.", txn->get_thd_id(), txn->get_txn_id(), this->_row, retry_count);
+		// 	printf("reach debug point. exit\n");
+		// 	exit(1);
+		// }
 #endif
 		PAUSE
 		goto retry;
