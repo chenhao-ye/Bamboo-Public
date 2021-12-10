@@ -203,6 +203,11 @@ final:
 		}
 		cleanup(rc);
 	}
+#if DEBUG_SVEN2
+	printf("prio=%u\n", prio);
+	return RC::Abort;
+#else
 	return rc;
+#endif
 }
 #endif

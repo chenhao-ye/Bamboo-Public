@@ -16,8 +16,7 @@ public:
     bool rerun;
 
 #if CC_ALG == SILO_PRIO
-	drand48_data _buffer;
-	uint32_t _prio;
+	uint32_t _prio = 0;
 #endif
 };
 

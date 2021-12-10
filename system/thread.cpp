@@ -173,6 +173,10 @@ RC thread_t::run() {
 		ts_t endtime = get_sys_clock();
 
 		if (rc == Abort) {
+#if CC_ALG == SILO_PRIO
+			if (m_query->_prio != 15)
+				++(m_query->_prio);
+#endif
 			uint64_t penalty = 0;
 			if (ABORT_PENALTY != 0)  {
 				double r;

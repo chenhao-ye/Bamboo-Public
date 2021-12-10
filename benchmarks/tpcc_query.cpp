@@ -7,20 +7,6 @@
 #include "table.h"
 
 void tpcc_query::init(uint64_t thd_id, workload * h_wl) {
-#if CC_ALG == SILO_PRIO
-	{
-		double x;
-		drand48_r(&_buffer, &x);
-		if (x > HAS_PRIO_RATIO) {
-			drand48_r(&_buffer, &x);
-			x *= ((1 << PRIO_BIT_COUNT) - 1); // x in [0..15) (double)
-			_prio = 1 + (uint32_t)x; // _prio in [1..16) (uint32)
-		}
-		else {
-			_prio = 0;
-		}
-	}
-#endif
   double x = (double)(rand() % 100) / 100.0;
   part_to_access = (uint64_t *)
       mem_allocator.alloc(sizeof(uint64_t) * g_part_cnt, thd_id);
