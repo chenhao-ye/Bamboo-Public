@@ -88,12 +88,24 @@ void Stats::abort(uint64_t thd_id) {
 }
 
 void Stats::print() {
+  uint64_t global_prios[16]={0};
+  uint64_t total = 0;
+
   ALL_METRICS(INIT_TOTAL_VAR, INIT_TOTAL_VAR, INIT_TOTAL_VAR)
   for (uint64_t tid = 0; tid < g_thread_cnt; tid ++) {
     ALL_METRICS(SUM_UP_STATS, SUM_UP_STATS, MAX_STATS)
     printf("[tid=%lu] txn_cnt=%lu,abort_cnt=%lu, user_abort_cnt=%lu\n",
         tid, _stats[tid]->txn_cnt, _stats[tid]->abort_cnt,
         _stats[tid]->user_abort_cnt);
+
+     #if CC_ALG == SILO_PRIO || CC_ALG == SILO
+     for(int i=0; i<16;i++) {
+           std::cout << "priority" << i << "= " << _stats[tid]->prios[i] << ", ";
+           global_prios[i]+=_stats[tid]->prios[i];
+           total+=_stats[tid]->prios[i];
+     }
+     std::cout << "\n";
+     #endif
   }
   total_latency = total_latency / total_txn_cnt;
   total_commit_latency = total_commit_latency / total_txn_cnt;
@@ -108,6 +120,10 @@ void Stats::print() {
       outf << "cycle_detect= " << cycle_detect << ", ";
       outf << "dl_detect_time= " << dl_detect_time / BILLION << ", ";
       outf << "dl_wait_time= " << dl_wait_time / BILLION << "\n";
+#if CC_ALG == SILO_PRIO || CC_ALG == SILO
+       for(int i=0; i<16 ;i++) outf << "priority " << i << "= " << (double)global_prios[i]/total << ", ";
+       outf << "\n";
+#endif
       outf.close();
     }
   }
@@ -118,6 +134,14 @@ void Stats::print() {
   std::cout << "cycle_detect= " << cycle_detect << ", ";
   std::cout << "dl_detect_time= " << dl_detect_time / BILLION << ", ";
   std::cout << "dl_wait_time= " << dl_wait_time / BILLION << "\n";
+
+  #if CC_ALG == SILO_PRIO || CC_ALG == SILO
+  for(int i=0; i<16 ;i++) std::cout << "priority perc" << i << "= " << (double)global_prios[i]/total << ", ";
+  std::cout << "\n";
+  for(int i=0; i<16 ;i++) std::cout << "priority" << i << "= " << global_prios[i] << ", ";
+  std::cout << "\n";
+  #endif
+
   if (g_prt_lat_distr)
     print_lat_distr();
 }

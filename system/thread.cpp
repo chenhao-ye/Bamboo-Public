@@ -122,7 +122,7 @@ RC thread_t::run() {
         // used for after warmup, since aborted txn keeps original ts
         if (unlikely(m_txn->get_ts() == 0))
             m_txn->set_ts(get_next_ts());
-#elif CC_ALG == SILO_PRIO
+#elif CC_ALG == SILO_PRIO || CC_ALG == SILO
 		m_txn->prio = m_query->_prio;
 #endif
 		m_txn->set_txn_id(get_thd_id() + thd_txn_id * g_thread_cnt);
@@ -172,7 +172,7 @@ RC thread_t::run() {
 		ts_t endtime = get_sys_clock();
 
 		if (rc == Abort) {
-#if CC_ALG == SILO_PRIO
+#if CC_ALG == SILO_PRIO || CC_ALG == SILO
 			if (m_query->_prio != 15)
 				++(m_query->_prio);
 #endif
@@ -205,6 +205,10 @@ RC thread_t::run() {
             INC_STATS(get_thd_id(), commit_latency, timespan);
             INC_STATS(get_thd_id(), latency, endtime - txn_starttime);
             INC_STATS(get_thd_id(), txn_cnt, 1);
+	    #if CC_ALG == SILO_PRIO || CC_ALG == SILO
+		INC_PRIO_STATS(get_thd_id(), m_txn->prio, 1);
+	    #endif
+
 #if WORKLOAD == YCSB
             if (unlikely(g_long_txn_ratio > 0)) {
                 if ( ((ycsb_query *) m_query)->request_cnt > REQ_PER_QUERY)

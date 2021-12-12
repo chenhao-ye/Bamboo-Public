@@ -40,7 +40,7 @@ int main(int argc, char* argv[])
 #elif CC_ALG == SILO
 	printf("SILO\n");
 #elif CC_ALG == SILO_PRIO
-	printf("SILO_PRIO\tTHREAD_CNT=%u\n", g_thread_cnt);
+	printf("SILO_PRIO\n");
 #elif CC_ALG == IC3
 	printf("IC3\n");
 #endif

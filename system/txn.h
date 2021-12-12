@@ -150,6 +150,7 @@ class txn_man
     ts_t 			    _cur_tid;
     bool 			    _pre_abort;
     bool 			    _validation_no_wait;
+	uint32_t			prio;
     // [SILO_PRIO]
 #elif CC_ALG == SILO_PRIO
 	// the priority of the current transaction
