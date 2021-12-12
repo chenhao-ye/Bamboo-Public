@@ -68,7 +68,7 @@ public:
 	// acquire/release_prio will maintain ref_cnt based on priority
 	bool acquire_prio(uint32_t prio) {
 		if (tid_prio.prio == prio) {
-			inc_ref_cnt();
+			if (prio > 0) inc_ref_cnt();
 			return true;
 		}
 		if (tid_prio.prio < prio) {
@@ -80,9 +80,9 @@ public:
 	}
 
 	void release_prio(uint32_t prio, uint32_t prio_ver) {
-		if (tid_prio.prio != prio || tid_prio.prio_ver != prio_ver) return;
+		if (prio == 0 || tid_prio.prio != prio || tid_prio.prio_ver != prio_ver) return;
 		dec_ref_cnt();
-		if (tid_prio.ref_cnt == 0) {
+		if (prio > 0 && tid_prio.ref_cnt == 0) {
 			set_prio(0);
 			inc_prio_ver();
 		}
