@@ -43,6 +43,7 @@ class Stats_thd {
   uint64_t * all_debug1;
   uint64_t * all_debug2;
   char _pad[CL_SIZE];
+  uint64_t all_latency[MAX_TXN_PER_PART];
   #if CC_ALG == SILO_PRIO || CC_ALG == SILO
   uint64_t prios[16];
   #endif

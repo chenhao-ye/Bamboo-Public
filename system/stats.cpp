@@ -4,6 +4,10 @@
 #include "helper.h"
 #include "stats.h"
 #include "mem_alloc.h"
+#include <algorithm>
+#include <queue>
+#include <functional>
+#include <vector>
 
 #define BILLION 1000000000UL
 
@@ -13,6 +17,7 @@ void Stats_thd::init(uint64_t thd_id) {
       _mm_malloc(sizeof(uint64_t) * MAX_TXN_PER_PART, 64);
   all_debug2 = (uint64_t *)
       _mm_malloc(sizeof(uint64_t) * MAX_TXN_PER_PART, 64);
+  memset(&all_latency, 0, sizeof(uint64_t) * MAX_TXN_PER_PART);
 }
 
 void Stats_thd::clear() {
@@ -106,10 +111,47 @@ void Stats::print() {
      }
      std::cout << "\n";
      #endif
+
+     // sort latency
+     std::sort(_stats[tid]->all_latency, _stats[tid]->all_latency + _stats[tid]->txn_cnt, std::greater<uint64_t>());
   }
   total_latency = total_latency / total_txn_cnt;
   total_commit_latency = total_commit_latency / total_txn_cnt;
   total_time_man = total_time_man - total_time_wait;
+  
+  // find p99 95 90 50  latency
+  uint64_t tail_idx[4] = {total_txn_cnt * 1, total_txn_cnt * 5, total_txn_cnt * 10, total_txn_cnt * 50};
+  for (int i = 0; i < 4; ++i) tail_idx[i] /= 100;
+  uint64_t tail_latency[4];
+
+  struct lat_thd
+  {
+    uint64_t latency, thread;
+  };
+  auto cmp = [](lat_thd l, lat_thd r) { return l.latency < r.latency; };
+  priority_queue<lat_thd, std::vector<lat_thd>, decltype(cmp)> pq(cmp);
+  for (uint64_t tid = 0; tid < g_thread_cnt; ++tid) pq.push({_stats[tid]->all_latency[0], tid});
+  std::vector<uint64_t> _latency_idx(g_thread_cnt, 1);
+  
+  uint64_t idx = 0, ii = 0;
+  while (ii < 4) {
+    if (pq.empty()) {
+      std::cout << "Error finding tail latency! \n";
+      break;
+    }
+    lat_thd l = pq.top();
+    pq.pop();
+    if (idx == tail_idx[ii]) {
+      tail_latency[ii] = l.latency;
+      ++ii;
+    }
+    if (_latency_idx[l.thread] < _stats[l.thread]->txn_cnt) {
+      pq.push({_stats[l.thread]->all_latency[_latency_idx[l.thread]], l.thread});
+      ++_latency_idx[l.thread];
+    }
+    ++idx;
+  }
+
   if (output_file != NULL) {
     ofstream outf(output_file);
     if (outf.is_open()) {
@@ -124,6 +166,8 @@ void Stats::print() {
        for(int i=0; i<16 ;i++) outf << "priority " << i << "= " << (double)global_prios[i]/total << ", ";
        outf << "\n";
 #endif
+      outf << "[tail_latency] p99= " << tail_latency[0] << ", p95= " << tail_latency[1] << \
+              ", p90= " << tail_latency[2] << ", p50= " << tail_latency[3] << "\n";
       outf.close();
     }
   }
@@ -141,6 +185,9 @@ void Stats::print() {
   for(int i=0; i<16 ;i++) std::cout << "priority" << i << "= " << global_prios[i] << ", ";
   std::cout << "\n";
   #endif
+
+  std::cout << "[tail_latency] p99= " << tail_latency[0] << ", p95= " << tail_latency[1] << \
+              ", p90= " << tail_latency[2] << ", p50= " << tail_latency[3] << "\n";
 
   if (g_prt_lat_distr)
     print_lat_distr();
