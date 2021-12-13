@@ -205,6 +205,7 @@ RC thread_t::run() {
             INC_STATS(get_thd_id(), commit_latency, timespan);
             INC_STATS(get_thd_id(), latency, endtime - txn_starttime);
             INC_STATS(get_thd_id(), txn_cnt, 1);
+			stats._stats[get_thd_id()]->all_latency[txn_cnt] = endtime - txn_starttime;
 	    #if CC_ALG == SILO_PRIO || CC_ALG == SILO
 		INC_PRIO_STATS(get_thd_id(), m_txn->prio, 1);
 	    #endif
