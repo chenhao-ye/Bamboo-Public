@@ -1,13 +1,13 @@
 #!/bin/bash
-LOADS=("TPCC" "YCSB")
+LOADS=("YCSB")
 ALGS=("SILO" "SILO_PRIO" "WAIT_DIE" "WOUND_WAIT")
-T_CNT=(1 2 3 4 5 8 10 16 20)
+T_CNT=(1 2 4 8 16 32 64)
 # LOADS=("TPCC")
 # ALGS=("SILO")
 # T_CNT=(8)
+mkdir exp_result
 for a in "${ALGS[@]}"
 do
-	
 	for l in "${LOADS[@]}"
 	do
 		#echo "workload:$l"
@@ -34,6 +34,5 @@ do
 
 			mv tmp.txt exp_result/$a-$l-$i.log
 		done
-
 	done
 done
