@@ -63,6 +63,11 @@
 #define INDEX_STRUCT				IDX_HASH
 #define BTREE_ORDER 				16
 
+// [SILO_PRIO]
+#define PRIO_BIT_COUNT  4 // if changed, must configure bit count in TID_prio_t in row_silo_prio.h
+#define HAS_PRIO_RATIO 0.6 // ratio of transactions that have non-zero priority values
+#define HIGH_PRIO_RATIO 0.5
+
 // [DL_DETECT]
 #define DL_LOOP_DETECT				1000 	// 100 us
 #define DL_LOOP_TRIAL				100	// 1 us

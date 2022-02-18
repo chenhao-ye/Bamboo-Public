@@ -15,7 +15,7 @@ public:
 	uint64_t * part_to_access;
     bool rerun;
 
-#if CC_ALG == SILO_PRIO || CC_ALG == SILO
+#if CC_ALG == SILO_PRIO
 	uint32_t _prio = 0;
 #endif
 };

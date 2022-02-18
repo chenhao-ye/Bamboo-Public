@@ -100,6 +100,10 @@ Query_thd::init(workload * h_wl, int thread_id) {
 		new(&queries[qid]) tpcc_query();
 		queries[qid].init(thread_id, h_wl);
 #endif
+#if CC_ALG == SILO_PRIO
+		if ((rand() % 100) / 100.0 < HIGH_PRIO_RATIO)
+			queries[qid]._prio = 1;
+#endif
 	}
 }
 

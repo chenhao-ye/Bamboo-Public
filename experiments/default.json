@@ -18,6 +18,7 @@
 	"BB_PRECOMMIT": "false",
 	"BB_AUTORETIRE": "false",
 	"BB_ALWAYS_RETIRE_READ": "true",
+	"HIGH_PRIO_RATIO": 0.5,
 
 	"WORKLOAD": "YCSB",
 	"SYNTHETIC_YCSB": "false",

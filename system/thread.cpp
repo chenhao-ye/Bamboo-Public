@@ -78,7 +78,7 @@ RC thread_t::run() {
 							} else if (_abort_buffer_empty_slots == 0
 					          		&& _abort_buffer[i].ready_time < min_ready_time)
 								min_ready_time = _abort_buffer[i].ready_time;
-							}
+						}
 				    }
 					if (m_query == NULL && _abort_buffer_empty_slots == 0) {
 						M_ASSERT(min_ready_time >= curr_time, "min_ready_time=%ld, curr_time=%ld\n", min_ready_time, curr_time);
@@ -172,10 +172,10 @@ RC thread_t::run() {
 		ts_t endtime = get_sys_clock();
 
 		if (rc == Abort) {
-#if CC_ALG == SILO_PRIO || CC_ALG == SILO
-			if (m_query->_prio != 15)
-				++(m_query->_prio);
-#endif
+// #if CC_ALG == SILO_PRIO || CC_ALG == SILO
+// 			if (m_query->_prio != 15)
+// 				++(m_query->_prio);
+// #endif
 			uint64_t penalty = 0;
 			if (ABORT_PENALTY != 0)  {
 				double r;
