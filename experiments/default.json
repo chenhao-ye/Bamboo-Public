@@ -19,6 +19,7 @@
 	"BB_AUTORETIRE": "false",
 	"BB_ALWAYS_RETIRE_READ": "true",
 	"HIGH_PRIO_RATIO": 0.5,
+	"PRT_LAT_DISTR": "true",
 
 	"WORKLOAD": "YCSB",
 	"SYNTHETIC_YCSB": "false",
