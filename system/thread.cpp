@@ -206,7 +206,7 @@ RC thread_t::run() {
             INC_STATS(get_thd_id(), latency, endtime - txn_starttime);
             INC_STATS(get_thd_id(), txn_cnt, 1);
 	    #if CC_ALG == SILO_PRIO || CC_ALG == SILO
-		INC_PRIO_STATS(get_thd_id(), m_txn->prio, 1);
+			ADD_PRIO_LATENCY(get_thd_id(), m_txn->prio, endtime - txn_starttime);
 	    #endif
 
 #if WORKLOAD == YCSB

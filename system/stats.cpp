@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <algorithm>
 #include "global.h"
 #include "helper.h"
 #include "stats.h"
@@ -73,6 +74,18 @@ void Stats::add_debug(uint64_t thd_id, uint64_t value, uint32_t select) {
   }
 }
 
+#if CC_ALG == SILO_PRIO
+void Stats::add_latency(uint64_t thd_id, uint64_t latency, uint32_t prio) {
+  if (warmup_finish) {
+    uint64_t tnum = _stats[thd_id]->prios[prio];
+    if (prio == 0)
+      _stats[thd_id]->all_debug1[tnum] = latency;
+    else if (prio == 1)
+      _stats[thd_id]->all_debug2[tnum] = latency;
+  }
+}
+#endif
+
 void Stats::commit(uint64_t thd_id) {
   if (STATS_ENABLE) {
     _stats[thd_id]->time_man += tmp_stats[thd_id]->time_man;
@@ -88,8 +101,7 @@ void Stats::abort(uint64_t thd_id) {
 }
 
 void Stats::print() {
-  uint64_t global_prios[16]={0};
-  uint64_t total = 0;
+  uint64_t txn_cnt_of_prio[16]={0};
 
   ALL_METRICS(INIT_TOTAL_VAR, INIT_TOTAL_VAR, INIT_TOTAL_VAR)
   for (uint64_t tid = 0; tid < g_thread_cnt; tid ++) {
@@ -98,14 +110,13 @@ void Stats::print() {
         tid, _stats[tid]->txn_cnt, _stats[tid]->abort_cnt,
         _stats[tid]->user_abort_cnt);
 
-     #if CC_ALG == SILO_PRIO || CC_ALG == SILO
-     for(int i=0; i<16;i++) {
-           std::cout << "priority" << i << "= " << _stats[tid]->prios[i] << ", ";
-           global_prios[i]+=_stats[tid]->prios[i];
-           total+=_stats[tid]->prios[i];
-     }
-     std::cout << "\n";
-     #endif
+#if CC_ALG == SILO_PRIO || CC_ALG == SILO
+  for(int i = 0; i < 2; i++) {
+        std::cout << "priority" << i << "= " << _stats[tid]->prios[i] << ", ";
+        txn_cnt_of_prio[i]+=_stats[tid]->prios[i];
+  }
+  std::cout << "\n";
+#endif
   }
   total_latency = total_latency / total_txn_cnt;
   total_commit_latency = total_commit_latency / total_txn_cnt;
@@ -121,7 +132,7 @@ void Stats::print() {
       outf << "dl_detect_time= " << dl_detect_time / BILLION << ", ";
       outf << "dl_wait_time= " << dl_wait_time / BILLION << "\n";
 #if CC_ALG == SILO_PRIO || CC_ALG == SILO
-       for(int i=0; i<16 ;i++) outf << "priority " << i << "= " << (double)global_prios[i]/total << ", ";
+       for(int i=0; i<16 ;i++) outf << "priority " << i << "= " << (double)txn_cnt_of_prio[i] / total_txn_cnt << ", ";
        outf << "\n";
 #endif
       outf.close();
@@ -135,15 +146,61 @@ void Stats::print() {
   std::cout << "dl_detect_time= " << dl_detect_time / BILLION << ", ";
   std::cout << "dl_wait_time= " << dl_wait_time / BILLION << "\n";
 
-  #if CC_ALG == SILO_PRIO || CC_ALG == SILO
-  for(int i=0; i<16 ;i++) std::cout << "priority perc" << i << "= " << (double)global_prios[i]/total << ", ";
-  std::cout << "\n";
-  for(int i=0; i<16 ;i++) std::cout << "priority" << i << "= " << global_prios[i] << ", ";
-  std::cout << "\n";
-  #endif
+  if (g_prt_lat_distr) {
+#if CC_ALG == SILO_PRIO || CC_ALG == SILO 
+    uint64_t p99, p999;
+    for (uint32_t tid = 0; tid < g_thread_cnt; ++tid) {
+      p99  = _stats[tid]->prios[0] *  99 /  100 - 1;
+      p999 = _stats[tid]->prios[0] * 999 / 1000 - 1;
+      std::sort(_stats[tid]->all_debug1, _stats[tid]->all_debug1 + _stats[tid]->prios[0]);
+      std::cout << "tid=" << tid << ", prio=0, p99=" << _stats[tid]->all_debug1[p99]
+                << ", p999=" << _stats[tid]->all_debug1[p999] << std::endl;
+      p99  = _stats[tid]->prios[1] *  99 /  100 - 1;
+      p999 = _stats[tid]->prios[1] * 999 / 1000 - 1;
+      std::sort(_stats[tid]->all_debug2, _stats[tid]->all_debug2 + _stats[tid]->prios[1]);
+      std::cout << "tid=" << tid << ", prio=1, p99=" << _stats[tid]->all_debug2[p99]
+                << ", p999=" << _stats[tid]->all_debug2[p999] << std::endl;
+    }
+    // total latency
+    uint64_t *all_latency = (uint64_t *)malloc(sizeof(uint64_t) * std::max(txn_cnt_of_prio[0], txn_cnt_of_prio[1]));
+    if (all_latency) {
+      memset(all_latency, 0, sizeof(uint64_t) * std::max(txn_cnt_of_prio[0], txn_cnt_of_prio[1]));
+      uint64_t pos = 0;
+      for (uint32_t tid = 0; tid < g_thread_cnt; ++tid) {
+        memcpy(all_latency + pos, _stats[tid]->all_debug1, sizeof(uint64_t) * _stats[tid]->prios[0]);
+        pos += _stats[tid]->prios[0];
+      }
+      std::sort(all_latency, all_latency + pos);
+      p99  = pos *  99 /  100 - 1;
+      p999 = pos * 999 / 1000 - 1;
+      std::cout << "total" << ", prio=0, p99=" << all_latency[p99]
+                << ", p999=" << all_latency[p999] << std::endl;
+      printf("p99_pos=%lu, p999_pos=%lu, \n", p99, p999);
 
-  if (g_prt_lat_distr)
+      memset(all_latency, 0, sizeof(uint64_t) * std::max(txn_cnt_of_prio[0], txn_cnt_of_prio[1]));
+      pos = 0;
+      for (uint32_t tid = 0; tid < g_thread_cnt; ++tid) {
+        memcpy(all_latency + pos, _stats[tid]->all_debug2, sizeof(uint64_t) * _stats[tid]->prios[1]);
+        pos += _stats[tid]->prios[1];
+      }
+      std::sort(all_latency, all_latency + pos);
+      p99  = pos *  99 /  100 - 1;
+      p999 = pos * 999 / 1000 - 1;
+      std::cout << "total" << ", prio=1, p99=" << all_latency[p99]
+                << ", p999=" << all_latency[p999] << std::endl;
+      printf("p99_pos=%lu, p999_pos=%lu, \n", p99, p999);
+
+      free(all_latency);
+    }
+    
+    // for(int i=0; i<16 ;i++) std::cout << "priority perc" << i << "= " << (double)global_prios[i]/total << ", ";
+    // std::cout << "\n";
+    // for(int i=0; i<16 ;i++) std::cout << "priority" << i << "= " << global_prios[i] << ", ";
+    // std::cout << "\n";
+#else
     print_lat_distr();
+#endif
+  }
 }
 
 void Stats::print_lat_distr() {
