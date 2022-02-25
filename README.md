@@ -62,10 +62,14 @@ These configuration are newly added to support priority-related experiments.
         counter for transactions with non-zero priority at commit time.
         Default is false. Be aware that this option does not affect
         abort_txn_cnt, which counts the abort number for all transactions.
+    SPLIT_LATENCY_PRIO                 : whether separating latencies of zero
+        priority transactions and non-zero priority transactions.
     DUMP_LATENCY                       : whether dump all latency into a file.
         Default is true. Useful for plotting.
     DUMP_LATENCY_FILENAME              : the name of latency file to dump.
-        Default is "latency_dump.csv".
+        Default is "latency_dump.csv". If SPLIT_LATENCY_PRIO is true, there
+        will be two files with suffix "_zero" and "_nonzero", 
+        containing zero-prio and nonzero-prio txns' latency respectively.
 ```
 
 The options above could be used as some combos.

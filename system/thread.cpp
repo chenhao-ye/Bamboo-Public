@@ -224,7 +224,11 @@ RC thread_t::run() {
 #endif
 			INC_STATS_CNT(get_thd_id(), abort_txn_cnt, \
 							std::min<int>(m_query->num_abort, STAT_MAX_NUM_ABORT), 1);
+#if CC_ALG ==SILO_PRIO && SPLIT_LATENCY_PRIO
+			stats._stats[get_thd_id()]->append_latency(endtime - txn_starttime, m_txn->prio == 0);
+#else
 			stats._stats[get_thd_id()]->append_latency(endtime - txn_starttime);
+#endif
 			stats.commit(get_thd_id());
 			txn_cnt ++;
 		} else if (rc == Abort) {

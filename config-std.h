@@ -152,6 +152,8 @@ static_assert(SILO_PRIO_NUM_BITS_PRIO_VER + SILO_PRIO_NUM_BITS_PRIO \
 #define HIGH_PRIO_RATIO 0
 //   split num_abort counter based on priority (zero and nonzero)
 #define SPLIT_ABORT_COUNT_PRIO false
+//   split latency based on priority (zero and nonzero)
+#define SPLIT_LATENCY_PRIO true
 //   we collect the query distribution in terms of num_abort; for
 //   abort_cnt < MAX_ABORT_CNT, we collect the exact number; for txn with more
 //   abort, we simply keep a counter for all of them

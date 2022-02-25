@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <string>
 #include "global.h"
 #include "helper.h"
 #include "stats.h"
@@ -30,6 +31,9 @@ void Stats_thd::clear() {
   INIT_CNT(uint64_t, abort_txn_cnt, STAT_MAX_NUM_ABORT + 1);
   memset(latency_record, 0, sizeof(uint64_t) * MAX_TXN_PER_PART);
   latency_record_len = 0;
+#if CC_ALG == SILO_PRIO && SPLIT_LATENCY_PRIO
+  latency_record_len_back = MAX_TXN_PER_PART - 1;
+#endif
 }
 
 void Stats_tmp::init() {
@@ -189,7 +193,9 @@ void Stats::print() {
 
   // if smaller than 1000, we will have problems for p999
   assert (total_latency_record.size() > 1000);
-
+#if CC_ALG == SILO_PRIO && SPLIT_LATENCY_PRIO
+  std::cout << "[Latency of prio=0 transactions]\n";
+#endif
   std::cout << "p50=" << total_latency_record[total_latency_record.size() * 50 / 100] / 1000.0 << "us\n";
   std::cout << "p90=" << total_latency_record[total_latency_record.size() * 90 / 100] / 1000.0 << "us\n";
   std::cout << "p99=" << total_latency_record[total_latency_record.size() * 99 / 100] / 1000.0 << "us\n";
@@ -200,9 +206,37 @@ void Stats::print() {
 
   // dump the latency distribution in case we want to have a plot
   if (DUMP_LATENCY) {
-    std::ofstream of(DUMP_LATENCY_FILENAME);
+    std::string filename(DUMP_LATENCY_FILENAME);
+    filename.append((CC_ALG == SILO_PRIO && SPLIT_LATENCY_PRIO) ? "_zero" : "");
+    std::ofstream of(filename);
     for (uint64_t lat: total_latency_record) of << lat << '\n';
   }
+
+#if CC_ALG == SILO_PRIO && SPLIT_LATENCY_PRIO
+  total_latency_record.clear();
+  for (uint32_t i = 0; i < g_thread_cnt; ++i)
+    for (uint64_t j = _stats[i]->latency_record_len_back + 1; j < MAX_TXN_PER_PART ; ++j)
+      total_latency_record.emplace_back(_stats[i]->latency_record[j]);
+  std::sort(total_latency_record.begin(), total_latency_record.end());
+
+  // if smaller than 1000, we will have problems for p999
+  assert (total_latency_record.size() > 1000);
+  std::cout << "[Latency of nonzero prio transactions]\n";
+  std::cout << "p50=" << total_latency_record[total_latency_record.size() * 50 / 100] / 1000.0 << "us\n";
+  std::cout << "p90=" << total_latency_record[total_latency_record.size() * 90 / 100] / 1000.0 << "us\n";
+  std::cout << "p99=" << total_latency_record[total_latency_record.size() * 99 / 100] / 1000.0 << "us\n";
+  std::cout << "p999=" << total_latency_record[total_latency_record.size() * 999 / 1000] / 1000.0 << "us\n";
+
+  if (total_latency_record.size() > 10000)
+    std::cout << "p9999=" << total_latency_record[total_latency_record.size() * 9999 / 10000] / 1000.0 << "us\n";
+
+  // dump the latency distribution in case we want to have a plot
+  if (DUMP_LATENCY) {
+    std::string filename(std::string(DUMP_LATENCY_FILENAME) + std::string("_one"));
+    std::ofstream of(filename);
+    for (uint64_t lat: total_latency_record) of << lat << '\n';
+  }
+#endif
 
   // it doesn't make sense to have a zero-latency txn
   assert(total_latency_record[0] > 0);

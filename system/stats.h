@@ -59,17 +59,34 @@ class Stats_thd {
  public:
   void init(uint64_t thd_id);
   void clear();
+#if CC_ALG == SILO_PRIO && SPLIT_LATENCY_PRIO
+  void append_latency(uint64_t latency, bool zero_prio = true) {
+    assert(latency_record_len <= latency_record_len_back);
+    if (zero_prio) {
+      latency_record[latency_record_len] = latency;
+      latency_record_len++;
+    }
+    else {
+      latency_record[latency_record_len_back] = latency;
+      latency_record_len_back--;
+    }
+  }
+#else 
   void append_latency(uint64_t latency) {
     latency_record[latency_record_len] = latency;
     latency_record_len++;
     assert(latency_record_len <= MAX_TXN_PER_PART);
   }
+#endif
 
   char _pad2[CL_SIZE];
   ALL_METRICS(DECLARE_VAR, DECLARE_VAR, DECLARE_VAR)
   uint64_t * latency_record;
   uint64_t latency_record_len;
-
+#if CC_ALG == SILO_PRIO && SPLIT_LATENCY_PRIO
+  // latency_record_len_back is used when we have binary prio. non-zero prio latency stores from back.
+  uint64_t latency_record_len_back;
+#endif
   uint64_t * all_debug1;
   uint64_t * all_debug2;
 
