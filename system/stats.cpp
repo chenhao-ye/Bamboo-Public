@@ -166,11 +166,13 @@ void Stats::print() {
       std::sort(_stats[tid]->all_debug1, _stats[tid]->all_debug1 + _stats[tid]->prios[0]);
       std::cout << "tid=" << tid << ", prio=0, p99=" << _stats[tid]->all_debug1[p99]
                 << ", p999=" << _stats[tid]->all_debug1[p999] << std::endl;
+#if CC_ALG == SILO_PRIO
       p99  = _stats[tid]->prios[1] *  99 /  100 - 1;
       p999 = _stats[tid]->prios[1] * 999 / 1000 - 1;
       std::sort(_stats[tid]->all_debug2, _stats[tid]->all_debug2 + _stats[tid]->prios[1]);
       std::cout << "tid=" << tid << ", prio=1, p99=" << _stats[tid]->all_debug2[p99]
                 << ", p999=" << _stats[tid]->all_debug2[p999] << std::endl;
+#endif
     }
     // total latency
     uint64_t *all_latency = (uint64_t *)malloc(sizeof(uint64_t) * std::max(txn_cnt_of_prio[0], txn_cnt_of_prio[1]));
@@ -186,8 +188,8 @@ void Stats::print() {
       p999 = pos * 999 / 1000 - 1;
       std::cout << "total" << ", prio=0, p99=" << all_latency[p99]
                 << ", p999=" << all_latency[p999] << std::endl;
-      printf("p99_pos=%lu, p999_pos=%lu, \n", p99, p999);
 
+#if CC_ALG == SILO_PRIO
       memset(all_latency, 0, sizeof(uint64_t) * std::max(txn_cnt_of_prio[0], txn_cnt_of_prio[1]));
       pos = 0;
       for (uint32_t tid = 0; tid < g_thread_cnt; ++tid) {
@@ -199,7 +201,7 @@ void Stats::print() {
       p999 = pos * 999 / 1000 - 1;
       std::cout << "total" << ", prio=1, p99=" << all_latency[p99]
                 << ", p999=" << all_latency[p999] << std::endl;
-      printf("p99_pos=%lu, p999_pos=%lu, \n", p99, p999);
+#endif
 
       free(all_latency);
     }
