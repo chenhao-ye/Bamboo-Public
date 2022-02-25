@@ -76,7 +76,7 @@ class Stats {
   void init(uint64_t thread_id);
   void clear(uint64_t tid);
   void add_debug(uint64_t thd_id, uint64_t value, uint32_t select);
-#if CC_ALG == SILO_PRIO
+#if CC_ALG == SILO_PRIO | CC_ALG == SILO
   void add_latency(uint64_t thd_id, uint64_t latency, uint32_t prio); // add SILO_PRIO tail latency. prio can be either 0 or 1
 #endif
   void commit(uint64_t thd_id);

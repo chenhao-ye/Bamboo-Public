@@ -14,6 +14,7 @@ void Stats_thd::init(uint64_t thd_id) {
       _mm_malloc(sizeof(uint64_t) * MAX_TXN_PER_PART, 64);
   all_debug2 = (uint64_t *)
       _mm_malloc(sizeof(uint64_t) * MAX_TXN_PER_PART, 64);
+  memset(prios, 0, 16 * sizeof(uint64_t));
 }
 
 void Stats_thd::clear() {
@@ -75,6 +76,16 @@ void Stats::add_debug(uint64_t thd_id, uint64_t value, uint32_t select) {
 }
 
 #if CC_ALG == SILO_PRIO
+void Stats::add_latency(uint64_t thd_id, uint64_t latency, uint32_t prio) {
+  if (warmup_finish) {
+    uint64_t tnum = _stats[thd_id]->prios[prio];
+    if (prio == 0)
+      _stats[thd_id]->all_debug1[tnum] = latency;
+    else if (prio == 1)
+      _stats[thd_id]->all_debug2[tnum] = latency;
+  }
+}
+#elif CC_ALG == SILO
 void Stats::add_latency(uint64_t thd_id, uint64_t latency, uint32_t prio) {
   if (warmup_finish) {
     uint64_t tnum = _stats[thd_id]->prios[prio];

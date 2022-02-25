@@ -122,8 +122,10 @@ RC thread_t::run() {
         // used for after warmup, since aborted txn keeps original ts
         if (unlikely(m_txn->get_ts() == 0))
             m_txn->set_ts(get_next_ts());
-#elif CC_ALG == SILO_PRIO || CC_ALG == SILO
+#elif CC_ALG == SILO_PRIO
 		m_txn->prio = m_query->_prio;
+#elif CC_ALG == SILO
+		m_txn->prio = 0;
 #endif
 		m_txn->set_txn_id(get_thd_id() + thd_txn_id * g_thread_cnt);
 		thd_txn_id ++;
@@ -206,7 +208,12 @@ RC thread_t::run() {
             INC_STATS(get_thd_id(), latency, endtime - txn_starttime);
             INC_STATS(get_thd_id(), txn_cnt, 1);
 	    #if CC_ALG == SILO_PRIO || CC_ALG == SILO
-			ADD_PRIO_LATENCY(get_thd_id(), m_txn->prio, endtime - txn_starttime);
+			if (m_txn->prio == 0) {
+				stats._stats[get_thd_id()]->all_debug1[(stats._stats[get_thd_id()]->prios[0])++] = endtime - txn_starttime;
+			}
+			else {
+				stats._stats[get_thd_id()]->all_debug2[(stats._stats[get_thd_id()]->prios[1])++] = endtime - txn_starttime;
+			}
 	    #endif
 
 #if WORKLOAD == YCSB

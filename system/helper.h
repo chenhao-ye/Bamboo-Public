@@ -134,12 +134,6 @@
 	if (STATS_ENABLE) \
 		stats._stats[tid]->name -= value;
 
-#define ADD_PRIO_LATENCY(tid, prio, latency) \
-	if (STATS_ENABLE) {\
-		stats._stats[tid]->prios[prio] += 1; \
-		stats.add_latency(tid, latency, prio);\
-	}
-
 #define INC_TMP_STATS(tid, name, value) \
 	if (STATS_ENABLE) \
 		stats.tmp_stats[tid]->name += value;
