@@ -1,0 +1,33 @@
+{
+	"CPU_FREQ": 2.6,
+	"THREAD_CNT": 16,
+	"MAX_TXN_PER_PART": 1000000,
+	"ABORT_PENALTY": 50000,
+	"LATCH": "LH_MCSLOCK",
+	"TERMINATE_BY_COUNT": "true",
+	"MAX_RUNTIME": 10,
+
+	"PF_BASIC": "true",
+	"PF_CS": "false",
+	"PF_ABORT": "false",
+
+	"CC_ALG": "SILO",
+	"WW_STARV_FREE": "false",
+	"SILO_PRIO_FIXED_PRIO": "true",
+	"HIGH_PRIO_RATIO": 0.1,
+	"SPLIT_ABORT_COUNT_PRIO": "true",
+	"SPLIT_LATENCY_PRIO": "true",
+
+	"WORKLOAD": "YCSB",
+	"SYNTHETIC_YCSB": "false",
+	"ZIPF_THETA": 0.9,
+	"READ_PERC": 0.5,
+	"LONG_TXN_RATIO": 0,
+	"MAX_ROW_PER_TXN": 1000,
+	"REQ_PER_QUERY": 16,
+	"SYNTH_TABLE_SIZE": 10000000,
+
+	"UNSET_NUMA": "false",
+	"COMPILE_ONLY": "false",
+	"NDEBUG": "true"
+}
