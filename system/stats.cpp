@@ -33,7 +33,8 @@ void Stats_thd::clear() {
 #endif
 #endif
   INIT_CNT(uint64_t, abort_txn_cnt, STAT_MAX_NUM_ABORT + 1);
-  memset(latency_record_long, 0, sizeof(uint64_t) * MAX_TXN_PER_PART * 0.1);
+  //don't often need much space
+  memset(latency_record_long, 0, sizeof(uint64_t) * MAX_TXN_PER_PART * LONG_TXN_RATIO * 2);
   latency_record_long_len = 0;
   //memset(latency_record_short, 0, sizeof(uint64_t) * MAX_TXN_PER_PART);
   //latency_record_short_len = 0;
@@ -230,7 +231,7 @@ std::cout << "short txn lats count= "<<  total_latency_record_short.size() << "\
   //////////////long
   //total_latency_record_long.reserve(MAX_TXN_PER_PART * LONG_TXN_RATIO * 2 * g_thread_cnt);
 
-  total_latency_record_long.reserve(MAX_TXN_PER_PART * g_thread_cnt * 0.1);
+  total_latency_record_long.reserve(MAX_TXN_PER_PART * g_thread_cnt * LONG_TXN_RATIO * 2);
   for (uint32_t i = 0; i < g_thread_cnt; ++i)
     for (uint64_t j = 0; j < _stats[i]->latency_record_long_len; ++j)
       total_latency_record_long.emplace_back(_stats[i]->latency_record_long[j]);
