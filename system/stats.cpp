@@ -10,6 +10,11 @@
 #define BILLION 1000000000UL
 
 void Stats_thd::init(uint64_t thd_id) {
+  //latency_record_short = (uint64_t *)
+  //    _mm_malloc(sizeof(uint64_t) * MAX_TXN_PER_PART, 64);
+  latency_record_long = (uint64_t *)
+      _mm_malloc(sizeof(uint64_t) * MAX_TXN_PER_PART * 0.1, 64);
+
   latency_record = (uint64_t *)
       _mm_malloc(sizeof(uint64_t) * MAX_TXN_PER_PART, 64);
   all_debug1 = (uint64_t *)
@@ -28,6 +33,11 @@ void Stats_thd::clear() {
 #endif
 #endif
   INIT_CNT(uint64_t, abort_txn_cnt, STAT_MAX_NUM_ABORT + 1);
+  memset(latency_record_long, 0, sizeof(uint64_t) * MAX_TXN_PER_PART * 0.1);
+  latency_record_long_len = 0;
+  //memset(latency_record_short, 0, sizeof(uint64_t) * MAX_TXN_PER_PART);
+  //latency_record_short_len = 0;
+  
   memset(latency_record, 0, sizeof(uint64_t) * MAX_TXN_PER_PART);
   latency_record_len = 0;
 }
@@ -147,8 +157,8 @@ void Stats::print() {
   if (output_file != NULL) {
     ofstream outf(output_file);
     if (outf.is_open()) {
-      outf << "[summary] throughput=" << total_txn_cnt / total_run_time *
-      BILLION * THREAD_CNT << ", ";
+      outf << "[summary] throughput= " << total_txn_cnt / total_run_time *
+      BILLION * THREAD_CNT << " , ";
       ALL_METRICS(WRITE_STAT_X, WRITE_STAT_Y, WRITE_STAT_Y)
       outf << "deadlock_cnt=" << deadlock << ", ";
       outf << "cycle_detect=" << cycle_detect << ", ";
@@ -164,8 +174,8 @@ void Stats::print() {
       PRINT_TOTAL_CNT(outf, abort_txn_cnt, STAT_MAX_NUM_ABORT + 1)
     }
   }
-  std::cout << "[summary] throughput=" << total_txn_cnt / total_run_time *
-      BILLION * THREAD_CNT << ", ";
+  std::cout << "[summary] throughput= " << total_txn_cnt / total_run_time *
+      BILLION * THREAD_CNT << " , ";
   ALL_METRICS(PRINT_STAT_X, PRINT_STAT_Y, PRINT_STAT_Y)
   std::cout << "deadlock_cnt=" << deadlock << ", ";
   std::cout << "cycle_detect=" << cycle_detect << ", ";
@@ -179,7 +189,7 @@ void Stats::print() {
 #endif
   PRINT_TOTAL_CNT(std::cout, abort_txn_cnt, STAT_MAX_NUM_ABORT + 1)
 
-  std::vector<uint64_t> total_latency_record;
+  std::vector<uint64_t> total_latency_record, total_latency_record_long, total_latency_record_short;
   total_latency_record.reserve(MAX_TXN_PER_PART * g_thread_cnt);
   
   for (uint32_t i = 0; i < g_thread_cnt; ++i)
@@ -189,14 +199,53 @@ void Stats::print() {
 
   // if smaller than 1000, we will have problems for p999
   assert (total_latency_record.size() > 1000);
-
-  std::cout << "p50=" << total_latency_record[total_latency_record.size() * 50 / 100] / 1000.0 << "us\n";
-  std::cout << "p90=" << total_latency_record[total_latency_record.size() * 90 / 100] / 1000.0 << "us\n";
-  std::cout << "p99=" << total_latency_record[total_latency_record.size() * 99 / 100] / 1000.0 << "us\n";
-  std::cout << "p999=" << total_latency_record[total_latency_record.size() * 999 / 1000] / 1000.0 << "us\n";
+ std::cout << "all lats count= " << total_latency_record.size() << "\n";
+  std::cout << "all p50= " << total_latency_record[total_latency_record.size() * 50 / 100] / 1000.0 << " us\n";
+  std::cout << "all p90= " << total_latency_record[total_latency_record.size() * 90 / 100] / 1000.0 << " us\n";
+  std::cout << "all p99= " << total_latency_record[total_latency_record.size() * 99 / 100] / 1000.0 << " us\n";
+  std::cout << "all p999= " << total_latency_record[total_latency_record.size() * 999 / 1000] / 1000.0 << " us\n";
 
   if (total_latency_record.size() > 10000)
-    std::cout << "p9999=" << total_latency_record[total_latency_record.size() * 9999 / 10000] / 1000.0 << "us\n";
+    std::cout << "all p9999=" << total_latency_record[total_latency_record.size() * 9999 / 10000] / 1000.0 << "us\n";
+
+  ///////////////short
+  /*total_latency_record_short.reserve(MAX_TXN_PER_PART * g_thread_cnt);
+
+  for (uint32_t i = 0; i < g_thread_cnt; ++i)
+    for (uint64_t j = 0; j < _stats[i]->latency_record_short_len; ++j)
+      total_latency_record_short.emplace_back(_stats[i]->latency_record_short[j]);
+  std::sort(total_latency_record_short.begin(), total_latency_record_short.end());
+
+  // if smaller than 1000, we will have problems for p999
+  assert (total_latency_record_short.size() > 1000);
+std::cout << "short txn lats count= "<<  total_latency_record_short.size() << "\n";
+  std::cout << "short p50= " << total_latency_record_short[total_latency_record_short.size() * 50 / 100] / 1000.0 << " us\n";
+  std::cout << "short p90= " << total_latency_record_short[total_latency_record_short.size() * 90 / 100] / 1000.0 << " us\n";
+  std::cout << "short p99= " << total_latency_record_short[total_latency_record_short.size() * 99 / 100] / 1000.0 << " us\n";
+  std::cout << "short p999= " << total_latency_record_short[total_latency_record_short.size() * 999 / 1000] / 1000.0 << " us\n";
+
+  if (total_latency_record_short.size() > 10000)
+    std::cout << "short p9999=" << total_latency_record_short[total_latency_record_short.size() * 9999 / 10000] / 1000.0 << "us\n";
+ */
+  //////////////long
+  //total_latency_record_long.reserve(MAX_TXN_PER_PART * LONG_TXN_RATIO * 2 * g_thread_cnt);
+
+  total_latency_record_long.reserve(MAX_TXN_PER_PART * g_thread_cnt * 0.1);
+  for (uint32_t i = 0; i < g_thread_cnt; ++i)
+    for (uint64_t j = 0; j < _stats[i]->latency_record_long_len; ++j)
+      total_latency_record_long.emplace_back(_stats[i]->latency_record_long[j]);
+  std::sort(total_latency_record_long.begin(), total_latency_record_long.end());
+
+  // if smaller than 100, we will have problems for p99
+  assert (total_latency_record_long.size() > 100);
+std::cout << "long txn lats count= "<<  total_latency_record_long.size() <<"\n";
+  std::cout << "long p50= " << total_latency_record_long[total_latency_record_long.size() * 50 / 100] / 1000.0 << " us\n";
+  std::cout << "long p90= " << total_latency_record_long[total_latency_record_long.size() * 90 / 100] / 1000.0 << " us\n";
+  std::cout << "long p99= " << total_latency_record_long[total_latency_record_long.size() * 99 / 100] / 1000.0 << " us\n";
+  //std::cout << "long p999= " << total_latency_record[total_latency_record.size() * 999 / 1000] / 1000.0 << " us\n";
+
+  if (total_latency_record.size() > 1000)
+    std::cout << "long p999=" << total_latency_record_long[total_latency_record_long.size() * 9999 / 10000] / 1000.0 << "us\n";
 
   // dump the latency distribution in case we want to have a plot
   if (DUMP_LATENCY) {

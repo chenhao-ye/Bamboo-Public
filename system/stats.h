@@ -64,11 +64,27 @@ class Stats_thd {
     latency_record_len++;
     assert(latency_record_len <= MAX_TXN_PER_PART);
   }
+  void append_long_latency(uint64_t latency) {
+    latency_record_long[latency_record_long_len] = latency;
+    latency_record_long_len++;
+    assert(latency_record_long_len <= MAX_TXN_PER_PART);
+  }
+  void append_short_latency(uint64_t latency) {
+    latency_record_short[latency_record_short_len] = latency;
+    latency_record_short_len++;
+    assert(latency_record_short_len <= MAX_TXN_PER_PART);
+  }
 
   char _pad2[CL_SIZE];
   ALL_METRICS(DECLARE_VAR, DECLARE_VAR, DECLARE_VAR)
   uint64_t * latency_record;
   uint64_t latency_record_len;
+  
+  uint64_t * latency_record_long;
+  uint64_t latency_record_long_len;
+  uint64_t * latency_record_short;
+  uint64_t latency_record_short_len;
+
 
   uint64_t * all_debug1;
   uint64_t * all_debug2;

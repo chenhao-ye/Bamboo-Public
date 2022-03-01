@@ -14,7 +14,7 @@ void ycsb_query::init(uint64_t thd_id, workload * h_wl, Query_thd * query_thd) {
 #if CC_ALG == SILO_PRIO
 	double y;
 	drand48_r(&per_thread_rand_buf, &y);
-	prio = y < HIGH_PRIO_RATIO ? 1 : 0;
+	//prio = y < HIGH_PRIO_RATIO ? 1 : 0;
 #endif
 	// ycsb_query init
 	_query_thd = query_thd;
