@@ -177,9 +177,10 @@ public:
 	retry:
 		v = _tid_word_prio;
 		assert (v.is_locked());
-		v2 = v;
-		v2.unlock();
-		v2.release_prio(prio, prio_ver);
+		// v2 = v;
+		// v2.release_prio(prio, prio_ver);
+		v2 = {v.get_data_ver(), v.get_prio_ver() + 1};
+		// v2.unlock();
 		if (!__sync_bool_compare_and_swap(&_tid_word_prio.raw_bits, v.raw_bits, v2.raw_bits))
 			goto retry;
 	}
