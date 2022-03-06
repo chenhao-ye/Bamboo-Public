@@ -273,6 +273,8 @@ extern TestCases					g_test_case;
 #define DEBUG_BAMBOO                			false
 #define DEBUG_TMP					false
 
+#define ENABLE_NANOLOG				false
+
 /***********************************************/
 // PROFILING 
 /***********************************************/

@@ -34,6 +34,33 @@
 #endif
 #include "helper.h"
 
+#if ENABLE_NANOLOG
+#include "NanoLogCpp17.h"
+#define SET_LOG_DEBUG() NanoLog::setLogLevel(NanoLog::LogLevels::DEBUG)
+#define SET_LOG_NOTICE() NanoLog::setLogLevel(NanoLog::LogLevels::NOTICE)
+#define SET_LOG_WARNING() NanoLog::setLogLevel(NanoLog::LogLevels::WARNING)
+#define SET_LOG_ERROR() NanoLog::setLogLevel(NanoLog::LogLevels::ERROR)
+#define LOG_DEBUG(msg, ...) NANO_LOG(DEBUG, msg, ##__VA_ARGS__)
+#define LOG_NOTICE(msg, ...) NANO_LOG(NOTICE, msg, ##__VA_ARGS__)
+#define LOG_WARNING(msg, ...) NANO_LOG(WARNING, msg, ##__VA_ARGS__)
+#define LOG_ERROR(msg, ...) NANO_LOG(ERROR, msg, ##__VA_ARGS__)
+#else // ENABLE_NANOLOG
+#define SET_LOG_DEBUG() (void(0))
+#define SET_LOG_NOTICE() (void(0))
+#define SET_LOG_WARNING() (void(0))
+#define SET_LOG_ERROR() (void(0))
+#define LOG_DEBUG(msg, ...) (void(msg))
+#define LOG_NOTICE(msg, ...) (void(msg))
+#define LOG_WARNING(msg, ...) (void(msg))
+#define LOG_ERROR(msg, ...) (void(msg))
+#endif // ENABLE_NANOLOG
+
+/**
+ * Example usage of NanoLog:
+ * 	LOG_DEBUG("DBx%d: %s", 1000, "An Evaluation of Concurrency Control")
+ * This line will only be logged if ENABLE_NANOLOG is set.
+ */
+
 using namespace std;
 
 class mem_alloc;

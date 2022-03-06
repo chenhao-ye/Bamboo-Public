@@ -4,10 +4,10 @@ CFLAGS=-Wall -g -std=c++17 -fno-omit-frame-pointer
 .SUFFIXES: .o .cpp .h
 
 SRC_DIRS = ./ ./benchmarks/ ./concurrency_control/ ./storage/ ./system/
-INCLUDE = -I. -I./benchmarks -I./concurrency_control -I./storage -I./system
+INCLUDE = -I. -I./benchmarks -I./concurrency_control -I./storage -I./system -I./libs/NanoLog/runtime
 
-CFLAGS += $(INCLUDE) -D NOGRAPHITE=1 -O3 -Wno-unused-variable #-Werror
-LDFLAGS = -Wall -L. -L./libs -pthread -g -lrt -std=c++17 -O3 -ljemalloc
+CFLAGS += $(INCLUDE) -D NOGRAPHITE=1 -O3 -Wno-unused-variable 
+LDFLAGS = -Wall -L. -L./libs -pthread -g -lrt -std=c++17 -O3 -ljemalloc -L./libs/NanoLog/runtime/ -lNanoLog
 LDFLAGS += $(CFLAGS)
 
 CPPS = $(foreach dir, $(SRC_DIRS), $(wildcard $(dir)*.cpp))
@@ -16,7 +16,7 @@ DEPS = $(CPPS:.cpp=.d)
 
 all:rundb
 
-rundb : $(OBJS)
+rundb : $(OBJS) libs/NanoLog/runtime/libNanoLog.a
 	$(CC) -no-pie -o $@ $^ $(LDFLAGS)
 	#$(CC) -o $@ $^ $(LDFLAGS)
 
@@ -27,6 +27,9 @@ rundb : $(OBJS)
 
 %.o: %.cpp
 	$(CC) -c $(CFLAGS) -o $@ $<
+
+libs/NanoLog/runtime/libNanoLog.a:
+	make -C libs/NanoLog/runtime/
 
 .PHONY: clean
 clean:
