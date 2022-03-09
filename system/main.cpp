@@ -19,6 +19,8 @@ void parser(int argc, char * argv[]);
 
 int main(int argc, char* argv[])
 {
+	// set NanoLog's logging level to DEBUG
+	SET_LOG_DEBUG();
 	parser(argc, argv);
 	
 #ifndef NDEBUG

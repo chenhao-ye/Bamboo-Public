@@ -35,32 +35,79 @@
 #define WRITE_STAT_Y(tpe, name) \
   outf << STR_X(tpe, name) << "= " << VAL_Y(tpe, name) << ", ";
 
-// counter-array operators
-#define DEF_CNT(tpe, name, size) tpe name[size];
-#define INIT_CNT(tpe, name, size) memset(name, 0, (size) * sizeof(tpe)); \
-  assert((size) * sizeof(tpe) == sizeof(name));
-#define PRINT_CNT(name, size) \
-  std::cout << STR(name) << " = [\n"; \
-  for (int i = 0; i < (size); ++i) \
-    if (name[i]) std::cout << '\t' << i << ": " << name[i] << ',\n'; \
-  std::cout << "]\n";
-#define INIT_TOTAL_CNT(tpe, name, size) tpe total_##name[(size)] = {};
-#define SUM_UP_CNT(name, size) \
-  for (int i = 0; i < (size); ++i) \
-    total_##name[i] += _stats[tid]->name[i];
-#define PRINT_TOTAL_CNT(outf, name, size) \
-  outf << STR(name) << " = [\n"; \
-  for (int i = 0; i < (size); ++i) \
-    if (total_##name[i]) \
-      std::cout << '\t' << i << ": " << total_##name[i] << ",\n"; \
-  std::cout << "]\n";
+union LatencyRecord {
+  uint64_t raw_bits;
+  struct {
+    bool is_long: 1;
+    uint32_t abort_cnt : 7;
+    uint32_t prio : SILO_PRIO_NUM_BITS_PRIO;
+    uint64_t latency : (64 - 1 - 7 - SILO_PRIO_NUM_BITS_PRIO);
+  };
+
+  LatencyRecord() = default;
+  LatencyRecord(bool is_long, uint32_t abort_cnt, uint32_t prio, uint64_t latency):
+    is_long(is_long), abort_cnt(abort_cnt < 128 ? abort_cnt : 127),
+    prio(prio), latency(latency) {
+    assert (latency < (1UL << (64 - 1 - 7 - SILO_PRIO_NUM_BITS_PRIO)));
+  }
+
+  // `is_long` cannot be both data member name and function name.. so let's call
+  // it `get_is_long` for now...
+  bool get_is_long() const { return is_long; }
+  uint32_t get_abort_cnt() const { return abort_cnt; }
+  uint32_t get_prio() const { return prio; }
+  uint64_t get_latency() const { return latency; }
+};
+
+static_assert(sizeof(LatencyRecord) == 8, "LatencyRecord must be 64-bit");
+
+struct PerPrioMetrics {
+  // how long spent on the executions that eventually abort
+  uint64_t total_abort_time;
+  // how long spent on the execution that eventually commit
+  uint64_t total_exec_time;
+  // how long spent on backoff (abort buffer)
+  uint64_t total_backoff_time;
+  // how many txns (in this prio) in total
+  uint64_t total_txn_cnt;
+  // how many aborts in total
+  uint64_t total_abort_cnt;
+  uint64_t per_abort_cnts[STAT_MAX_NUM_ABORT + 1];
+
+  void add_abort_time(uint64_t t) { total_abort_time += t; }
+  void add_exec_time(uint64_t t) { total_exec_time += t; }
+  void add_backoff_time(uint64_t t) { total_backoff_time += t; }
+  void add_txn_cnt(uint64_t cnt) { total_txn_cnt += cnt; }
+  void add_abort_cnt(uint64_t abort_cnt) {
+    total_abort_cnt += abort_cnt;
+    per_abort_cnts[std::min<uint64_t>(abort_cnt, STAT_MAX_NUM_ABORT)]++;
+  }
+
+  void print(const char* tag) {
+    if (total_txn_cnt == 0) return;
+    std::cout << tag << " ";
+    std::cout << "txn_cnt=" << total_txn_cnt << ", ";
+    std::cout << "abort_cnt=" << total_abort_cnt << ", ";
+    std::cout << "abort_time=" << total_abort_time << ", ";
+    std::cout << "exec_time=" << total_exec_time << ", ";
+    std::cout << "backoff_time=" << total_backoff_time << ", ";
+    std::cout << "abort_cnt_distr=[";
+    for (int i = 0; i < STAT_MAX_NUM_ABORT; ++i) {
+      if (per_abort_cnts[i] > 0)
+        std::cout << i << ": " << per_abort_cnts[i] << ", ";
+    }
+    if (per_abort_cnts[STAT_MAX_NUM_ABORT] > 0)
+      std::cout << STAT_MAX_NUM_ABORT << "+: " << per_abort_cnts[STAT_MAX_NUM_ABORT] << ", ";
+    std::cout << "]\n";
+  }
+};
 
 class Stats_thd {
  public:
   void init(uint64_t thd_id);
   void clear();
-  void append_latency(uint64_t latency) {
-    latency_record[latency_record_len] = latency;
+  void append_latency(bool is_long, uint32_t abort_cnt, uint32_t prio, uint64_t latency) {
+    latency_record[latency_record_len] = {is_long, abort_cnt, prio, latency};
     latency_record_len++;
     assert(latency_record_len <= MAX_TXN_PER_PART);
   }
@@ -77,7 +124,8 @@ class Stats_thd {
 
   char _pad2[CL_SIZE];
   ALL_METRICS(DECLARE_VAR, DECLARE_VAR, DECLARE_VAR)
-  uint64_t * latency_record;
+  PerPrioMetrics prio_metrics[SILO_PRIO_NUM_PRIO_LEVEL];
+  LatencyRecord * latency_record;
   uint64_t latency_record_len;
   
   uint64_t * latency_record_long;
@@ -88,17 +136,6 @@ class Stats_thd {
 
   uint64_t * all_debug1;
   uint64_t * all_debug2;
-
-#if CC_ALG == SILO_PRIO
-  // counter for txns for different priorities
-  DEF_CNT(uint64_t, prio_txn_cnt, SILO_PRIO_NUM_PRIO_LEVEL);
-#if SPLIT_ABORT_COUNT_PRIO
-  // counter for high-priority txns (i.e. nonzero priority)
-  DEF_CNT(uint64_t, high_prio_abort_txn_cnt, STAT_MAX_NUM_ABORT + 1);
-#endif
-#endif
-  // counter for txns with different num_abort (last one for overflow)
-  DEF_CNT(uint64_t, abort_txn_cnt, STAT_MAX_NUM_ABORT + 1);
 
   char _pad[CL_SIZE];
 };

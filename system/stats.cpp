@@ -1,6 +1,7 @@
 #include <algorithm>
 #include <iostream>
 #include <fstream>
+#include <iomanip>
 #include <vector>
 #include "global.h"
 #include "helper.h"
@@ -111,46 +112,46 @@ void Stats::abort(uint64_t thd_id) {
     tmp_stats[thd_id]->init();
 }
 
+// tag must be formatted as "[%s:tail]" to be captured by log parser
+void print_tail_latency(const std::vector<uint64_t>& total_latency_record, const char* tag) {
+  uint64_t txn_cnt = total_latency_record.size();
+  if (txn_cnt == 0) return;
+  std::cout << std::left << std::setw(15) << tag << ' ';
+  std::cout <<  "txn_cnt=" << txn_cnt;
+
+  if (txn_cnt < 2) goto done;
+  std::cout << ", p50=" << total_latency_record[txn_cnt * 50 / 100] / 1000.0;
+  if (txn_cnt < 10) goto done;
+  std::cout << ", p90=" << total_latency_record[txn_cnt * 90 / 100] / 1000.0;
+  if (txn_cnt < 100) goto done;
+  std::cout << ", p99=" << total_latency_record[txn_cnt * 99 / 100] / 1000.0;
+  if (txn_cnt < 1000) goto done;
+  std::cout << ", p999=" << total_latency_record[txn_cnt * 999 / 1000] / 1000.0;
+  if (txn_cnt < 10000) goto done;
+  std::cout << ", p9999=" << total_latency_record[txn_cnt * 9999 / 10000] / 1000.0;
+
+done:
+  std::cout << std::endl;
+}
+
 void Stats::print() {
 #if CC_ALG == SILO_PRIO
   printf("use_fixed_prio: %s\n", SILO_PRIO_FIXED_PRIO ? "true" : "false");
   printf("inc_prio_after_num_abort: %d\n", SILO_PRIO_INC_PRIO_AFTER_NUM_ABORT);
 #endif
   ALL_METRICS(INIT_TOTAL_VAR, INIT_TOTAL_VAR, INIT_TOTAL_VAR)
-#if CC_ALG == SILO_PRIO
-  INIT_TOTAL_CNT(uint64_t, prio_txn_cnt, SILO_PRIO_NUM_PRIO_LEVEL)
-#if SPLIT_ABORT_COUNT_PRIO
-  INIT_TOTAL_CNT(uint64_t, high_prio_abort_txn_cnt, STAT_MAX_NUM_ABORT + 1);
-#endif
-#endif
-  INIT_TOTAL_CNT(uint64_t, abort_txn_cnt, STAT_MAX_NUM_ABORT + 1)
-  for (uint64_t tid = 0; tid < g_thread_cnt; tid ++) {
+  for (uint64_t tid = 0; tid < g_thread_cnt; tid++) {
     ALL_METRICS(SUM_UP_STATS, SUM_UP_STATS, MAX_STATS)
-    printf("[tid=%lu] txn_cnt=%lu,abort_cnt=%lu, user_abort_cnt=%lu\n",
+    printf("[tid=%lu] txn_cnt=%lu, abort_cnt=%lu, user_abort_cnt=%lu\n",
         tid, _stats[tid]->txn_cnt, _stats[tid]->abort_cnt,
         _stats[tid]->user_abort_cnt);
-#if CC_ALG == SILO_PRIO
-    SUM_UP_CNT(prio_txn_cnt, SILO_PRIO_NUM_PRIO_LEVEL)
-    printf("\tprio_txn_cnt = [\n");
-    for (int i = 0; i < SILO_PRIO_NUM_PRIO_LEVEL; ++i) \
-      if (_stats[tid]->prio_txn_cnt[i])
-        printf("\t\t%d: %lu,\n", i, _stats[tid]->prio_txn_cnt[i]);
-    printf("\t]\n");
-#if SPLIT_ABORT_COUNT_PRIO
-    SUM_UP_CNT(high_prio_abort_txn_cnt, SILO_PRIO_NUM_PRIO_LEVEL)
-    printf("\thigh_prio_txn_cnt = [\n");
-    for (int i = 0; i < STAT_MAX_NUM_ABORT + 1; ++i) \
-      if (_stats[tid]->high_prio_abort_txn_cnt[i])
-        printf("\t\t%d: %lu,\n", i, _stats[tid]->high_prio_abort_txn_cnt[i]);
-    printf("\t]\n");
-#endif
-#endif
-    SUM_UP_CNT(abort_txn_cnt, STAT_MAX_NUM_ABORT + 1)
-    printf("\tabort_txn_cnt = [\n");
-    for (int i = 0; i < STAT_MAX_NUM_ABORT + 1; ++i) \
-      if (_stats[tid]->abort_txn_cnt[i])
-        printf("\t\t%d: %lu,\n", i, _stats[tid]->abort_txn_cnt[i]);
-    printf("\t]\n");
+  }
+  for (uint64_t tid = 0; tid < g_thread_cnt; tid++) {
+    for (uint32_t p = 0; p < SILO_PRIO_NUM_PRIO_LEVEL; ++p) {
+      char tag_buf[40];
+      sprintf(tag_buf, "[tid=%ld,prio=%d]", tid, p);
+      _stats[tid]->prio_metrics[p].print(tag_buf);
+    }
   }
   total_latency = total_latency / total_txn_cnt;
   total_commit_latency = total_commit_latency / total_txn_cnt;
@@ -166,13 +167,6 @@ void Stats::print() {
       outf << "dl_detect_time=" << dl_detect_time / BILLION << ", ";
       outf << "dl_wait_time=" << dl_wait_time / BILLION << "\n";
       outf.close();
-#if CC_ALG == SILO_PRIO
-      PRINT_TOTAL_CNT(outf, prio_txn_cnt, SILO_PRIO_NUM_PRIO_LEVEL)
-#if SPLIT_ABORT_COUNT_PRIO
-      PRINT_TOTAL_CNT(outf, high_prio_abort_txn_cnt, STAT_MAX_NUM_ABORT + 1)
-#endif
-#endif
-      PRINT_TOTAL_CNT(outf, abort_txn_cnt, STAT_MAX_NUM_ABORT + 1)
     }
   }
   std::cout << "[summary] throughput= " << total_txn_cnt / total_run_time *
@@ -182,13 +176,6 @@ void Stats::print() {
   std::cout << "cycle_detect=" << cycle_detect << ", ";
   std::cout << "dl_detect_time=" << dl_detect_time / BILLION << ", ";
   std::cout << "dl_wait_time=" << dl_wait_time / BILLION << "\n";
-#if CC_ALG == SILO_PRIO
-  PRINT_TOTAL_CNT(std::cout, prio_txn_cnt, SILO_PRIO_NUM_PRIO_LEVEL)
-#if SPLIT_ABORT_COUNT_PRIO
-  PRINT_TOTAL_CNT(std::cout, high_prio_abort_txn_cnt, STAT_MAX_NUM_ABORT + 1)
-#endif
-#endif
-  PRINT_TOTAL_CNT(std::cout, abort_txn_cnt, STAT_MAX_NUM_ABORT + 1)
 
   std::vector<uint64_t> total_latency_record, total_latency_record_long, total_latency_record_short;
   total_latency_record.reserve(MAX_TXN_PER_PART * g_thread_cnt);
@@ -251,12 +238,12 @@ std::cout << "long txn lats count= "<<  total_latency_record_long.size() <<"\n";
   // dump the latency distribution in case we want to have a plot
   if (DUMP_LATENCY) {
     std::ofstream of(DUMP_LATENCY_FILENAME);
-    for (uint64_t lat: total_latency_record) of << lat << '\n';
+    for (uint32_t i = 0; i < g_thread_cnt; ++i)
+      for (uint64_t j = 0; j < _stats[i]->latency_record_len; ++j)
+        of << _stats[i]->latency_record[j].is_long << ",\t" \
+          << _stats[i]->latency_record[j].prio << ",\t"
+          << _stats[i]->latency_record[j].latency << '\n';
   }
-
-  // it doesn't make sense to have a zero-latency txn
-  assert(total_latency_record[0] > 0);
-  assert(total_latency_record.size() == total_txn_cnt);
 
   if (g_prt_lat_distr)
     print_lat_distr();
