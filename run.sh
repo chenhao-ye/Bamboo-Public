@@ -1,10 +1,10 @@
 #!/bin/bash
 LOAD="YCSB"
-ALGS=("SILO_PRIO")
-LONG_RATIO=(0.1 0.15 0.2)
-LONG_READ_RATIO=(1)
-THREAD_CNT=(16 32 64)
-zipf_thetea=(1.2)
+ALGS=("SILO_PRIO" "SILO" "NO_WAIT" "WOUND_WAIT" "WAIT_DIE")
+LONG_RATIO=(0.2)
+LONG_READ_RATIO=(1 0.5)
+THREAD_CNT=(1 2 4 8 16 32 64)
+zipf_thetea=(0.99)
 PRIO_BIT_COUNT=4
 
 for a in "${ALGS[@]}"
@@ -17,7 +17,7 @@ do
 			do
 				for zipf in "${zipf_thetea[@]}"
 				do
-					python test.py experiments/long_txn.json PRIO_BIT_COUNT=4 CC_ALG=$a LONG_RATIO=$r LONG_READ_RATIO=$rr THREAD_CNT=$t ZIPF_THETA=$zipf | tee ~/$a-$r-$rr-$t-$zipf.log
+					python test.py experiments/long_txn.json PRIO_BIT_COUNT=4 CC_ALG=$a LONG_TXN_RATIO=$r LONG_READ_RATIO=$rr THREAD_CNT=$t ZIPF_THETA=$zipf | tee ~/$a-$r-$rr-$t-$zipf.log
 					thrupt=$(grep "summary" ~/$a-$r-$rr-$t-$zipf.log | awk '{print $3}')
 					shrt_50=$(grep "short p50=" ~/$a-$r-$rr-$t-$zipf.log | awk '{print $3}')
 					shrt_90=$(grep "short p90=" ~/$a-$r-$rr-$t-$zipf.log | awk '{print $3}')
@@ -39,6 +39,7 @@ LOAD="TPCC"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TPCC~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 for t in "${THREAD_CNT[@]}"
 do
+	exit
 	for a in "${ALGS[@]}"
 		do
 		python test.py experiments/default.json WORKLOAD=$LOAD THREAD_CNT=$t | tee ~/tpcc-$t.log

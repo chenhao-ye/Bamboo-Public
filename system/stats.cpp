@@ -13,7 +13,7 @@ void Stats_thd::init(uint64_t thd_id) {
   //latency_record_short = (uint64_t *)
   //    _mm_malloc(sizeof(uint64_t) * MAX_TXN_PER_PART, 64);
   latency_record_long = (uint64_t *)
-      _mm_malloc(sizeof(uint64_t) * MAX_TXN_PER_PART * 0.1, 64);
+      _mm_malloc(sizeof(uint64_t) * MAX_TXN_PER_PART * LONG_TXN_RATIO * 3, 64);
 
   latency_record = (uint64_t *)
       _mm_malloc(sizeof(uint64_t) * MAX_TXN_PER_PART, 64);

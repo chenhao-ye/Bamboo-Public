@@ -224,7 +224,7 @@ RC thread_t::run() {
 #endif
 			INC_STATS_CNT(get_thd_id(), abort_txn_cnt, \
 							std::min<int>(m_query->num_abort, STAT_MAX_NUM_ABORT), 1);
-			stats._stats[get_thd_id()]->append_latency(endtime - txn_starttime);
+			//stats._stats[get_thd_id()]->append_latency(endtime - txn_starttime);
 			bool is_long = false;
 #if WORKLOAD == YCSB
 			is_long = ( (ycsb_query *) m_query)->is_long;
@@ -232,7 +232,7 @@ RC thread_t::run() {
 			is_long = ( (tpcc_query *) m_query)->is_long;
 #endif
 			if (is_long) stats._stats[get_thd_id()]->append_long_latency(endtime - txn_starttime);
-			//else stats._stats[get_thd_id()]->append_short_latency(endtime - txn_starttime);
+			else stats._stats[get_thd_id()]->append_latency(endtime - txn_starttime);
 
 			stats.commit(get_thd_id());
 			txn_cnt ++;

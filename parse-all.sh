@@ -1,10 +1,10 @@
 #!/bin/bash
 
-perf_file="/users/kChen/perfs.txt"
-prio_file="/users/kChen/prios.txt"
-abort_file="/users/kChen/aborts.txt"
+perf_file="/users/kChen/perfs-mar4.txt"
+prio_file="/users/kChen/prios-mar4.txt"
+abort_file="/users/kChen/aborts-mar4.txt"
 
-log_files="/users/kChen/logs/"
+log_files="/users/kChen/log-mar4/"
 
 #init output files
 echo "log throughput avg_latency tail_latencies" > $perf_file
