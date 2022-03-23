@@ -24,10 +24,10 @@
 //     		
 #define UPDATE_RETIRE_INFO(en, prev) { \
   if (prev) { \
-    if (en->type == LOCK_EX) \
+    if (en->type == _LOCK_EX) \
       en->txn->increment_commit_barriers(); \
     else { \
-            if (prev->type == LOCK_SH) { \
+            if (prev->type == _LOCK_SH) { \
               en->is_cohead = prev->is_cohead; \
               if (!en->is_cohead) { \
                 en->txn->increment_commit_barriers(); \
@@ -100,7 +100,7 @@ struct BBLockEntry {
     bool is_cohead;
     lock_status status;
     BBLockEntry * prev;
-    BBLockEntry(txn_man * t, Access * a): txn(t), access(a), type(LOCK_NONE),
+    BBLockEntry(txn_man * t, Access * a): txn(t), access(a), type(_LOCK_NONE),
                                           next(NULL), is_cohead(false),
                                           status(LOCK_DROPPED),
                                           prev(NULL) {};
@@ -216,11 +216,11 @@ class Row_bamboo {
 
 	// NOTE: it is unrealistic to have completely ordered read with
 	// dynamically assigned ts. e.g. [0,0,0] -> [12, 11, 5]
-	// used when to_insert->type = LOCK_SH
+	// used when to_insert->type = _LOCK_SH
 	inline RC wound_retired_rd(ts_t ts, BBLockEntry * to_insert) {
 		BBLockEntry * en = retired_head;
 		while(en) {
-			if (en->type == LOCK_EX && a_higher_than_b(ts, en->txn->get_ts())) {
+			if (en->type == _LOCK_EX && a_higher_than_b(ts, en->txn->get_ts())) {
 				if (to_insert->txn->wound_txn(en->txn) == COMMITED) {
 					//return_entry(to_insert);
 					//return Abort;
@@ -263,7 +263,7 @@ class Row_bamboo {
 		return RCOK;
 	};
 
-// owner's type is always LOCK_EX
+// owner's type is always _LOCK_EX
 #define WOUND_OWNER(to_insert) { \
     TRY_WOUND(owners, to_insert); \
     return_entry(owners); \

@@ -21,7 +21,7 @@ void Row_lock::init(row_t * row) {
 #else
   latch = new mcslock();
 #endif
-  lock_type = LOCK_NONE;
+  lock_type = _LOCK_NONE;
   blatch = false;
 
 }
@@ -90,7 +90,7 @@ RC Row_lock::lock_get(lock_t type, txn_man * txn, uint64_t* &txnids,
   if (owners != NULL)
 		assert(lock_type == owners->type); 
 	else 
-		assert(lock_type == LOCK_NONE);
+		assert(lock_type == _LOCK_NONE);
 	LockEntry * en = owners;
 	UInt32 cnt = 0;
 	while (en) {
@@ -250,7 +250,7 @@ RC Row_lock::lock_release(LockEntry * entry) {
       owners = entry->next;
     owner_cnt --;
     if (owner_cnt == 0)
-      lock_type = LOCK_NONE;
+      lock_type = _LOCK_NONE;
   } else if (entry->status == LOCK_WAITER) {
     // Not in owners list, try waiters list.
     LIST_REMOVE(entry);
@@ -264,7 +264,7 @@ RC Row_lock::lock_release(LockEntry * entry) {
   }
 
   if (owner_cnt == 0)
-    ASSERT(lock_type == LOCK_NONE);
+    ASSERT(lock_type == _LOCK_NONE);
 #if DEBUG_ASSERT && CC_ALG == WAIT_DIE
   for (en = waiters_head; en != NULL && en->next != NULL; en = en->next)
 			assert(en->next->txn->get_ts() < en->txn->get_ts());
@@ -292,9 +292,9 @@ RC Row_lock::lock_release(LockEntry * entry) {
 }
 
 bool Row_lock::conflict_lock(lock_t l1, lock_t l2) {
-  if (l1 == LOCK_NONE || l2 == LOCK_NONE)
+  if (l1 == _LOCK_NONE || l2 == _LOCK_NONE)
     return false;
-  else if (l1 == LOCK_EX || l2 == LOCK_EX)
+  else if (l1 == _LOCK_EX || l2 == _LOCK_EX)
     return true;
   else
     return false;
@@ -320,7 +320,7 @@ void Row_lock::return_entry(LockEntry * entry) {
   //mem_allocator.free(entry, sizeof(LockEntry));
   entry->next = NULL;
   entry->prev = NULL;
-  entry->type = LOCK_NONE;
+  entry->type = _LOCK_NONE;
   entry->status = LOCK_DROPPED;
 }
 

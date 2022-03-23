@@ -8,7 +8,7 @@ struct LockEntry {
     lock_status status;
     LockEntry * next;
     LockEntry * prev;
-    LockEntry(txn_man * t, Access * a): txn(t), access(a), type(LOCK_NONE),
+    LockEntry(txn_man * t, Access * a): txn(t), access(a), type(_LOCK_NONE),
                                         status(LOCK_DROPPED), next(NULL), prev(NULL) {};
 };
 

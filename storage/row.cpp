@@ -243,7 +243,7 @@ RC row_t::get_row(access_t type, txn_man * txn, row_t *& row, Access * access) {
   return rc;
 #elif CC_ALG == WAIT_DIE || CC_ALG == NO_WAIT || CC_ALG == DL_DETECT || CC_ALG == WOUND_WAIT || CC_ALG == BAMBOO
   uint64_t thd_id = txn->get_thd_id();
-  lock_t lt = (type == RD || type == SCAN)? LOCK_SH : LOCK_EX;
+  lock_t lt = (type == RD || type == SCAN)? _LOCK_SH : _LOCK_EX;
   #if CC_ALG == DL_DETECT
   uint64_t * txnids;
   int txncnt;

@@ -24,7 +24,7 @@ void Row_ww::init(row_t * row) {
   latch = new mcslock();
 #endif
 
-  lock_type = LOCK_NONE;
+  lock_type = _LOCK_NONE;
   blatch = false;
 }
 
@@ -131,7 +131,7 @@ RC Row_ww::lock_get(lock_t type, txn_man * txn, uint64_t* &txnids, int&txncnt,
         // update count
         owner_cnt--;
         if (owner_cnt == 0)
-          lock_type = LOCK_NONE;
+          lock_type = _LOCK_NONE;
       } else {
         prev = en;
       }
@@ -215,7 +215,7 @@ RC Row_ww::lock_release(LockEntry * entry) {
     }
     owner_cnt --;
     if (owner_cnt == 0)
-      lock_type = LOCK_NONE;
+      lock_type = _LOCK_NONE;
   } else if (entry->status == LOCK_WAITER) {
     LIST_REMOVE(entry);
     if (entry == waiters_head)
@@ -240,9 +240,9 @@ RC Row_ww::lock_release(LockEntry * entry) {
 }
 
 bool Row_ww::conflict_lock(lock_t l1, lock_t l2) {
-  if (l1 == LOCK_NONE || l2 == LOCK_NONE)
+  if (l1 == _LOCK_NONE || l2 == _LOCK_NONE)
     return false;
-  else if (l1 == LOCK_EX || l2 == LOCK_EX)
+  else if (l1 == _LOCK_EX || l2 == _LOCK_EX)
     return true;
   else
     return false;
@@ -268,7 +268,7 @@ void Row_ww::return_entry(LockEntry * entry) {
   entry->status = LOCK_DROPPED;
   entry->next = NULL;
   entry->prev = NULL;
-  entry->type = LOCK_NONE;
+  entry->type = _LOCK_NONE;
   //mem_allocator.free(entry, sizeof(LockEntry));
 }
 
