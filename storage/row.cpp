@@ -370,7 +370,9 @@ RC row_t::get_row(access_t type, txn_man * txn, row_t *& row, Access * access) {
 	return rc;
 #elif CC_ALG == TICTOC || CC_ALG == SILO || CC_ALG == SILO_PRIO
 	// like OCC, tictoc also makes a local copy for each read/write
+	//NANO_LOG(NOTICE, "");
 	row->table = get_table();
+	//NANO_LOG(NOTICE, "get table good\r\n");
 	TsType ts_type = (type == RD)? R_REQ : P_REQ; 
 	rc = this->manager->access(txn, ts_type, row);
 	return rc;

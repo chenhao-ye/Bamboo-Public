@@ -171,8 +171,11 @@ RC thread_t::run() {
 #if CC_ALG != VLL
 			if (WORKLOAD == TEST)
 				rc = runTest(m_txn);
-			else {
+			else 
+			{
+				//NANO_LOG(DEBUG, "about to start txn\r\n");
 			    rc = m_txn->run_txn(m_query);
+			    //NANO_LOG(DEBUG, "finished txn\r\n");
 			}
 #endif
 #if CC_ALG == HSTORE
@@ -222,6 +225,7 @@ RC thread_t::run() {
 			INC_STATS(get_thd_id(), commit_latency, timespan);
 			INC_STATS(get_thd_id(), latency, txn_timespan);
 			INC_STATS(get_thd_id(), txn_cnt, 1);
+NANO_LOG(DEBUG, "Thread %d request num %d request txn_cnt %d content...\r\n", get_thd_id(), thd_txn_id, txn_cnt);
 #if WORKLOAD == YCSB
             if (unlikely(g_long_txn_ratio > 0)) {
                 if ( ((ycsb_query *) m_query)->request_cnt > REQ_PER_QUERY)
@@ -233,6 +237,7 @@ RC thread_t::run() {
 			ADD_PER_PRIO_STATS(get_thd_id(), txn_cnt, m_txn->prio, 1);
 			ADD_PER_PRIO_STATS(get_thd_id(), abort_cnt, m_txn->prio, m_query->num_abort);
 #if WORKLOAD == YCSB
+			//NANO_LOG(DEBUG, "about to add latency\r\n");
 			stats._stats[get_thd_id()]->append_latency(
 				((ycsb_query *) m_query)->is_long, m_query->num_abort,
 				m_txn->prio, txn_timespan);
@@ -240,8 +245,10 @@ RC thread_t::run() {
 			stats._stats[get_thd_id()]->append_latency(
 				false, m_query->num_abort, m_txn->prio, txn_timespan);
 #endif
+
 			stats.commit(get_thd_id());
 			txn_cnt ++;
+			//NANO_LOG(DEBUG, "transaction latency added\r\n");
 		} else if (rc == Abort) {
 			INC_STATS(get_thd_id(), time_abort, timespan);
 			INC_STATS(get_thd_id(), abort_cnt, 1);
@@ -271,6 +278,8 @@ RC thread_t::run() {
 		}
 
 		if (rc == FINISH) {
+			printf("%d\n", thd_txn_id);
+			NANO_LOG(DEBUG, "Thread %d finished\r\n", get_thd_id());
 #if CC_ALG == IC3
 		    m_txn->set_txn_id(get_thd_id() + thd_txn_id * g_thread_cnt);
 #endif
@@ -279,6 +288,7 @@ RC thread_t::run() {
 		if (!warmup_finish && txn_cnt >= WARMUP / g_thread_cnt)
 		{
 			stats.clear( get_thd_id() );
+			NANO_LOG(DEBUG, "Thread %d failed\r\n", get_thd_id());
 			return FINISH;
 		}
 
@@ -297,12 +307,16 @@ RC thread_t::run() {
 #endif
 
 		if (_wl->sim_done) {
+			 printf("B %d\n", thd_txn_id);
+			NANO_LOG(DEBUG, "Thread %d simulation done\r\n", get_thd_id());
 #if CC_ALG == IC3
 		    m_txn->set_txn_id(get_thd_id() + thd_txn_id * g_thread_cnt);
 #endif
 			return FINISH;
 		}
 	}
+	 printf("C %d\n", thd_txn_id);
+	NANO_LOG(DEBUG, "Thread %d for some reason is going to assert false...\r\n", get_thd_id());
 	assert(false);
 }
 
