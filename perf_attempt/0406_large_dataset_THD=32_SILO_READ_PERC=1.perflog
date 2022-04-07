@@ -1,0 +1,79 @@
+mem_allocator initialized!
+SILO
+workload initialized!
+Query Queue Init Time 24.019986
+query_queue initialized!
+WARMUP start!
+WARMUP finished!
+PASS! SimTime = 8126380824
+[tid=0] txn_cnt=980729, abort_cnt=0, user_abort_cnt=0
+[tid=1] txn_cnt=990821, abort_cnt=0, user_abort_cnt=0
+[tid=2] txn_cnt=999375, abort_cnt=0, user_abort_cnt=0
+[tid=3] txn_cnt=982514, abort_cnt=0, user_abort_cnt=0
+[tid=4] txn_cnt=995072, abort_cnt=0, user_abort_cnt=0
+[tid=5] txn_cnt=989047, abort_cnt=0, user_abort_cnt=0
+[tid=6] txn_cnt=976033, abort_cnt=0, user_abort_cnt=0
+[tid=7] txn_cnt=994421, abort_cnt=0, user_abort_cnt=0
+[tid=8] txn_cnt=999050, abort_cnt=0, user_abort_cnt=0
+[tid=9] txn_cnt=992285, abort_cnt=0, user_abort_cnt=0
+[tid=10] txn_cnt=992097, abort_cnt=0, user_abort_cnt=0
+[tid=11] txn_cnt=974308, abort_cnt=0, user_abort_cnt=0
+[tid=12] txn_cnt=987370, abort_cnt=0, user_abort_cnt=0
+[tid=13] txn_cnt=994078, abort_cnt=0, user_abort_cnt=0
+[tid=14] txn_cnt=995862, abort_cnt=0, user_abort_cnt=0
+[tid=15] txn_cnt=998029, abort_cnt=0, user_abort_cnt=0
+[tid=16] txn_cnt=985068, abort_cnt=0, user_abort_cnt=0
+[tid=17] txn_cnt=996669, abort_cnt=0, user_abort_cnt=0
+[tid=18] txn_cnt=985334, abort_cnt=0, user_abort_cnt=0
+[tid=19] txn_cnt=997297, abort_cnt=0, user_abort_cnt=0
+[tid=20] txn_cnt=997379, abort_cnt=0, user_abort_cnt=0
+[tid=21] txn_cnt=982459, abort_cnt=0, user_abort_cnt=0
+[tid=22] txn_cnt=1000000, abort_cnt=0, user_abort_cnt=0
+[tid=23] txn_cnt=981753, abort_cnt=0, user_abort_cnt=0
+[tid=24] txn_cnt=994493, abort_cnt=0, user_abort_cnt=0
+[tid=25] txn_cnt=987960, abort_cnt=0, user_abort_cnt=0
+[tid=26] txn_cnt=991394, abort_cnt=0, user_abort_cnt=0
+[tid=27] txn_cnt=971320, abort_cnt=0, user_abort_cnt=0
+[tid=28] txn_cnt=976372, abort_cnt=0, user_abort_cnt=0
+[tid=29] txn_cnt=981219, abort_cnt=0, user_abort_cnt=0
+[tid=30] txn_cnt=984569, abort_cnt=0, user_abort_cnt=0
+[tid=31] txn_cnt=992156, abort_cnt=0, user_abort_cnt=0
+[tid=0,prio=0] txn_cnt=980729, abort_cnt=0, abort_time=0, exec_time=8074957810, backoff_time=0, abort_cnt_distr=[0: 980729, ]
+[tid=1,prio=0] txn_cnt=990821, abort_cnt=0, abort_time=0, exec_time=8078185652, backoff_time=0, abort_cnt_distr=[0: 990821, ]
+[tid=2,prio=0] txn_cnt=999375, abort_cnt=0, abort_time=0, exec_time=8077900779, backoff_time=0, abort_cnt_distr=[0: 999375, ]
+[tid=3,prio=0] txn_cnt=982514, abort_cnt=0, abort_time=0, exec_time=8078343885, backoff_time=0, abort_cnt_distr=[0: 982514, ]
+[tid=4,prio=0] txn_cnt=995072, abort_cnt=0, abort_time=0, exec_time=8077875775, backoff_time=0, abort_cnt_distr=[0: 995072, ]
+[tid=5,prio=0] txn_cnt=989047, abort_cnt=0, abort_time=0, exec_time=8078235894, backoff_time=0, abort_cnt_distr=[0: 989047, ]
+[tid=6,prio=0] txn_cnt=976033, abort_cnt=0, abort_time=0, exec_time=8077797665, backoff_time=0, abort_cnt_distr=[0: 976033, ]
+[tid=7,prio=0] txn_cnt=994421, abort_cnt=0, abort_time=0, exec_time=8078125266, backoff_time=0, abort_cnt_distr=[0: 994421, ]
+[tid=8,prio=0] txn_cnt=999050, abort_cnt=0, abort_time=0, exec_time=8077976810, backoff_time=0, abort_cnt_distr=[0: 999050, ]
+[tid=9,prio=0] txn_cnt=992285, abort_cnt=0, abort_time=0, exec_time=8076033592, backoff_time=0, abort_cnt_distr=[0: 992285, ]
+[tid=10,prio=0] txn_cnt=992097, abort_cnt=0, abort_time=0, exec_time=8076842157, backoff_time=0, abort_cnt_distr=[0: 992097, ]
+[tid=11,prio=0] txn_cnt=974308, abort_cnt=0, abort_time=0, exec_time=8078563001, backoff_time=0, abort_cnt_distr=[0: 974308, ]
+[tid=12,prio=0] txn_cnt=987370, abort_cnt=0, abort_time=0, exec_time=8078091254, backoff_time=0, abort_cnt_distr=[0: 987370, ]
+[tid=13,prio=0] txn_cnt=994078, abort_cnt=0, abort_time=0, exec_time=8078052193, backoff_time=0, abort_cnt_distr=[0: 994078, ]
+[tid=14,prio=0] txn_cnt=995862, abort_cnt=0, abort_time=0, exec_time=8077811949, backoff_time=0, abort_cnt_distr=[0: 995862, ]
+[tid=15,prio=0] txn_cnt=998029, abort_cnt=0, abort_time=0, exec_time=8078404876, backoff_time=0, abort_cnt_distr=[0: 998029, ]
+[tid=16,prio=0] txn_cnt=985068, abort_cnt=0, abort_time=0, exec_time=8078345233, backoff_time=0, abort_cnt_distr=[0: 985068, ]
+[tid=17,prio=0] txn_cnt=996669, abort_cnt=0, abort_time=0, exec_time=8078378982, backoff_time=0, abort_cnt_distr=[0: 996669, ]
+[tid=18,prio=0] txn_cnt=985334, abort_cnt=0, abort_time=0, exec_time=8078284538, backoff_time=0, abort_cnt_distr=[0: 985334, ]
+[tid=19,prio=0] txn_cnt=997297, abort_cnt=0, abort_time=0, exec_time=8078470756, backoff_time=0, abort_cnt_distr=[0: 997297, ]
+[tid=20,prio=0] txn_cnt=997379, abort_cnt=0, abort_time=0, exec_time=8077959268, backoff_time=0, abort_cnt_distr=[0: 997379, ]
+[tid=21,prio=0] txn_cnt=982459, abort_cnt=0, abort_time=0, exec_time=8078333863, backoff_time=0, abort_cnt_distr=[0: 982459, ]
+[tid=22,prio=0] txn_cnt=1000000, abort_cnt=0, abort_time=0, exec_time=8078118649, backoff_time=0, abort_cnt_distr=[0: 1000000, ]
+[tid=23,prio=0] txn_cnt=981753, abort_cnt=0, abort_time=0, exec_time=8076896635, backoff_time=0, abort_cnt_distr=[0: 981753, ]
+[tid=24,prio=0] txn_cnt=994493, abort_cnt=0, abort_time=0, exec_time=8078188663, backoff_time=0, abort_cnt_distr=[0: 994493, ]
+[tid=25,prio=0] txn_cnt=987960, abort_cnt=0, abort_time=0, exec_time=8073303721, backoff_time=0, abort_cnt_distr=[0: 987960, ]
+[tid=26,prio=0] txn_cnt=991394, abort_cnt=0, abort_time=0, exec_time=8078218526, backoff_time=0, abort_cnt_distr=[0: 991394, ]
+[tid=27,prio=0] txn_cnt=971320, abort_cnt=0, abort_time=0, exec_time=8073606507, backoff_time=0, abort_cnt_distr=[0: 971320, ]
+[tid=28,prio=0] txn_cnt=976372, abort_cnt=0, abort_time=0, exec_time=8079114828, backoff_time=0, abort_cnt_distr=[0: 976372, ]
+[tid=29,prio=0] txn_cnt=981219, abort_cnt=0, abort_time=0, exec_time=8074962417, backoff_time=0, abort_cnt_distr=[0: 981219, ]
+[tid=30,prio=0] txn_cnt=984569, abort_cnt=0, abort_time=0, exec_time=8078512400, backoff_time=0, abort_cnt_distr=[0: 984569, ]
+[tid=31,prio=0] txn_cnt=992156, abort_cnt=0, abort_time=0, exec_time=8076448899, backoff_time=0, abort_cnt_distr=[0: 992156, ]
+[summary] throughput=3.91786e+06, txn_cnt= 31646533, abort_cnt= 0, user_abort_cnt= 0, run_time= 258.48, time_abort= 0, time_cleanup= 4.99063, time_query= 1.16049, time_get_latch= 0, time_get_cs= 0, time_copy= 0, time_retire_latch= 0, time_retire_cs= 0, time_release_latch= 0, time_release_cs= 0, time_semaphore_cs= 0, time_commit= 0, time_ts_alloc= 0, wait_cnt= 0, latency= 8167, commit_latency= 8167, abort_length= 0, cascading_abort_times= 0, max_abort_length= 0, txn_cnt_long= 0, abort_cnt_long= 0, cascading_abort_cnt= 0, lock_acquire_cnt= 0, lock_directly_cnt= 0, time_wait= 0, time_man= 14.4594, time_index= 11.9815, deadlock_cnt=0, cycle_detect=0, dl_detect_time=0, dl_wait_time=0
+[prio=0] txn_cnt=31646533, abort_cnt=0, abort_time=0, exec_time=258480342443, backoff_time=0, abort_cnt_distr=[0: 31646533, ]
+[all:tail]      txn_cnt=31646533, p50=8.011, p90=10.487, p99=13.761, p999=17.098, p9999=29.193
+[short:tail]    txn_cnt=31646533, p50=8.011, p90=10.487, p99=13.761, p999=17.098, p9999=29.193
+[prio=0:tail]   txn_cnt=31646533, p50=8.011, p90=10.487, p99=13.761, p999=17.098, p9999=29.193
+[ perf record: Woken up 3032 times to write data ]
+[ perf record: Captured and wrote 783.739 MB 0406_large_dataset_THD=32_SILO_READ_PERC=1.perf.data (7013076 samples) ]
